@@ -93,4 +93,4 @@ Y.extend(_class, Y.Base, {
 Y.GoogleMapsLoader = new _class();
 
 
-}, '@VERSION@' ,{requires:['base', 'jsonp'], skinnable:false});
+}, 'gallery-2011.03.09-21-14' ,{requires:['base', 'jsonp'], skinnable:false});

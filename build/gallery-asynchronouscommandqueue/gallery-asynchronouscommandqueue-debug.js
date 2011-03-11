@@ -71,7 +71,7 @@ Y.extend(_class, Y.Base, {
             queue = this.get('queue');
 
         startCommand = function (asynchronousCommand) {
-            asynchronousCommand.on('complete', function (eventFacade, response, args) {
+            asynchronousCommand.execute().on('complete', function () {
                 completeCount += 1;
                 if (completeCount === commandCount) {
                     this._set('queue', queue.slice(commandCount));
@@ -82,7 +82,6 @@ Y.extend(_class, Y.Base, {
                     }
                 }
             }, this);
-            asynchronousCommand.execute();
         };
 
         this.fire('start');
@@ -101,13 +100,10 @@ Y.extend(_class, Y.Base, {
             return this;
         }
 
-        var asynchronousCommand = this.get('queue').shift();
-        asynchronousCommand.on('complete', function (eventFacade, response, args) {
+        this.fire('start');
+        this.get('queue').shift().execute().on('complete', function () {
             this.startQueue();
         }, this);
-
-        this.fire('start');
-        asynchronousCommand.execute();
 
         return this;
     }
@@ -182,11 +178,11 @@ Y.extend(_class, Y.Base, {
         args.unshift(this);
         this._set('args', args);
 
-        this.on('complete', function (eventFacade, response, args) {
+        this.on('complete', function () {
             this._set('completed', true);
         }, this);
 
-        this.on('start', function (eventFacade, response, args) {
+        this.on('start', function () {
             this._set('started', true);
         }, this);
     }

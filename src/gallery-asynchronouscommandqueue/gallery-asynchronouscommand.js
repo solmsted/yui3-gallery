@@ -63,11 +63,11 @@ Y.extend(_class, Y.Base, {
         args.unshift(this);
         this._set('args', args);
 
-        this.on('complete', function (eventFacade, response, args) {
+        this.on('complete', function () {
             this._set('completed', true);
         }, this);
 
-        this.on('start', function (eventFacade, response, args) {
+        this.on('start', function () {
             this._set('started', true);
         }, this);
     }

@@ -76,4 +76,4 @@ Y.extend(_class, Y.Base, {
 Y.GoogleMapsFrame = _class;
 
 
-}, '@VERSION@' ,{requires:['base', 'frame', 'gallery-google-maps-loader'], skinnable:false});
+}, 'gallery-2011.03.11-23-49' ,{requires:['base', 'frame', 'gallery-google-maps-loader'], skinnable:false});

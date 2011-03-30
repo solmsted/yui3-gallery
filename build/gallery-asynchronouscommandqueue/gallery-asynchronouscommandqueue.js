@@ -112,7 +112,11 @@ Y.extend(_class, Y.Base, {
 Y.AsynchronousCommandQueue = _class;
 
 
+<<<<<<< HEAD
 }, '@VERSION@' ,{skinnable:false, requires:['base']});
+=======
+}, 'gallery-2011.03.16-21-24' ,{requires:['base'], skinnable:false});
+>>>>>>> upstream/master
 YUI.add('gallery-asynchronouscommand', function(Y) {
 
 'use strict';
@@ -191,8 +195,15 @@ Y.extend(_class, Y.Base, {
 Y.AsynchronousCommand = _class;
 
 
+<<<<<<< HEAD
 }, '@VERSION@' ,{skinnable:false, requires:['base']});
 
 
 YUI.add('gallery-asynchronouscommandqueue', function(Y){}, '@VERSION@' ,{requires:['gallery-asynchronouscommand', 'gallery-asynchronouscommandqueue-base'], skinnable:false});
+=======
+}, 'gallery-2011.03.16-21-24' ,{requires:['base'], skinnable:false});
+
+
+YUI.add('gallery-asynchronouscommandqueue', function(Y){}, 'gallery-2011.03.16-21-24' ,{requires:['gallery-asynchronouscommand', 'gallery-asynchronouscommandqueue-base'], skinnable:false});
+>>>>>>> upstream/master
 

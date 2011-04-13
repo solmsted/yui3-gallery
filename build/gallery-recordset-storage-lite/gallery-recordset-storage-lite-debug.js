@@ -39,4 +39,4 @@ Y.extend(_class, Y.Plugin.Base, {
 Y.Plugin.RecordsetStorageLite = _class;
 
 
-}, '@VERSION@' ,{requires:['gallery-storage-lite','plugin']});
+}, 'gallery-2011.04.06-19-44' ,{requires:['gallery-storage-lite','plugin']});

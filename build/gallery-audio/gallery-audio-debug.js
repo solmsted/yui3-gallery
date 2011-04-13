@@ -102,4 +102,4 @@ Y.Audio = {
 };
 
 
-}, '@VERSION@' ,{requires:['node'], optional:['gallery-modernizr']});
+}, 'gallery-2011.04.06-19-44' ,{requires:['node'], optional:['gallery-modernizr']});

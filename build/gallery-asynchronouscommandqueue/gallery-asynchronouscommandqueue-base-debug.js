@@ -160,4 +160,4 @@ Y.extend(_class, Y.Base, {
 Y.AsynchronousCommandQueue = _class;
 
 
-}, '@VERSION@' ,{skinnable:false, requires:['base']});
+}, 'gallery-2011.04.13-22-38' ,{requires:['base'], skinnable:false});

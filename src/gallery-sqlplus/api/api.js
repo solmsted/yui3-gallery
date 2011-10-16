@@ -1,0 +1,3 @@
+YUI.add("yuidoc-meta", function(Y) {
+   Y.YUIDoc = { meta: {"classes":["SqlPlus"],"modules":["gallery-sqlplus"],"allModules":[{"displayName":"gallery-sqlplus","name":"gallery-sqlplus","description":"This module provides an interface to an Oracle database from Node.js.\nIt requires Oracle's SQL*Plus application to be installed.\nThis module runs SQL*Plus as a child process and communicates through stdin and stdout."}]} };
+});

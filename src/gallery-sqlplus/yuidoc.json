@@ -1,0 +1,10 @@
+{
+    "name": "SQL*Plus",
+    "description": "This module provides an interface to an Oracle database from Node.js.  It requires Oracle's SQL*Plus application to be installed.  This module runs SQL*Plus as a child process and communicates through stdin and stdout.",
+    "options": {
+        "linkNatives": "true",
+        "attributesEmit": "true",
+        "paths": [ "./js" ],
+        "outdir": "./api"
+    }
+}

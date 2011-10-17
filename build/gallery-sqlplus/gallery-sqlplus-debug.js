@@ -329,7 +329,7 @@ YUI.add('gallery-sqlplus', function(Y) {
             if (this.get('ready')) {
                 _write.call(this, data, callbackFunction, contextObject);
             } else {
-                var eventHandle = this.on('readyChange', function (eventFacade) {
+                var eventHandle = this.after('readyChange', function (eventFacade) {
                     if (eventFacade.newVal) {
                         this.write(data, callbackFunction, contextObject);
                         eventHandle.detach();

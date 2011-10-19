@@ -352,7 +352,7 @@
                 <p>Defined in
             
         
-        <a href="../files/js_sqlplus.js.html#l342"><code>js&#x2F;sqlplus.js:342</code></a></p>
+        <a href="../files/js_sqlplus.js.html#l351"><code>js&#x2F;sqlplus.js:351</code></a></p>
 
         
 
@@ -474,7 +474,7 @@
                 <p>Defined in
             
         
-        <a href="../files/js_sqlplus.js.html#l395"><code>js&#x2F;sqlplus.js:395</code></a></p>
+        <a href="../files/js_sqlplus.js.html#l404"><code>js&#x2F;sqlplus.js:404</code></a></p>
 
         
 
@@ -683,6 +683,10 @@ Warning: There are certain characters which may be unexpectedly interpreted inco
             </li>
     </dd>
 </dl>
+
+There is a poorly supported error state where error will return null and data will return NaN.  This happens when Sql<em>Plus returns an
+error message similar to this: SP2-0734: unknown command beginning &quot;SELECTCOUN...&quot; - rest of line ignored \n
+This error was produced by the following query: "SELECTCOUNT(</em>) FROM tablename" notice the missing space between SELECT and COUNT.
                     </div>
 
                     
@@ -763,7 +767,7 @@ Warning: There are certain characters which may be unexpectedly interpreted inco
                 <p>Defined in
             
         
-        <a href="../files/js_sqlplus.js.html#l309"><code>js&#x2F;sqlplus.js:309</code></a></p>
+        <a href="../files/js_sqlplus.js.html#l312"><code>js&#x2F;sqlplus.js:312</code></a></p>
 
         
 
@@ -776,11 +780,17 @@ If the stdout of the SQL</em>Plus process is currently returning data from a pre
 this data will be queued until the prompt string is read.
 If the stdin of the SQL<em>Plus process has reported its kernel buffer is full, this data will be queued until the drain event.
 Note that SQL</em>Plus shell requires 'pressing enter' to execute a command.  Append a '\n' character to all commands for this to work.
-Warning: If the '\n' is missing, the data will be sent to the SQL*Plus shell, then the shell will continue waiting for input until
+Warning: If the '\n' is missing, the data will be sent to the SQL<em>Plus shell, then the shell will continue waiting for input until
 'enter is pressed'.  While the shell is waiting, the callback function will never fire.  The write method can continue to be invoked.
 Each call to write will append more data to the shell until '\n' is received.  When the shell responds to the command, all callback
 functions associated with this command will fire.
-Warning: I'm not sure what will happen if '\n' occurs in the middle of a command.</p>
+Warning: I'm not sure what will happen if '\n' occurs in the middle of a command.
+Warning: There is a rare edge case where this method will never call back.  Here is the situation to repoduce the problem:  There is
+an Oracle table with a unique constraint.  Start a script which uses SQL</em>Plus to insert a new row into that table.  Don't do a commit.
+At the terminal press ctrl-z to terminate the process.  The node process terminates but the sqlplus child process does not terminate.
+The oracle session still active in the sqlplus process holds a lock on the row it inserted.  Restart the script, when it tries to insert
+the same row again, it will never call back and neither will any other calls to sqlplus.  The insert query will wait forever for the
+other sqlplus process to either commit or rollback its transaction.  The only solution is to manually kill the orphaned sqlplus process.</p>
     </div>
 
     
@@ -1437,7 +1447,7 @@ and the prompt string has been read from the stdout of the SQL</em>Plus pocess.<
                 <p>Defined in
             
         
-        <a href="../files/js_sqlplus.js.html#l218"><code>js&#x2F;sqlplus.js:218</code></a></p>
+        <a href="../files/js_sqlplus.js.html#l221"><code>js&#x2F;sqlplus.js:221</code></a></p>
 
         
 
@@ -1515,7 +1525,7 @@ signal is the string name of the signal, otherwise null.
                 <p>Defined in
             
         
-        <a href="../files/js_sqlplus.js.html#l235"><code>js&#x2F;sqlplus.js:235</code></a></p>
+        <a href="../files/js_sqlplus.js.html#l238"><code>js&#x2F;sqlplus.js:238</code></a></p>
 
         
 

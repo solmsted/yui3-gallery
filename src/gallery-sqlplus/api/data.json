@@ -140,7 +140,7 @@
                 },
                 {
                     "name": "callbackFunction",
-                    "description": "A function which receives two arguments:\n<dl>\n    <dt>\n        error\n    </dt>\n    <dd>\n        The error string returned by SQL*Plus or null.  If an error is returned, data will be null.\n    </dd>\n    <dt>\n        data\n    </dt>\n    <dd>\n        <ul>\n            <li>\n                A SELECT query will return an array of objects.  There will be one object per row of data returned.\n                The array may be empty.  Each object will have the same property.  The property names will be complete strings of\n                the column names returned by SQL*Plus.  For example the query, \"SELECT count(*) FROM users;\" will\n                return an array with one object.  That object will have one property called 'COUNT(*)'.  In cases of complex names\n                I recommend renaming the columns like this, \"SELECT count(*) AS count FROM users;\".  For Oracle number column types,\n                the values returned should be numbers or null.  For Oracle text column types, the values returned should be strings\n                or null.  Oracle date and time column types get converted to text; I recommend using the PL/SQL TO_CHAR function to\n                manually specify the date and time formats that are returned.  Oracle clob values appear to be selectable just like\n                other text values except they may get truncated to 2000000000 characters.  All returned string values will have\n                leading and trailing whitespace trimmed.  Other column types have not been tested.  Complex column types could\n                probably be made to work, but have not been implemented.\n            </li>\n            <li>\n                A DELETE, INSERT, or UPDATE statemet query will return the number rows affected by the query.\n            </li>\n            <li>\n                Other types of queries have not been tested and aren't supported by the execute method.  Refer to the write method\n                for more information.\n            </li>\n    </dd>\n</dl>",
+                    "description": "A function which receives two arguments:\n<dl>\n    <dt>\n        error\n    </dt>\n    <dd>\n        The error string returned by SQL*Plus or null.  If an error is returned, data will be null.\n    </dd>\n    <dt>\n        data\n    </dt>\n    <dd>\n        <ul>\n            <li>\n                A SELECT query will return an array of objects.  There will be one object per row of data returned.\n                The array may be empty.  Each object will have the same property.  The property names will be complete strings of\n                the column names returned by SQL*Plus.  For example the query, \"SELECT count(*) FROM users;\" will\n                return an array with one object.  That object will have one property called 'COUNT(*)'.  In cases of complex names\n                I recommend renaming the columns like this, \"SELECT count(*) AS count FROM users;\".  For Oracle number column types,\n                the values returned should be numbers or null.  For Oracle text column types, the values returned should be strings\n                or null.  Oracle date and time column types get converted to text; I recommend using the PL/SQL TO_CHAR function to\n                manually specify the date and time formats that are returned.  Oracle clob values appear to be selectable just like\n                other text values except they may get truncated to 2000000000 characters.  All returned string values will have\n                leading and trailing whitespace trimmed.  Other column types have not been tested.  Complex column types could\n                probably be made to work, but have not been implemented.\n            </li>\n            <li>\n                A DELETE, INSERT, or UPDATE statemet query will return the number rows affected by the query.\n            </li>\n            <li>\n                Other types of queries have not been tested and aren't supported by the execute method.  Refer to the write method\n                for more information.\n            </li>\n    </dd>\n</dl>\nThere is a poorly supported error state where error will return null and data will return NaN.  This happens when Sql*Plus returns an\nerror message similar to this: SP2-0734: unknown command beginning &quot;SELECTCOUN...&quot; - rest of line ignored \\n\nThis error was produced by the following query: \"SELECTCOUNT(*) FROM tablename\" notice the missing space between SELECT and COUNT.",
                     "type": "Function"
                 },
                 {
@@ -154,7 +154,7 @@
         },
         {
             "file": "js/sqlplus.js",
-            "line": 218,
+            "line": 221,
             "description": "Fires when the SQL*Plus process exits.  Note that SQL*Plus provides a shell interface and does not terminate by itself.\nWhile a Sql*Plus process is running, the parent process will not terminate by itself either.  To terminate the SQL*Plus process,\npass 'exit\\n' or 'quit\\n' to the write method, or call the kill method on the sqlPlus attribute Child Process object.",
             "itemtype": "event",
             "name": "exit",
@@ -176,7 +176,7 @@
         },
         {
             "file": "js/sqlplus.js",
-            "line": 235,
+            "line": 238,
             "description": "Fires when a complete response has been received from SQL*Plus.  This is not the indended way to receive responses from SQL*Plus\nqueries sent throught the execute or write methods.  Use the callback function arguments of those methods to get the response.\nPreventing this event will prevent callback functions associated with this specific response from being called.",
             "itemtype": "event",
             "name": "response",
@@ -193,8 +193,8 @@
         },
         {
             "file": "js/sqlplus.js",
-            "line": 309,
-            "description": "Sends data to the SQL*Plus shell.\nIf the stdout of the SQL*Plus process is currently returning data from a previous command,\nthis data will be queued until the prompt string is read.\nIf the stdin of the SQL*Plus process has reported its kernel buffer is full, this data will be queued until the drain event.\nNote that SQL*Plus shell requires 'pressing enter' to execute a command.  Append a '\\n' character to all commands for this to work.\nWarning: If the '\\n' is missing, the data will be sent to the SQL*Plus shell, then the shell will continue waiting for input until\n'enter is pressed'.  While the shell is waiting, the callback function will never fire.  The write method can continue to be invoked.\nEach call to write will append more data to the shell until '\\n' is received.  When the shell responds to the command, all callback\nfunctions associated with this command will fire.\nWarning: I'm not sure what will happen if '\\n' occurs in the middle of a command.",
+            "line": 312,
+            "description": "Sends data to the SQL*Plus shell.\nIf the stdout of the SQL*Plus process is currently returning data from a previous command,\nthis data will be queued until the prompt string is read.\nIf the stdin of the SQL*Plus process has reported its kernel buffer is full, this data will be queued until the drain event.\nNote that SQL*Plus shell requires 'pressing enter' to execute a command.  Append a '\\n' character to all commands for this to work.\nWarning: If the '\\n' is missing, the data will be sent to the SQL*Plus shell, then the shell will continue waiting for input until\n'enter is pressed'.  While the shell is waiting, the callback function will never fire.  The write method can continue to be invoked.\nEach call to write will append more data to the shell until '\\n' is received.  When the shell responds to the command, all callback\nfunctions associated with this command will fire.\nWarning: I'm not sure what will happen if '\\n' occurs in the middle of a command.\nWarning: There is a rare edge case where this method will never call back.  Here is the situation to repoduce the problem:  There is\nan Oracle table with a unique constraint.  Start a script which uses SQL*Plus to insert a new row into that table.  Don't do a commit.\nAt the terminal press ctrl-z to terminate the process.  The node process terminates but the sqlplus child process does not terminate.\nThe oracle session still active in the sqlplus process holds a lock on the row it inserted.  Restart the script, when it tries to insert\nthe same row again, it will never call back and neither will any other calls to sqlplus.  The insert query will wait forever for the\nother sqlplus process to either commit or rollback its transaction.  The only solution is to manually kill the orphaned sqlplus process.",
             "itemtype": "method",
             "name": "write",
             "chainable": 1,
@@ -220,7 +220,7 @@
         },
         {
             "file": "js/sqlplus.js",
-            "line": 342,
+            "line": 351,
             "itemtype": "method",
             "name": "_readTableData",
             "params": [
@@ -247,7 +247,7 @@
         },
         {
             "file": "js/sqlplus.js",
-            "line": 395,
+            "line": 404,
             "itemtype": "method",
             "name": "_write",
             "params": [

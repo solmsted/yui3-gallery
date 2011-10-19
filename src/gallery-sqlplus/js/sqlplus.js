@@ -160,6 +160,9 @@
          *             </li>
          *     </dd>
          * </dl>
+         * There is a poorly supported error state where error will return null and data will return NaN.  This happens when Sql*Plus returns an
+         * error message similar to this: SP2-0734: unknown command beginning &quot;SELECTCOUN...&quot; - rest of line ignored \n
+         * This error was produced by the following query: "SELECTCOUNT(*) FROM tablename" notice the missing space between SELECT and COUNT.
          * @param {Object} contextObject (optional) An object to provide as the execution context for the callback function.
          */
         execute: function (query, callbackFunction, contextObject) {
@@ -317,6 +320,12 @@
          * Each call to write will append more data to the shell until '\n' is received.  When the shell responds to the command, all callback
          * functions associated with this command will fire.
          * Warning: I'm not sure what will happen if '\n' occurs in the middle of a command.
+         * Warning: There is a rare edge case where this method will never call back.  Here is the situation to repoduce the problem:  There is
+         * an Oracle table with a unique constraint.  Start a script which uses SQL*Plus to insert a new row into that table.  Don't do a commit.
+         * At the terminal press ctrl-z to terminate the process.  The node process terminates but the sqlplus child process does not terminate.
+         * The oracle session still active in the sqlplus process holds a lock on the row it inserted.  Restart the script, when it tries to insert
+         * the same row again, it will never call back and neither will any other calls to sqlplus.  The insert query will wait forever for the
+         * other sqlplus process to either commit or rollback its transaction.  The only solution is to manually kill the orphaned sqlplus process.
          * @method write
          * @chainable
          * @param {Buffer|String} data The data to write.

@@ -126,4 +126,4 @@ YUI.add('gallery-yql-crypto', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-base64', 'yql'], skinnable:false});
+}, 'gallery-2011.10.27-17-03' ,{requires:['gallery-base64', 'yql'], skinnable:false});

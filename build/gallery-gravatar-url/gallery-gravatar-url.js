@@ -101,7 +101,7 @@ YUI.add('gallery-gravatar-url', function(Y) {
             queryString = '?' + _stringify(queryString);
         }
         
-        if (force) {
+        if (force && (defaultImage === '404' || defaultImage === 'mm')) {
             complete();
         } else {
             _md5(_trim(options.email || '').toLowerCase(), function (md5) {
@@ -112,4 +112,4 @@ YUI.add('gallery-gravatar-url', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-yql-crypto', 'querystring-stringify-simple'], skinnable:false});
+}, 'gallery-2011.10.27-17-03' ,{requires:['gallery-yql-crypto', 'querystring-stringify-simple'], skinnable:false});

@@ -479,4 +479,8 @@ YUI.add('gallery-composite-image', function(Y) {
 }(Y));
 
 
+<<<<<<< HEAD
+}, '@VERSION@' ,{requires:['base'], skinnable:false});
+=======
 }, 'gallery-2011.11.17-14-56' ,{requires:['base'], skinnable:false});
+>>>>>>> 7b443d88688e91b4e735f90919eef2a16a412e35

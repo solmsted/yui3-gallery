@@ -479,4 +479,4 @@ YUI.add('gallery-composite-image', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['base'], skinnable:false});
+}, 'gallery-2011.11.17-14-56' ,{requires:['base'], skinnable:false});

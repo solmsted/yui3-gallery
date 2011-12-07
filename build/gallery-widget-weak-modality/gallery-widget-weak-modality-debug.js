@@ -27,4 +27,4 @@ YUI.add('gallery-widget-weak-modality', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['widget-modality'], skinnable:false});
+}, 'gallery-2011.11.30-20-58' ,{requires:['widget-modality'], skinnable:false});

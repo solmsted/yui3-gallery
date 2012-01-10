@@ -32,4 +32,4 @@ YUI.add('gallery-delay', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['yui-later'], skinnable:false});
+}, 'gallery-2011.12.14-21-12' ,{requires:['yui-later'], skinnable:false});

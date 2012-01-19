@@ -60,4 +60,4 @@ YUI.add('gallery-async-command-delay', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-async-command', 'gallery-delay', 'plugin'], skinnable:false});
+}, 'gallery-2012.01.11-21-03' ,{requires:['gallery-async-command', 'gallery-delay', 'plugin'], skinnable:false});

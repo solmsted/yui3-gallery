@@ -225,4 +225,4 @@ YUI.add('gallery-async-command', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['base'], skinnable:false});
+}, 'gallery-2012.01.11-21-03' ,{requires:['base'], skinnable:false});

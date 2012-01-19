@@ -217,4 +217,4 @@ YUI.add('gallery-async', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-array-unnest', 'gallery-async-command'], skinnable:false});
+}, 'gallery-2012.01.11-21-03' ,{requires:['gallery-array-unnest', 'gallery-async-command'], skinnable:false});

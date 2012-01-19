@@ -151,4 +151,4 @@ YUI.add('gallery-yql-rest-client-oauth', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['array-extras', 'event-custom-base', 'gallery-yql-crypto', 'gallery-yql-rest-client'], skinnable:false});
+}, 'gallery-2012.01.18-21-09' ,{requires:['array-extras', 'event-custom-base', 'gallery-yql-crypto', 'gallery-yql-rest-client'], skinnable:false});

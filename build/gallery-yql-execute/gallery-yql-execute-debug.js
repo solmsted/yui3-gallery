@@ -20,4 +20,4 @@ YUI.add('gallery-yql-execute', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['yql'], skinnable:false});
+}, 'gallery-2012.01.11-21-03' ,{requires:['yql'], skinnable:false});

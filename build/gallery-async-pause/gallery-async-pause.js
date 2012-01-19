@@ -139,4 +139,4 @@ YUI.add('gallery-async-pause', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-async', 'plugin'], skinnable:false});
+}, 'gallery-2012.01.11-21-03' ,{requires:['gallery-async', 'plugin'], skinnable:false});

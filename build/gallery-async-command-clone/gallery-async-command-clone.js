@@ -41,4 +41,4 @@ YUI.add('gallery-async-command-clone', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-async-command', 'plugin'], skinnable:false});
+}, 'gallery-2012.01.11-21-03' ,{requires:['gallery-async-command', 'plugin'], skinnable:false});

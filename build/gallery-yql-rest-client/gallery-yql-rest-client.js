@@ -225,4 +225,4 @@ YUI.add('gallery-yql-rest-client', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-yql-execute', 'querystring-stringify'], skinnable:false});
+}, 'gallery-2012.01.18-21-09' ,{requires:['gallery-yql-execute', 'querystring-stringify'], skinnable:false});

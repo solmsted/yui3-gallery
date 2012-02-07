@@ -8,6 +8,7 @@ YUI.add('gallery-lazy-load', function(Y) {
         _Lang = Y.Lang,
         
         _attached = _Env._attached,
+        _config = Y.config,
         _loader = _Env._loader,
         
         _each = Y.each,
@@ -20,6 +21,7 @@ YUI.add('gallery-lazy-load', function(Y) {
             alreadyAttached = {},
             callbackFunction = args[args.length - 1],
             errors = [],
+            loadErrorFn = _config.loadErrorFn,
             onFailure = _loader.onFailure,
             onTimeout = _loader.onTimeout;
  
@@ -43,6 +45,8 @@ YUI.add('gallery-lazy-load', function(Y) {
             }
         });
         
+        delete _config.loadErrorFn;
+        
         _loader.onFailure = function (error) {
             errors.push(error);
         };
@@ -52,6 +56,7 @@ YUI.add('gallery-lazy-load', function(Y) {
         };
         
         args.push(function () {
+            _config.loadErrorFn = loadErrorFn;
             _loader.onFailure = onFailure;
             _loader.onTimeout = onTimeout;
             

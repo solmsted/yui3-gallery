@@ -39,4 +39,4 @@ YUI.add('gallery-model-list-union', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['gallery-array-unnest', 'model-list'], skinnable:false});
+}, 'gallery-2012.02.01-21-35' ,{requires:['gallery-array-unnest', 'model-list'], skinnable:false});

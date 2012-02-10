@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>YQLCrypto - solmsted gallery modules</title>
+    <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
+    <script src="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;yui&#x2F;yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            <h1><img src="..&#x2F;assets/css/logo.png"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: undefined</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="..&#x2F;classes/Array.html">Array</a></li>
+            
+                <li><a href="..&#x2F;classes/Composite.Image.html">Composite.Image</a></li>
+            
+                <li><a href="..&#x2F;classes/ModelList.html">ModelList</a></li>
+            
+                <li><a href="..&#x2F;classes/WidgetModality.html">WidgetModality</a></li>
+            
+                <li><a href="..&#x2F;classes/Y.Async.html">Y.Async</a></li>
+            
+                <li><a href="..&#x2F;classes/Y.AsyncCommand.html">Y.AsyncCommand</a></li>
+            
+                <li><a href="..&#x2F;classes/Y.Plugin.AsyncCommandClone.html">Y.Plugin.AsyncCommandClone</a></li>
+            
+                <li><a href="..&#x2F;classes/Y.Plugin.AsyncCommandDelay.html">Y.Plugin.AsyncCommandDelay</a></li>
+            
+                <li><a href="..&#x2F;classes/Y.Plugin.AsyncCommandWithhold.html">Y.Plugin.AsyncCommandWithhold</a></li>
+            
+                <li><a href="..&#x2F;classes/Y.Plugin.AsyncPause.html">Y.Plugin.AsyncPause</a></li>
+            
+                <li><a href="..&#x2F;classes/YQL.html">YQL</a></li>
+            
+                <li><a href="..&#x2F;classes/YQLCrypto.html">YQLCrypto</a></li>
+            
+                <li><a href="..&#x2F;classes/YQLRESTClient.html">YQLRESTClient</a></li>
+            
+                <li><a href="..&#x2F;classes/YUI.html">YUI</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="..&#x2F;modules/gallery-array-unnest.html">gallery-array-unnest</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-async.html">gallery-async</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-async-command.html">gallery-async-command</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-async-command-clone.html">gallery-async-command-clone</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-async-command-delay.html">gallery-async-command-delay</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-async-command-withhold.html">gallery-async-command-withhold</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-async-pause.html">gallery-async-pause</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-composite-image.html">gallery-composite-image</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-delay.html">gallery-delay</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-gravatar-url.html">gallery-gravatar-url</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-lazy-load.html">gallery-lazy-load</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-model-list-union.html">gallery-model-list-union</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-widget-weak-modality.html">gallery-widget-weak-modality</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-yql-crypto.html">gallery-yql-crypto</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-yql-execute..html">gallery-yql-execute.</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-yql-rest-client.html">gallery-yql-rest-client</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-yql-rest-client-oauth.html">gallery-yql-rest-client-oauth</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main" class="content">
+                    <h1>YQLCrypto Class</h1>
+<div class="box meta">
+    
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l56"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:56</code></a>
+        </div>
+    
+
+    
+</div>
+
+
+
+<div class="box intro">
+    
+</div>
+
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+        
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+            
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method">
+                                <a href="#method_execute">execute</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_hmacSha1">hmacSha1</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_hmacSha1_b64">hmacSha1_b64</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_hmacSha256">hmacSha256</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_hmacSha256_b64">hmacSha256_b64</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_md5">md5</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_md5_b64">md5_b64</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_sha1">sha1</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_sha1_b64">sha1_b64</a>
+
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_uuid">uuid</a>
+
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+
+            
+        </div>
+
+        
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_execute" class="method item">
+    <h3 class="name"><code>execute</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>code</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l61"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:61</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>This method wraps the YQL execute data table which executes inline Javascript on the YQL server.
+YQL Server side Javascript documentation is here: http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">code</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Javascript code to execute on the YQL server.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_hmacSha1" class="method item">
+    <h3 class="name"><code>hmacSha1</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>secret</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l71"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:71</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates a sha1 hash-based message authentication code.
+The result is expressed as a hex value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">secret</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The secret key.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_hmacSha1_b64" class="method item">
+    <h3 class="name"><code>hmacSha1_b64</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>secret</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l82"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:82</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates a sha1 hash-based message authentication code.
+The result is expressed as a base 64 encoded value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">secret</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The secret key.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_hmacSha256" class="method item">
+    <h3 class="name"><code>hmacSha256</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>secret</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l93"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:93</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates a sha256 hash-based message authentication code.
+The result is expressed as a hex value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">secret</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The secret key.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_hmacSha256_b64" class="method item">
+    <h3 class="name"><code>hmacSha256_b64</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>secret</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l104"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:104</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates a sha256 hash-based message authentication code.
+The result is expressed as a base 64 encoded value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">secret</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The secret key.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_md5" class="method item">
+    <h3 class="name"><code>md5</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l115"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:115</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates an md5 hash.
+The result is expressed as a hex value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_md5_b64" class="method item">
+    <h3 class="name"><code>md5_b64</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l125"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:125</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates an md5 hash.
+The result is expressed as a base 64 encoded value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_sha1" class="method item">
+    <h3 class="name"><code>sha1</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l135"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:135</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates a sha1 hash.
+The result is expressed as a hex value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_sha1_b64" class="method item">
+    <h3 class="name"><code>sha1_b64</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>string</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l145"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:145</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates a sha1 hash.
+The result is expressed as a base 64 encoded value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">string</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The message to hash.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_uuid" class="method item">
+    <h3 class="name"><code>uuid</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>params</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>opts</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l155"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:155</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Generates a universally unique identifier.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The result value is the only parameter.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">opts</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(optional) Passes through to Y.YQL.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+
+        
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="..&#x2F;assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="..&#x2F;assets/js/yui-prettify.js"></script>
+<!--script src="..&#x2F;assets/js/tabs.js"></script-->
+<script src="..&#x2F;assets/../api.js"></script>
+
+
+<script src="..&#x2F;assets/js/api-filter.js"></script>
+<script src="..&#x2F;assets/js/api-list.js"></script>
+<script src="..&#x2F;assets/js/api-search.js"></script>
+<script src="..&#x2F;assets/js/apidocs.js"></script>
+</body>
+</html>

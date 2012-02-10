@@ -1,0 +1,2068 @@
+{
+    "project": {
+        "name": "solmsted gallery modules",
+        "description": ""
+    },
+    "files": {
+        "yui3-gallery/src/gallery-array-unnest/js/array-unnest.js": {
+            "name": "yui3-gallery/src/gallery-array-unnest/js/array-unnest.js",
+            "modules": {
+                "gallery-array-unnest": 1
+            },
+            "classes": {},
+            "fors": {
+                "Array": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-async/js/async.js": {
+            "name": "yui3-gallery/src/gallery-async/js/async.js",
+            "modules": {
+                "gallery-async": 1
+            },
+            "classes": {
+                "Y.Async": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y": 1
+            }
+        },
+        "yui3-gallery/src/gallery-async-command/js/async-command.js": {
+            "name": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "modules": {
+                "gallery-async-command": 1
+            },
+            "classes": {
+                "Y.AsyncCommand": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y": 1
+            }
+        },
+        "yui3-gallery/src/gallery-async-command-clone/js/async-command-clone.js": {
+            "name": "yui3-gallery/src/gallery-async-command-clone/js/async-command-clone.js",
+            "modules": {
+                "gallery-async-command-clone": 1
+            },
+            "classes": {
+                "Y.Plugin.AsyncCommandClone": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            }
+        },
+        "yui3-gallery/src/gallery-async-command-delay/js/async-command-delay.js": {
+            "name": "yui3-gallery/src/gallery-async-command-delay/js/async-command-delay.js",
+            "modules": {
+                "gallery-async-command-delay": 1
+            },
+            "classes": {
+                "Y.Plugin.AsyncCommandDelay": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            }
+        },
+        "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js": {
+            "name": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
+            "modules": {
+                "gallery-async-command-withhold": 1
+            },
+            "classes": {
+                "Y.Plugin.AsyncCommandWithhold": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            }
+        },
+        "yui3-gallery/src/gallery-async-pause/js/async-pause.js": {
+            "name": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "modules": {
+                "gallery-async-pause": 1
+            },
+            "classes": {
+                "Y.Plugin.AsyncPause": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            }
+        },
+        "yui3-gallery/src/gallery-composite-image/js/composite-image.js": {
+            "name": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "modules": {
+                "gallery-composite-image": 1
+            },
+            "classes": {
+                "Composite.Image": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Composite": 1
+            }
+        },
+        "yui3-gallery/src/gallery-delay/js/delay.js": {
+            "name": "yui3-gallery/src/gallery-delay/js/delay.js",
+            "modules": {
+                "gallery-delay": 1
+            },
+            "classes": {},
+            "fors": {
+                "YUI": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-gravatar-url/js/gravatar-url.js": {
+            "name": "yui3-gallery/src/gallery-gravatar-url/js/gravatar-url.js",
+            "modules": {
+                "gallery-gravatar-url": 1
+            },
+            "classes": {},
+            "fors": {
+                "YUI": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-lazy-load/js/lazy-load.js": {
+            "name": "yui3-gallery/src/gallery-lazy-load/js/lazy-load.js",
+            "modules": {
+                "gallery-lazy-load": 1
+            },
+            "classes": {},
+            "fors": {
+                "YUI": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-model-list-union/js/model-list-union.js": {
+            "name": "yui3-gallery/src/gallery-model-list-union/js/model-list-union.js",
+            "modules": {
+                "gallery-model-list-union": 1
+            },
+            "classes": {},
+            "fors": {
+                "ModelList": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-widget-weak-modality/js/widget-weak-modality.js": {
+            "name": "yui3-gallery/src/gallery-widget-weak-modality/js/widget-weak-modality.js",
+            "modules": {
+                "gallery-widget-weak-modality": 1
+            },
+            "classes": {},
+            "fors": {
+                "WidgetModality": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-yql-execute/js/yql-execute.js": {
+            "name": "yui3-gallery/src/gallery-yql-execute/js/yql-execute.js",
+            "modules": {
+                "gallery-yql-execute.": 1
+            },
+            "classes": {},
+            "fors": {
+                "YQL": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-yql-rest-client/js/yql-rest-client.js": {
+            "name": "yui3-gallery/src/gallery-yql-rest-client/js/yql-rest-client.js",
+            "modules": {
+                "gallery-yql-rest-client": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js": {
+            "name": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "modules": {
+                "gallery-yql-rest-client-oauth": 1
+            },
+            "classes": {
+                "YQLRESTClient": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js": {
+            "name": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "modules": {
+                "gallery-yql-crypto": 1
+            },
+            "classes": {
+                "YQLCrypto": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "gallery-array-unnest": {
+            "name": "gallery-array-unnest",
+            "submodules": {},
+            "classes": {
+                "Array": 1
+            },
+            "fors": {
+                "Array": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-array-unnest/js/array-unnest.js",
+            "line": 1,
+            "description": "Utility function that flattens nested arrays."
+        },
+        "gallery-async": {
+            "name": "gallery-async",
+            "submodules": {},
+            "classes": {
+                "Y.Async": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 1
+        },
+        "gallery-async-command": {
+            "name": "gallery-async-command",
+            "submodules": {},
+            "classes": {
+                "Y.AsyncCommand": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 1
+        },
+        "gallery-async-command-clone": {
+            "name": "gallery-async-command-clone",
+            "submodules": {},
+            "classes": {
+                "Y.Plugin.AsyncCommandClone": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-command-clone/js/async-command-clone.js",
+            "line": 1
+        },
+        "gallery-async-command-delay": {
+            "name": "gallery-async-command-delay",
+            "submodules": {},
+            "classes": {
+                "Y.Plugin.AsyncCommandDelay": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-command-delay/js/async-command-delay.js",
+            "line": 1
+        },
+        "gallery-async-command-withhold": {
+            "name": "gallery-async-command-withhold",
+            "submodules": {},
+            "classes": {
+                "Y.Plugin.AsyncCommandWithhold": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
+            "line": 1
+        },
+        "gallery-async-pause": {
+            "name": "gallery-async-pause",
+            "submodules": {},
+            "classes": {
+                "Y.Plugin.AsyncPause": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 1
+        },
+        "gallery-composite-image": {
+            "name": "gallery-composite-image",
+            "submodules": {},
+            "classes": {
+                "Composite.Image": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Composite": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 4
+        },
+        "gallery-delay": {
+            "name": "gallery-delay",
+            "submodules": {},
+            "classes": {
+                "YUI": 1
+            },
+            "fors": {
+                "YUI": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-delay/js/delay.js",
+            "line": 1,
+            "description": "Create a function that doesn't execute immediately when it is called."
+        },
+        "gallery-gravatar-url": {
+            "name": "gallery-gravatar-url",
+            "submodules": {},
+            "classes": {},
+            "fors": {
+                "YUI": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-gravatar-url/js/gravatar-url.js",
+            "line": 1,
+            "description": "This module provides a function for creating gravatar image urls."
+        },
+        "gallery-lazy-load": {
+            "name": "gallery-lazy-load",
+            "submodules": {},
+            "classes": {},
+            "fors": {
+                "YUI": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-lazy-load/js/lazy-load.js",
+            "line": 1,
+            "description": "A little helper function for when you want to load more modules into an existing Y instance."
+        },
+        "gallery-model-list-union": {
+            "name": "gallery-model-list-union",
+            "submodules": {},
+            "classes": {
+                "ModelList": 1
+            },
+            "fors": {
+                "ModelList": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-model-list-union/js/model-list-union.js",
+            "line": 1,
+            "description": "Creates a model list that is the union of two or more other model lists."
+        },
+        "gallery-widget-weak-modality": {
+            "name": "gallery-widget-weak-modality",
+            "submodules": {},
+            "classes": {
+                "WidgetModality": 1
+            },
+            "fors": {
+                "WidgetModality": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-widget-weak-modality/js/widget-weak-modality.js",
+            "line": 1,
+            "description": "Make widget modality less scary."
+        },
+        "gallery-yql-execute.": {
+            "name": "gallery-yql-execute.",
+            "submodules": {},
+            "classes": {
+                "YQL": 1
+            },
+            "fors": {
+                "YQL": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-yql-execute/js/yql-execute.js",
+            "line": 1,
+            "description": "This module Executes JavaScript remotely."
+        },
+        "gallery-yql-rest-client": {
+            "name": "gallery-yql-rest-client",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-yql-rest-client/js/yql-rest-client.js",
+            "line": 1,
+            "description": "This module is a REST client."
+        },
+        "gallery-yql-rest-client-oauth": {
+            "name": "gallery-yql-rest-client-oauth",
+            "submodules": {},
+            "classes": {
+                "YQLRESTClient": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "line": 1,
+            "description": "This module is a REST client supporting OAuth signatures."
+        },
+        "gallery-yql-crypto": {
+            "name": "gallery-yql-crypto",
+            "submodules": {},
+            "classes": {
+                "YQLCrypto": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 1,
+            "description": "This module provides convenient client side access to YQL's crypto functions."
+        }
+    },
+    "classes": {
+        "Array": {
+            "name": "Array",
+            "shortname": "Array",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-array-unnest",
+            "namespace": ""
+        },
+        "Y.Async": {
+            "name": "Y.Async",
+            "shortname": "Y.Async",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async",
+            "namespace": "Y",
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 20,
+            "description": "Asynchronous command runner class.",
+            "extends": "Y.AsyncCommand",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Y.AsyncCommand": {
+            "name": "Y.AsyncCommand",
+            "shortname": "Y.AsyncCommand",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async-command",
+            "namespace": "Y",
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 12,
+            "description": "Asynchronous command class.",
+            "extends": "Y.Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Y.Plugin.AsyncCommandClone": {
+            "name": "Y.Plugin.AsyncCommandClone",
+            "shortname": "Y.Plugin.AsyncCommandClone",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async-command-clone",
+            "namespace": "Y.Plugin",
+            "file": "yui3-gallery/src/gallery-async-command-clone/js/async-command-clone.js",
+            "line": 7,
+            "description": "Asynchronous command clone plugin.",
+            "extends": "Y.Plugin.Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Y.Plugin.AsyncCommandDelay": {
+            "name": "Y.Plugin.AsyncCommandDelay",
+            "shortname": "Y.Plugin.AsyncCommandDelay",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async-command-delay",
+            "namespace": "Y.Plugin",
+            "file": "yui3-gallery/src/gallery-async-command-delay/js/async-command-delay.js",
+            "line": 14,
+            "description": "Asynchronous command delay plugin.",
+            "extends": "Y.Plugin.Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Y.Plugin.AsyncCommandWithhold": {
+            "name": "Y.Plugin.AsyncCommandWithhold",
+            "shortname": "Y.Plugin.AsyncCommandWithhold",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async-command-withhold",
+            "namespace": "Y.Plugin",
+            "file": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
+            "line": 11,
+            "description": "Asynchronous command withhold plugin.",
+            "extends": "Y.Plugin.Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Y.Plugin.AsyncPause": {
+            "name": "Y.Plugin.AsyncPause",
+            "shortname": "Y.Plugin.AsyncPause",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async-pause",
+            "namespace": "Y.Plugin",
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 11,
+            "description": "Asynchronous command runner pause plugin.",
+            "extends": "Y.Plugin.Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Composite.Image": {
+            "name": "Composite.Image",
+            "shortname": "Composite.Image",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-composite-image",
+            "namespace": "Composite",
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 15,
+            "description": "Image Class",
+            "is_constructor": 1,
+            "extends": "Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "YUI": {
+            "name": "YUI",
+            "shortname": "YUI",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-delay",
+            "namespace": ""
+        },
+        "ModelList": {
+            "name": "ModelList",
+            "shortname": "ModelList",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-model-list-union",
+            "namespace": ""
+        },
+        "WidgetModality": {
+            "name": "WidgetModality",
+            "shortname": "WidgetModality",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-widget-weak-modality",
+            "namespace": ""
+        },
+        "YQL": {
+            "name": "YQL",
+            "shortname": "YQL",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-yql-execute.",
+            "namespace": ""
+        },
+        "YQLRESTClient": {
+            "name": "YQLRESTClient",
+            "shortname": "YQLRESTClient",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-yql-rest-client-oauth",
+            "namespace": "",
+            "file": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "line": 6,
+            "static": 1
+        },
+        "YQLCrypto": {
+            "name": "YQLCrypto",
+            "shortname": "YQLCrypto",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-yql-crypto",
+            "namespace": "",
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 56,
+            "static": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "yui3-gallery/src/gallery-array-unnest/js/array-unnest.js",
+            "line": 8,
+            "description": "Utility function that flattens nested arrays.\nThe original array is not modified. The returned array items are a shallow copy of the original array items.",
+            "itemtype": "method",
+            "name": "unnest",
+            "params": [
+                {
+                    "name": "array",
+                    "description": "",
+                    "type": "Array"
+                },
+                {
+                    "name": "levels",
+                    "description": "Optional.  If defined, must be a non-negative integer.  Defaults to 1.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "static": 1,
+            "class": "Array",
+            "module": "gallery-array-unnest"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 42,
+            "description": "Command function for all mode.",
+            "itemtype": "method",
+            "name": "_runAll",
+            "params": [
+                {
+                    "name": "success",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "run",
+                    "description": "",
+                    "type": "[AsyncCommand]"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 74,
+            "description": "Command function for queue mode.",
+            "itemtype": "method",
+            "name": "_runAll",
+            "params": [
+                {
+                    "name": "success",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "run",
+                    "description": "",
+                    "type": "[AsyncCommand]"
+                },
+                {
+                    "name": "index",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 105,
+            "description": "The inherited args attribute is protected.",
+            "itemtype": "attribute",
+            "name": "args",
+            "default": "[]",
+            "initonly": "",
+            "access": "protected",
+            "tagname": "",
+            "type": "Array",
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 113,
+            "description": "The inherited ctx attribute is protected.",
+            "itemtype": "attribute",
+            "name": "ctx",
+            "initonly": "",
+            "access": "protected",
+            "tagname": "",
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 119,
+            "description": "The inherited fn attribute is protected.",
+            "itemtype": "attribute",
+            "name": "fn",
+            "initonly": "",
+            "access": "protected",
+            "tagname": "",
+            "type": "Function",
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 126,
+            "description": "Value indicating the run mode.  Possible modes are:\n<dl>\n    <dt>\n        all\n    </dt>\n    <dd>\n        This mode runs all commands.  The commands might be completed out of order.\n        The run completes once all commands have completed.  The run fails if any\n        command fails.\n    </dd>\n    <dt>\n        queue\n    </dt>\n    <dd>\n        This mode runs one command at a time.  It waits for the first command to complete\n        before moving on to the next one.  The run completes when the last command has completed.\n        The run fails if a command fails and the remaining commands are not run.\n    </dd>\n</dl>",
+            "itemtype": "attribute",
+            "name": "mode",
+            "default": "'queue'",
+            "initonly": "",
+            "type": "String",
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 155,
+            "description": "An array of AsyncCommands to run.  Functions will get converted to instances of AsyncCommand.",
+            "itemtype": "attribute",
+            "name": "run",
+            "default": "[]",
+            "initonly": "",
+            "type": "[AsyncCommand]",
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 185,
+            "description": "Creates and runs an instance of Async in 'all' mode.  This method accepts an unlimited number of parameters.\nParameters can be command functions, instances of AsyncCommand, instances of Async, or arrays of any of the above.",
+            "itemtype": "method",
+            "name": "runAll",
+            "return": {
+                "description": "",
+                "type": "Async"
+            },
+            "static": 1,
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async/js/async.js",
+            "line": 195,
+            "description": "Creates and runs an instance of Async in 'queue' mode.  This method accepts an unlimited number of parameters.\nParameters can be command functions, instances of AsyncCommand, instances of Async, or arrays of any of the above.",
+            "itemtype": "method",
+            "name": "runQueue",
+            "return": {
+                "description": "",
+                "type": "Async"
+            },
+            "static": 1,
+            "class": "Y.Async",
+            "module": "gallery-async",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 25,
+            "description": "Fired when the command function completes.",
+            "itemtype": "event",
+            "name": "complete",
+            "fireonce": "",
+            "params": [
+                {
+                    "name": "error",
+                    "description": "Optional error value."
+                },
+                {
+                    "name": "failed",
+                    "description": "Indicates the failed status of the command.",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "value",
+                    "description": "Optional return value from the command function."
+                }
+            ],
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 40,
+            "description": "Fired when the command function fails.",
+            "itemtype": "event",
+            "name": "failure",
+            "fireonce": "",
+            "params": [
+                {
+                    "name": "error",
+                    "description": "Optional error value."
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 62,
+            "description": "Fired when the command function starts.",
+            "itemtype": "event",
+            "name": "start",
+            "fireonce": "",
+            "access": "protected",
+            "tagname": "",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 76,
+            "description": "Fired when the command function succeeds.",
+            "itemtype": "event",
+            "name": "success",
+            "fireonce": "",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "Optional return value from the command function."
+                }
+            ],
+            "access": "protected",
+            "tagname": "",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 99,
+            "description": "Execute the command function.",
+            "itemtype": "method",
+            "name": "run",
+            "chainable": 1,
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 110,
+            "description": "Array of arguments to be passed to the command function.\nA special callback function is automatically added as the first argument.",
+            "itemtype": "attribute",
+            "name": "args",
+            "default": "[]",
+            "initonly": "",
+            "type": "Array",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 131,
+            "description": "Boolean value indicating the completed status of the command.",
+            "itemtype": "attribute",
+            "name": "completed",
+            "default": "false",
+            "readonly": "",
+            "type": "Boolean",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 142,
+            "description": "Execution context for the command function.",
+            "itemtype": "attribute",
+            "name": "ctx",
+            "initonly": "",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 150,
+            "description": "Error value passed to the failure event.",
+            "itemtype": "attribute",
+            "name": "error",
+            "readonly": "",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 158,
+            "description": "Boolean value indicating the failed status of the command.",
+            "itemtype": "attribute",
+            "name": "failed",
+            "default": "false",
+            "readonly": "",
+            "type": "Boolean",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 169,
+            "description": "The command function to execute.  This function receives a special success callback function as\nthe first parameter.  The success callback function has a method parameter called fail.  One of \nthese callback functions must be called in order to complete the command.",
+            "itemtype": "attribute",
+            "name": "fn",
+            "initonly": "",
+            "type": "Function",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 183,
+            "description": "Boolean value indicating the started status of the command.",
+            "itemtype": "attribute",
+            "name": "started",
+            "default": "false",
+            "readonly": "",
+            "type": "Boolean",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command/js/async-command.js",
+            "line": 194,
+            "description": "Value passed to the success event.",
+            "itemtype": "attribute",
+            "name": "value",
+            "readonly": "",
+            "class": "Y.AsyncCommand",
+            "module": "gallery-async-command",
+            "namespace": "Y"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command-clone/js/async-command-clone.js",
+            "line": 17,
+            "description": "Clones the host AsyncCommand instance in a new unused state.",
+            "itemtype": "method",
+            "name": "clone",
+            "return": {
+                "description": "",
+                "type": "AsyncCommand"
+            },
+            "class": "Y.Plugin.AsyncCommandClone",
+            "module": "gallery-async-command-clone",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command-delay/js/async-command-delay.js",
+            "line": 40,
+            "description": "Approximate delay in milliseconds to wait between the time run is called\nand when the command function is executed.",
+            "itemtype": "attribute",
+            "name": "delay",
+            "default": "0",
+            "initonly": "",
+            "type": "Number",
+            "class": "Y.Plugin.AsyncCommandDelay",
+            "module": "gallery-async-command-delay",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
+            "line": 37,
+            "description": "Approximate delay in milliseconds to wait between the time the command function\nreports completion and when the completed status is updated.",
+            "itemtype": "attribute",
+            "name": "withhold",
+            "default": "0",
+            "initonly": "",
+            "type": "Number",
+            "class": "Y.Plugin.AsyncCommandWithhold",
+            "module": "gallery-async-command-withhold",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 37,
+            "description": "Pause the run.  Does not stop a command that is currently running, the run will pause\nbefore the next command runs.",
+            "itemtype": "method",
+            "name": "pause",
+            "chainable": 1,
+            "class": "Y.Plugin.AsyncPause",
+            "module": "gallery-async-pause",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 47,
+            "description": "Resumes a paused run.  If a command is currently running, the paused state may not be updated\nimmediately.  Resume does nothing if the run is not paused or not started yet or already complete.",
+            "itemtype": "method",
+            "name": "resume",
+            "chainable": 1,
+            "class": "Y.Plugin.AsyncPause",
+            "module": "gallery-async-pause",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 100,
+            "description": "Boolean value indicating the paused status of the run.",
+            "itemtype": "attribute",
+            "name": "paused",
+            "default": "false",
+            "readonly": "",
+            "type": "Boolean",
+            "class": "Y.Plugin.AsyncPause",
+            "module": "gallery-async-pause",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 111,
+            "description": "Paused _runQueue arguments.",
+            "itemtype": "attribute",
+            "name": "_args",
+            "access": "protected",
+            "tagname": "",
+            "readonly": "",
+            "type": "Array",
+            "class": "Y.Plugin.AsyncPause",
+            "module": "gallery-async-pause",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 121,
+            "description": "Boolean value indicating the resumed status of the run.",
+            "itemtype": "attribute",
+            "name": "_resumed",
+            "access": "protected",
+            "tagname": "",
+            "readonly": "",
+            "type": "Array",
+            "class": "Y.Plugin.AsyncPause",
+            "module": "gallery-async-pause",
+            "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 29,
+            "description": "Defines the color space for the image.\n\nAn image can have as many channels as needed.  3 or 4 channels is most common.\nUsually the first channel is the red color component, the second is green, the third is blue, and the fourth is alpha.\n\nThere are various ways to represent the value of a channel.\nValues can either be stored as integers or floating-point numbers.\nValues may be constrained within a minimum and maximum value.\n\nMost commonly red, green, and blue channels are represented by integers between 0 and 255.\nIn this case the values 0, 0, 0 represent black and the values 255, 255, 255 represent white.\n\nThe alpha channel is commonly stored as a floating-point value from 0 to 1.\n1 represents a completely visible pixel while 0 is completely transparent.\n\nValues are not required to be constrained.  For example, sometimes it is interesting or useful to store colors which have brightness beyond white.\n\nThis attribute should be set to an array of objects.  This array represents the channels in order.  This array should have at least one element.\nThis should not be a sparse array.  Each object must have a mode property.  The mode property must be set to either 'f' for floating-point values\nor 'i' for integer values.  Each object may include the optional maximum and/or minimum properties.  Each object may include the optional blackValue\nand/or whiteValue properties.  If undefined, blackValue will default to 0 and whiteValue will default to 255 when mode is set to 'i' or 1 otherwise.",
+            "itemtype": "attribute",
+            "name": "channels",
+            "default": "[{maximum: 255, minimum: 0, mode:'i'}, {maximum: 255, minimum: 0, mode:'i'}, {maximum: 255, minimum: 0, mode:'i'}, {maximum: 1, minimum: 0, mode:'f'}]",
+            "type": "Array",
+            "writeonce": "",
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 77,
+            "description": "Defines the pixel dimensions of the image.\n\nAn image can have as many dimensions as needed.  2 dimensions is most common.\nUsually the first dimension is width and the second is height.",
+            "itemtype": "attribute",
+            "name": "dimensions",
+            "default": "[512, 512]",
+            "type": "Array",
+            "writeonce": "",
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 95,
+            "description": "Contains the number of pixels in the image.",
+            "itemtype": "attribute",
+            "name": "pixelCount",
+            "readonly": "",
+            "type": "Number",
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 109,
+            "description": "Clears the image.\nThis method is chainable.",
+            "itemtype": "method",
+            "name": "clear",
+            "chainable": 1,
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 125,
+            "description": "Returns a new identical image.",
+            "itemtype": "method",
+            "name": "clone",
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 141,
+            "description": "Invokes a function for each pixel in the image.\nThis method is chainable.",
+            "itemtype": "method",
+            "name": "eachPixel",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "pixelParameters",
+                    "description": "This object contains the following members\n<ul>\n    <li>\n        ctx - Object - Optional scope with which to call fn.\n    </li>\n    <li>\n        fn - Function - This function is invoked once per pixel.\n        This function will receive an object with the following parameters\n        <ul>\n            <li>\n                at - Array of image pixel coordinates.\n            </li>\n            <li>\n                chs - Array of image channel definitions.\n            </li>\n            <li>\n                dims - Array of image dimension lengths.\n            </li>\n            <li>\n                img - Reference to this image.\n            </li>\n            <li>\n                pch - Array of pixel channel indices.\n            </li>\n            <li>\n                pcnt - Number of pixels in this image.\n            </li>\n            <li>\n                pix - Integer index of this pixel.\n            </li>\n            <li>\n                pxl - Array of pixel channel values.\n            </li>\n        </ul>\n        If this function returns true, eachPixel will stop and ignore the remaining pixels.\n    </li>\n    <li>\n        pch - Array - Optional array of channel indexes.  If undefined, pixels will contain all channels in order.\n    </li>\n</ul>",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "This function is invoked after the function has been invoked for each pixel in the image.\nThis function will receive an object with the following members\n<ul>\n    <li>\n        chs - Array of image channel definitions.\n    </li>\n    <li>\n        dims - Array of image dimension lengths.\n    </li>\n    <li>\n        img - Reference to this image.\n    </li>\n    <li>\n        pcnt - Number of pixels in this image.\n    </li>\n    <li>\n        pix - The last integer pixel index processed.  If eachPixel was not stopped early, this value should be equal to pcnt and not a valid pixel index.\n    </li>\n</ul>",
+                    "type": "Function"
+                },
+                {
+                    "name": "contextObject",
+                    "description": "Optional scope with which to call the callback function.",
+                    "type": "Object"
+                }
+            ],
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 262,
+            "description": "Converts a pixel index to an at array.",
+            "itemtype": "method",
+            "name": "getAt",
+            "params": [
+                {
+                    "name": "pixelIndex",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 271,
+            "description": "Accessor method to get a pixel from the image.",
+            "itemtype": "method",
+            "name": "getPixel",
+            "params": [
+                {
+                    "name": "at",
+                    "description": "Array containing pixel coordinates.  The length of this array should match the number of dimensions of the image.",
+                    "type": "Array"
+                },
+                {
+                    "name": "pixelChannels",
+                    "description": "Optional array of channel indexes.  If undefined, returned pixel will contain all channels in order.",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 303,
+            "description": "Converts an at array to a pixel index.",
+            "itemtype": "method",
+            "name": "getPixelIndex",
+            "params": [
+                {
+                    "name": "at",
+                    "description": "",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 347,
+            "description": "Accessor method to set a pixel in the image.\nThis method is chainable.",
+            "itemtype": "method",
+            "name": "setPixel",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "at",
+                    "description": "Array containing pixel coordinates.  The length of this array should match the number of dimensions of the image.",
+                    "type": "Array"
+                },
+                {
+                    "name": "pixel",
+                    "description": "Array containing the pixel's channel values.",
+                    "type": "Array"
+                },
+                {
+                    "name": "pixelChannels",
+                    "description": "Optional array of channel indexes.  If undefined, the given pixel is assumed to contain all channels in order.",
+                    "type": "Array"
+                }
+            ],
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 381,
+            "description": "Conforms the given value to the channel's specifications.",
+            "itemtype": "method",
+            "name": "conformChannelValue",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "channel",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "static": 1,
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 408,
+            "description": "Call this function with the length of each dimension followed by the number of channels.\nReturns a function which accepts a pixel index and returns an at array.",
+            "itemtype": "method",
+            "name": "_getGetAtFunction",
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "Function"
+            },
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
+            "line": 443,
+            "description": "Call this function with the length of each dimension.\nReturns a function which accepts dimension indices and returns a pixel index.",
+            "itemtype": "method",
+            "name": "_getGetPixelIndexFunction",
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "Function"
+            },
+            "class": "Composite.Image",
+            "module": "gallery-composite-image",
+            "namespace": "Composite"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-delay/js/delay.js",
+            "line": 10,
+            "description": "Pass in a callback function and the amount of time to delay.  Y.delay will return a function that will wait an\namount of time, then call your callback function.  The arguments and execution context of this function will\nbe passed to the callback function.  This function returns an object with a cancel method which will prevent\nthe execution of the callback function once the delay timer has begun.  If the amount of time to delay is not\ngreater than 0, the original callback function is returned.",
+            "itemtype": "method",
+            "name": "delay",
+            "params": [
+                {
+                    "name": "callbackFunction",
+                    "description": "The function to delay.",
+                    "type": "Function"
+                },
+                {
+                    "name": "delayAmount",
+                    "description": "The approximate amount of time to delay in milliseconds.",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Function"
+            },
+            "class": "YUI",
+            "module": "gallery-delay"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-gravatar-url/js/gravatar-url.js",
+            "line": 12,
+            "description": "Create a gravatar image url.",
+            "itemtype": "method",
+            "name": "gravatarUrl",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "An object with the following optional properties:\n<dl>\n    <dt>\n        defaultImage\n    </dt>\n    <dd>\n        This could be a string url to an image to use when there is no matching gravatar image or it could be one of the following values:\n        '404', 'mm', 'identicon', 'monsterid', 'wavatar', or 'retro'\n        Refer to gravatar's documentation: http://en.gravatar.com/site/implement/images/\n    </dd>\n    <dt>\n        email\n    </dt>\n    <dd>\n        The user's e-mail address.\n    </dd>\n    <dt>\n        force\n    </dt>\n    <dd>\n        If this is a truthy value, it will force the default image to load even if there is a matching gravatar image.\n    </dd>\n    <dt>\n        rating\n    </dt>\n    <dd>\n        The maximum image rating that is allowed to load.  It could be one of the following values:\n        'g', 'pg', 'r', 'x'  Defaults to 'g'.\n        Refer to gravatar's documentation: http://en.gravatar.com/site/implement/images/\n    </dd>\n    <dt>\n        secure\n    </dt>\n    <dd>\n        If this is a truthy value, the url will use the secure https protocol.\n    </dd>\n    <dt>\n        size\n    </dt>\n    <dd>\n        An integer representing the height and width of the image in pixels.  Values from 1 to 512 inclusive are supported.\n        Gravatar images are square.\n    </dd>\n</dl>",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "This function receives the gravatar url as its only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "contextObject",
+                    "description": "(optional) An object to provide as the execution context for the callback function.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YUI",
+            "module": "gallery-gravatar-url"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-lazy-load/js/lazy-load.js",
+            "line": 22,
+            "description": "A little helper function for when you want to load more modules into an existing Y instance.",
+            "itemtype": "method",
+            "name": "lazyLoad",
+            "params": [
+                {
+                    "name": "modules",
+                    "description": "1-n modules to bind (uses arguments array).",
+                    "type": "String",
+                    "multiple": true
+                },
+                {
+                    "name": "*callback",
+                    "description": "callback function executed when the instance has the required functionality.\nIf included, it must be the last parameter.  This function receives two arguments:\n<dl>\n    <dt>\n        errors\n    </dt>\n    <dd>\n        This will be an array of error objects if something went wrong.\n        This will be null if everything is okay.\n    </dd>\n    <dt>\n        attached\n    </dt>\n    <dd>\n        This is an object.  This object's keys are the names of modules that were attached to this YUI\n        instance during this load.  (Virtual rollups aren't listed here.)\n    </dd>\n</dl>",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "the YUI instance.",
+                "type": "YUI"
+            },
+            "class": "YUI",
+            "module": "gallery-lazy-load"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-model-list-union/js/model-list-union.js",
+            "line": 15,
+            "description": "Creates a model list that is the union of two or more other model lists.\nThe new model list stays up to date as the source lists change.",
+            "itemtype": "method",
+            "name": "union",
+            "params": [
+                {
+                    "name": "modelListType",
+                    "description": "Optional.  The first argument determines\nthe type of model list that is created; it may be a constructor function or a string namespace\nto a constructor function stored on Y. If the first argument is an instance of ModelList, its\nconstructor is used.",
+                    "type": "Function|Object|String"
+                },
+                {
+                    "name": "modelLists",
+                    "description": "1-n ModelList objects to union.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "static": 1,
+            "class": "ModelList",
+            "module": "gallery-model-list-union"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-widget-weak-modality/js/widget-weak-modality.js",
+            "line": 13,
+            "description": "When set to a truthy value, a modal widget can be closed by clicking on the background mask node.",
+            "itemtype": "attribute",
+            "name": "weak",
+            "default": "false",
+            "type": "Boolean",
+            "class": "WidgetModality",
+            "module": "gallery-widget-weak-modality"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-execute/js/yql-execute.js",
+            "line": 9,
+            "description": "Execute JavaScript remotely.",
+            "itemtype": "method",
+            "name": "execute",
+            "params": [
+                {
+                    "name": "code",
+                    "description": "The code to execute",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Passes through to YQL.",
+                    "type": "Fucntion"
+                },
+                {
+                    "name": "params",
+                    "description": "Passes through to YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "Passes through to YQL.",
+                    "type": "Object"
+                }
+            ],
+            "static": 1,
+            "class": "YQL",
+            "module": "gallery-yql-execute."
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-execute/js/yql-execute.js",
+            "line": 23,
+            "description": "Helper function to get the deeply nested result.",
+            "itemtype": "method",
+            "name": "execute.getResult",
+            "params": [
+                {
+                    "name": "result",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "static": 1,
+            "class": "YQL",
+            "module": "gallery-yql-execute."
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-rest-client/js/yql-rest-client.js",
+            "line": 24,
+            "description": "Sends a REST request.",
+            "itemtype": "method",
+            "name": "request",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Request parameters object.\n<dl>\n    <dt>\n        accept\n    </dt>\n    <dd>\n        Specifies the type of content to send in the response using the Accept HTTP header.\n        This tells YQL what kind of data format you want returned, as well as how to parse it.\n    </dd>\n    <dt>\n        content\n    </dt>\n    <dd>\n        The body content of a POST or PUT request.  This can be an object or a string.  If an\n        object is used, contentType is assumed to be application/x-www-form-urlencoded.\n    </dd>\n    <dt>\n        contentType\n    </dt>\n    <dd>\n        Specifies the content-type of the body content of a POST or PUT request.\n    </dd>\n    <dt>\n        fallbackCharsets\n    </dt>\n    <dd>\n        Overrides the list of fallback character sets, which is set to \"utf-8, iso-8859-1\" by default,\n        for decoding the returned response. YQL attempts to decode the response using the character sets\n        listed here when the response either does not specify the character set or specifies an\n        incorrect character set that results in a failed decoding.  This value may be an array of strings\n        or one string with comma separated values.\n    </dd>\n    <dt>\n        forceCharset\n    </dt>\n    <dd>\n        Forces YQL to use the character set specified. Using this overrides both the character set specified\n        by the response and the fallback character sets. \n    </dd>\n    <dt>\n        headers\n    </dt>\n    <dd>\n        Adds HTTP headers to the request.\n    </dd>\n    <dt>\n        jsonCompat\n    </dt>\n    <dd>\n        Set this value to 'new' to get \"lossless\" JSON when making a REST call to a Web service.\n        jsonCompat: 'new' must also be set in the yqlParams object.\n    </dd>\n    <dt>\n        matrix\n    </dt>\n    <dd>\n        Adds matrix parameters to the request. \n    </dd>\n    <dt>\n        method\n    </dt>\n    <dd>\n        The HTTP method to use.  Must be one of 'DELETE', 'GET', 'HEAD', 'POST' or 'PUT'.\n    </dd>\n    <dt>\n        paths\n    </dt>\n    <dd>\n        Array of paths to append to the url.\n    </dd>\n    <dt>\n        query\n    </dt>\n    <dd>\n        Query parameters to add to the request.\n    </dd>\n    <dt>\n        timeout\n    </dt>\n    <dd>\n        Specifies the request timeout in milliseconds. This is useful when you want to cancel\n        requests that take longer than expected. \n    </dd>\n    <dt>\n        url\n    </dt>\n    <dd>\n        Provides a URL endpoint to query.\n    </dd>\n</dl>",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The response object is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "yqlParams",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "yqlOpts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLRESTClient",
+            "module": "gallery-yql-rest-client"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-rest-client/js/yql-rest-client.js",
+            "line": 220,
+            "description": "Escapes \" characters.",
+            "itemtype": "method",
+            "name": "_quotedString",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "YQLRESTClient",
+            "module": "gallery-yql-rest-client"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "line": 11,
+            "description": "Sends a REST request.",
+            "itemtype": "method",
+            "name": "request",
+            "params": [
+                {
+                    "name": "params",
+                    "description": "Request parameters object.\n<dl>\n    <dt>\n        accept\n    </dt>\n    <dd>\n        Specifies the type of content to send in the response using the Accept HTTP header.\n        This tells YQL what kind of data format you want returned, as well as how to parse it.\n    </dd>\n    <dt>\n        content\n    </dt>\n    <dd>\n        The body content of a POST or PUT request.  This can be an object or a string.  If an\n        object is used, contentType is assumed to be application/x-www-form-urlencoded.\n    </dd>\n    <dt>\n        contentType\n    </dt>\n    <dd>\n        Specifies the content-type of the body content of a POST or PUT request.\n    </dd>\n    <dt>\n        fallbackCharsets\n    </dt>\n    <dd>\n        Overrides the list of fallback character sets, which is set to \"utf-8, iso-8859-1\" by default,\n        for decoding the returned response. YQL attempts to decode the response using the character sets\n        listed here when the response either does not specify the character set or specifies an\n        incorrect character set that results in a failed decoding.  This value may be an array of strings\n        or one string with comma separated values.\n    </dd>\n    <dt>\n        forceCharset\n    </dt>\n    <dd>\n        Forces YQL to use the character set specified. Using this overrides both the character set specified\n        by the response and the fallback character sets. \n    </dd>\n    <dt>\n        headers\n    </dt>\n    <dd>\n        Adds HTTP headers to the request.\n    </dd>\n    <dt>\n        jsonCompat\n    </dt>\n    <dd>\n        Set this value to 'new' to get \"lossless\" JSON when making a REST call to a Web service.\n        jsonCompat: 'new' must also be set in the yqlParams object.\n    </dd>\n    <dt>\n        method\n    </dt>\n    <dd>\n        The HTTP method to use.  Must be one of 'DELETE', 'GET', 'HEAD', 'POST' or 'PUT'.\n    </dd>\n    <dt>\n        oAuth\n    </dt>\n    <dd>\n        oAuth is an object with the following members:\n        <dl>\n            <dt>\n                consumer\n            </dt>\n            <dd>\n                an object with two members: key and secret\n            </dd>\n            <dt>\n                signatureMethod\n            </dt>\n            <dd>\n                must be either 'HMAC-SHA1' or 'PLAINTEXT'\n            </dd>\n            <dt>\n                token\n            </dt>\n            <dd>\n                an optional object with three optional members: key, verifier, and secret.\n            </dd>\n        </dl>\n    </dd>\n    <dt>\n        query\n    </dt>\n    <dd>\n        Query parameters to add to the request.\n    </dd>\n    <dt>\n        timeout\n    </dt>\n    <dd>\n        Specifies the request timeout in milliseconds. This is useful when you want to cancel\n        requests that take longer than expected. \n    </dd>\n    <dt>\n        url\n    </dt>\n    <dd>\n        Provides a URL endpoint to query.  The url scheme and host must be lower case.\n        If you are using the default port, there must not be a port specified in the url.\n        Querystring parameters must be defined in the query member and not part of the url string.\n    </dd>\n</dl>",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The response object is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "yqlParams",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "yqlOpts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLRESTClient",
+            "module": "gallery-yql-rest-client-oauth"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "line": 208,
+            "description": "Creates the OAuth Authorization Header",
+            "itemtype": "method",
+            "name": "_buildAuthorizationHeader",
+            "params": [
+                {
+                    "name": "oAuthParams",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "YQLRESTClient",
+            "module": "gallery-yql-rest-client-oauth"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "line": 223,
+            "description": "Performs the more strict version of URL Encode required by OAuth.",
+            "itemtype": "method",
+            "name": "_encode",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "YQLRESTClient",
+            "module": "gallery-yql-rest-client-oauth"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "line": 240,
+            "description": "Performs paramater sorting and normalization required by OAuth.",
+            "itemtype": "method",
+            "name": "_normalizeParameters",
+            "params": [
+                {
+                    "name": "content",
+                    "description": "Parameters from POST or PUT body content",
+                    "type": "Object"
+                },
+                {
+                    "name": "oAuthParams",
+                    "description": "Parameters from OAuth",
+                    "type": "Object"
+                },
+                {
+                    "name": "query",
+                    "description": "Parameters from the query string.",
+                    "type": "Object"
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "YQLRESTClient",
+            "module": "gallery-yql-rest-client-oauth"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-rest-client-oauth/js/yql-rest-client-oauth.js",
+            "line": 288,
+            "description": "Generates a random string containing digits and upper-case letters.",
+            "itemtype": "method",
+            "name": "_randomString",
+            "access": "private",
+            "tagname": "",
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "YQLRESTClient",
+            "module": "gallery-yql-rest-client-oauth"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 61,
+            "description": "This method wraps the YQL execute data table which executes inline Javascript on the YQL server.\nYQL Server side Javascript documentation is here: http://developer.yahoo.com/yql/guide/yql-javascript-objects.html",
+            "itemtype": "method",
+            "name": "execute",
+            "params": [
+                {
+                    "name": "code",
+                    "description": "Javascript code to execute on the YQL server.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Passes through to Y.YQL.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 71,
+            "description": "Generates a sha1 hash-based message authentication code.\nThe result is expressed as a hex value.",
+            "itemtype": "method",
+            "name": "hmacSha1",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "secret",
+                    "description": "The secret key.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 82,
+            "description": "Generates a sha1 hash-based message authentication code.\nThe result is expressed as a base 64 encoded value.",
+            "itemtype": "method",
+            "name": "hmacSha1_b64",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "secret",
+                    "description": "The secret key.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 93,
+            "description": "Generates a sha256 hash-based message authentication code.\nThe result is expressed as a hex value.",
+            "itemtype": "method",
+            "name": "hmacSha256",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "secret",
+                    "description": "The secret key.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 104,
+            "description": "Generates a sha256 hash-based message authentication code.\nThe result is expressed as a base 64 encoded value.",
+            "itemtype": "method",
+            "name": "hmacSha256_b64",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "secret",
+                    "description": "The secret key.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 115,
+            "description": "Generates an md5 hash.\nThe result is expressed as a hex value.",
+            "itemtype": "method",
+            "name": "md5",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 125,
+            "description": "Generates an md5 hash.\nThe result is expressed as a base 64 encoded value.",
+            "itemtype": "method",
+            "name": "md5_b64",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 135,
+            "description": "Generates a sha1 hash.\nThe result is expressed as a hex value.",
+            "itemtype": "method",
+            "name": "sha1",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 145,
+            "description": "Generates a sha1 hash.\nThe result is expressed as a base 64 encoded value.",
+            "itemtype": "method",
+            "name": "sha1_b64",
+            "params": [
+                {
+                    "name": "string",
+                    "description": "The message to hash.",
+                    "type": "String"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-yql-crypto/js/yql-crypto.js",
+            "line": 155,
+            "description": "Generates a universally unique identifier.",
+            "itemtype": "method",
+            "name": "uuid",
+            "params": [
+                {
+                    "name": "callbackFunction",
+                    "description": "The result value is the only parameter.",
+                    "type": "Function"
+                },
+                {
+                    "name": "params",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                },
+                {
+                    "name": "opts",
+                    "description": "(optional) Passes through to Y.YQL.",
+                    "type": "Object"
+                }
+            ],
+            "class": "YQLCrypto",
+            "module": "gallery-yql-crypto"
+        }
+    ]
+}

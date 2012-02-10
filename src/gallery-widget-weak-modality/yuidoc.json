@@ -1,0 +1,12 @@
+{
+    "name": "Widget Weak Modality",
+    "description": "Make widget modality less scary.",
+    "options": {
+        "linkNatives": "true",
+        "attributesEmit": "true",
+        "paths": [
+            "./js"
+        ],
+        "outdir": "./api"
+    }
+}

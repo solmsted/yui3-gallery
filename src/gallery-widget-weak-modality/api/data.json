@@ -1,0 +1,62 @@
+{
+    "project": {
+        "name": "Widget Weak Modality",
+        "description": "Make widget modality less scary."
+    },
+    "files": {
+        "js/widget-weak-modality.js": {
+            "name": "js/widget-weak-modality.js",
+            "modules": {
+                "gallery-widget-weak-modality": 1
+            },
+            "classes": {},
+            "fors": {
+                "WidgetModality": 1
+            },
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "gallery-widget-weak-modality": {
+            "name": "gallery-widget-weak-modality",
+            "submodules": {},
+            "classes": {
+                "WidgetModality": 1
+            },
+            "fors": {
+                "WidgetModality": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/widget-weak-modality.js",
+            "line": 1,
+            "description": "Make widget modality less scary."
+        }
+    },
+    "classes": {
+        "WidgetModality": {
+            "name": "WidgetModality",
+            "shortname": "WidgetModality",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-widget-weak-modality",
+            "namespace": ""
+        }
+    },
+    "classitems": [
+        {
+            "file": "js/widget-weak-modality.js",
+            "line": 13,
+            "description": "When set to a truthy value, a modal widget can be closed by clicking on the background mask node.",
+            "itemtype": "attribute",
+            "name": "weak",
+            "default": "false",
+            "type": "Boolean",
+            "class": "WidgetModality",
+            "module": "gallery-widget-weak-modality"
+        }
+    ]
+}

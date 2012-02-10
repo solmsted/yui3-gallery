@@ -1,3 +1,8 @@
+/**
+ * Make widget modality less scary.
+ * @module gallery-widget-weak-modality
+ */
+
 (function (Y) {
     'use strict';
     
@@ -5,6 +10,13 @@
         _widgetModality = Y.WidgetModality,
         _widgetModalityStack = _widgetModality.STACK;
     
+    /**
+     * When set to a truthy value, a modal widget can be closed by clicking on the background mask node.
+     * @attribute weak
+     * @default false
+     * @for WidgetModality
+     * @type Boolean
+     */
     _widgetModality.ATTRS.weak = {
         value: false
     };

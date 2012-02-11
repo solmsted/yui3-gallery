@@ -4,6 +4,15 @@
         "description": ""
     },
     "files": {
+        "yui3-gallery/src/gallery-array-iterate/js/array-iterate.js": {
+            "name": "yui3-gallery/src/gallery-array-iterate/js/array-iterate.js",
+            "modules": {},
+            "classes": {},
+            "fors": {
+                "Array": 1
+            },
+            "namespaces": {}
+        },
         "yui3-gallery/src/gallery-array-unnest/js/array-unnest.js": {
             "name": "yui3-gallery/src/gallery-array-unnest/js/array-unnest.js",
             "modules": {
@@ -205,12 +214,27 @@
         }
     },
     "modules": {
+        "gallery-async-pause": {
+            "name": "gallery-async-pause",
+            "submodules": {},
+            "classes": {
+                "Array": 1,
+                "Y.Plugin.AsyncPause": 1
+            },
+            "fors": {
+                "Array": 1
+            },
+            "namespaces": {
+                "Y.Plugin": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
+            "line": 1
+        },
         "gallery-array-unnest": {
             "name": "gallery-array-unnest",
             "submodules": {},
-            "classes": {
-                "Array": 1
-            },
+            "classes": {},
             "fors": {
                 "Array": 1
             },
@@ -288,20 +312,6 @@
             },
             "tag": "module",
             "file": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
-            "line": 1
-        },
-        "gallery-async-pause": {
-            "name": "gallery-async-pause",
-            "submodules": {},
-            "classes": {
-                "Y.Plugin.AsyncPause": 1
-            },
-            "fors": {},
-            "namespaces": {
-                "Y.Plugin": 1
-            },
-            "tag": "module",
-            "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
             "line": 1
         },
         "gallery-composite-image": {
@@ -451,7 +461,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "gallery-array-unnest",
+            "module": "gallery-async-pause",
             "namespace": ""
         },
         "Y.Async": {
@@ -683,6 +693,46 @@
         }
     },
     "classitems": [
+        {
+            "file": "yui3-gallery/src/gallery-array-iterate/js/array-iterate.js",
+            "line": 10,
+            "itemtype": "method",
+            "name": "iterate",
+            "params": [
+                {
+                    "name": "array",
+                    "description": "the array to iterate",
+                    "type": "Array"
+                },
+                {
+                    "name": "startIndex",
+                    "description": "(Optional) The first index to iterate.\nIf left undefined, iteration will either start at the beginning of the array if incrementBy\nis positive or at the end of the array if incrementBy is negative.",
+                    "type": "Number"
+                },
+                {
+                    "name": "incrementBy",
+                    "description": "the interval by which the array will be iterated. Must be a non-zero integer.\nNegative values cause the array to be iterated backwards.",
+                    "type": "Number"
+                },
+                {
+                    "name": "iterationFunction",
+                    "description": "the function to call on each iteration. This function will receive three\narguments: value, index, and array. If this function returns a truthy value, iteration will be terminated.",
+                    "type": "Function"
+                },
+                {
+                    "name": "contextObject",
+                    "description": "(Optional) the context that will become this in the iterationFunction",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "will return true if iteration was terminated early, otherwise it will return false.",
+                "type": "Boolean"
+            },
+            "static": 1,
+            "class": "Array",
+            "module": "gallery-async-pause"
+        },
         {
             "file": "yui3-gallery/src/gallery-array-unnest/js/array-unnest.js",
             "line": 8,

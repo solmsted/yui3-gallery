@@ -175,6 +175,14 @@
                     <ul class="index-list methods">
                         
                             <li class="index-item method">
+                                <a href="#method_iterate">iterate</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                            </li>
+                        
+                            <li class="index-item method">
                                 <a href="#method_unnest">unnest</a>
 
                                 
@@ -196,6 +204,191 @@
         
             <div id="methods" class="api-class-tabpanel">
                 <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_iterate" class="method item">
+    <h3 class="name"><code>iterate</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>array</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>startIndex</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>incrementBy</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>iterationFunction</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>contextObject</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-array-iterate_js_array-iterate.js.html#l10"><code>yui3-gallery&#x2F;src&#x2F;gallery-array-iterate&#x2F;js&#x2F;array-iterate.js:10</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">array</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>the array to iterate</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">startIndex</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(Optional) The first index to iterate.
+If left undefined, iteration will either start at the beginning of the array if incrementBy
+is positive or at the end of the array if incrementBy is negative.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">incrementBy</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>the interval by which the array will be iterated. Must be a non-zero integer.
+Negative values cause the array to be iterated backwards.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">iterationFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>the function to call on each iteration. This function will receive three
+arguments: value, index, and array. If this function returns a truthy value, iteration will be terminated.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">contextObject</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>(Optional) the context that will become this in the iterationFunction</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                    
+                    will return true if iteration was terminated early, otherwise it will return false.
+                
+            </div>
+        </div>
+    
+
+    
+</div>
 
                 
                     <div id="method_unnest" class="method item">
@@ -242,6 +435,8 @@
     <div class="meta">
         
             
+                
+                    <p>Provided by the <a href="../modules/gallery-array-unnest.html">gallery-array-unnest</a> module.</p>
                 
                 <p>Defined in
             

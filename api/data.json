@@ -76,6 +76,19 @@
                 "Y.Plugin": 1
             }
         },
+        "yui3-gallery/src/gallery-async-command-timeout/js/async-command-timeout.js": {
+            "name": "yui3-gallery/src/gallery-async-command-timeout/js/async-command-timeout.js",
+            "modules": {
+                "gallery-async-command-timeout": 1
+            },
+            "classes": {
+                "Y.Plugin.AsyncCommandTimeout": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            }
+        },
         "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js": {
             "name": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
             "modules": {
@@ -101,6 +114,19 @@
             "namespaces": {
                 "Y.Plugin": 1
             }
+        },
+        "yui3-gallery/src/gallery-async-progress/js/async-progress.js": {
+            "name": "yui3-gallery/src/gallery-async-progress/js/async-progress.js",
+            "modules": {
+                "gallery-async-progress": 1
+            },
+            "classes": {
+                "Y.Plugin.AsyncProgress": 1
+            },
+            "fors": {
+                "Y.Async": 1
+            },
+            "namespaces": {}
         },
         "yui3-gallery/src/gallery-composite-image/js/composite-image.js": {
             "name": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
@@ -145,6 +171,17 @@
             "classes": {},
             "fors": {
                 "YUI": 1
+            },
+            "namespaces": {}
+        },
+        "yui3-gallery/src/gallery-model-list-difference/js/model-list-difference.js": {
+            "name": "yui3-gallery/src/gallery-model-list-difference/js/model-list-difference.js",
+            "modules": {
+                "gallery-model-list-difference": 1
+            },
+            "classes": {},
+            "fors": {
+                "ModelList": 1
             },
             "namespaces": {}
         },
@@ -300,6 +337,20 @@
             "file": "yui3-gallery/src/gallery-async-command-delay/js/async-command-delay.js",
             "line": 1
         },
+        "gallery-async-command-timeout": {
+            "name": "gallery-async-command-timeout",
+            "submodules": {},
+            "classes": {
+                "Y.Plugin.AsyncCommandTimeout": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "Y.Plugin": 1
+            },
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-command-timeout/js/async-command-timeout.js",
+            "line": 1
+        },
         "gallery-async-command-withhold": {
             "name": "gallery-async-command-withhold",
             "submodules": {},
@@ -312,6 +363,20 @@
             },
             "tag": "module",
             "file": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
+            "line": 1
+        },
+        "gallery-async-progress": {
+            "name": "gallery-async-progress",
+            "submodules": {},
+            "classes": {
+                "Y.Plugin.AsyncProgress": 1
+            },
+            "fors": {
+                "Y.Async": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-async-progress/js/async-progress.js",
             "line": 1
         },
         "gallery-composite-image": {
@@ -369,12 +434,25 @@
             "line": 1,
             "description": "A little helper function for when you want to load more modules into an existing Y instance."
         },
-        "gallery-model-list-union": {
-            "name": "gallery-model-list-union",
+        "gallery-model-list-difference": {
+            "name": "gallery-model-list-difference",
             "submodules": {},
             "classes": {
                 "ModelList": 1
             },
+            "fors": {
+                "ModelList": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-model-list-difference/js/model-list-difference.js",
+            "line": 1,
+            "description": "Creates a model list that is the difference of two or more other model lists."
+        },
+        "gallery-model-list-union": {
+            "name": "gallery-model-list-union",
+            "submodules": {},
+            "classes": {},
             "fors": {
                 "ModelList": 1
             },
@@ -552,6 +630,28 @@
                 }
             ]
         },
+        "Y.Plugin.AsyncCommandTimeout": {
+            "name": "Y.Plugin.AsyncCommandTimeout",
+            "shortname": "Y.Plugin.AsyncCommandTimeout",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async-command-timeout",
+            "namespace": "Y.Plugin",
+            "file": "yui3-gallery/src/gallery-async-command-timeout/js/async-command-timeout.js",
+            "line": 12,
+            "description": "Asynchronous command timeout plugin.",
+            "extends": "Y.Plugin.Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
         "Y.Plugin.AsyncCommandWithhold": {
             "name": "Y.Plugin.AsyncCommandWithhold",
             "shortname": "Y.Plugin.AsyncCommandWithhold",
@@ -587,6 +687,28 @@
             "file": "yui3-gallery/src/gallery-async-pause/js/async-pause.js",
             "line": 11,
             "description": "Asynchronous command runner pause plugin.",
+            "extends": "Y.Plugin.Base",
+            "params": [
+                {
+                    "name": "config",
+                    "description": "Configuration Object.",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Y.Plugin.AsyncProgress": {
+            "name": "Y.Plugin.AsyncProgress",
+            "shortname": "Y.Plugin.AsyncProgress",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-async-progress",
+            "namespace": "",
+            "file": "yui3-gallery/src/gallery-async-progress/js/async-progress.js",
+            "line": 11,
+            "description": "Asynchronous command runner progress plugin.",
             "extends": "Y.Plugin.Base",
             "params": [
                 {
@@ -638,7 +760,7 @@
             "extensions": [],
             "plugin_for": [],
             "extension_for": [],
-            "module": "gallery-model-list-union",
+            "module": "gallery-model-list-difference",
             "namespace": ""
         },
         "WidgetModality": {
@@ -1128,6 +1250,19 @@
             "namespace": "Y.Plugin"
         },
         {
+            "file": "yui3-gallery/src/gallery-async-command-timeout/js/async-command-timeout.js",
+            "line": 61,
+            "description": "Approximate timeout in milliseconds to wait for success before\nthe command automatically fails.  Must be a non-negative integer.\nA value of 0 disables the timeout.",
+            "itemtype": "attribute",
+            "name": "timeout",
+            "default": "0",
+            "initonly": "",
+            "type": "Number",
+            "class": "Y.Plugin.AsyncCommandTimeout",
+            "module": "gallery-async-command-timeout",
+            "namespace": "Y.Plugin"
+        },
+        {
             "file": "yui3-gallery/src/gallery-async-command-withhold/js/async-command-withhold.js",
             "line": 37,
             "description": "Approximate delay in milliseconds to wait between the time the command function\nreports completion and when the completed status is updated.",
@@ -1202,6 +1337,27 @@
             "class": "Y.Plugin.AsyncPause",
             "module": "gallery-async-pause",
             "namespace": "Y.Plugin"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-async-progress/js/async-progress.js",
+            "line": 32,
+            "itemtype": "event",
+            "name": "progress",
+            "params": [
+                {
+                    "name": "completed",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "total",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "class": "Y.Async",
+            "module": "gallery-async-progress",
+            "namespace": "Y"
         },
         {
             "file": "yui3-gallery/src/gallery-composite-image/js/composite-image.js",
@@ -1523,6 +1679,32 @@
             },
             "class": "YUI",
             "module": "gallery-lazy-load"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-model-list-difference/js/model-list-difference.js",
+            "line": 19,
+            "description": "Creates a model list that is the difference of two or more other model lists.\nThe new model list stays up to date as the source lists change.",
+            "itemtype": "method",
+            "name": "difference",
+            "params": [
+                {
+                    "name": "modelListType",
+                    "description": "Optional.  The first argument determines\nthe type of model list that is created; it may be a constructor function or a string namespace\nto a constructor function stored on Y. If the first argument is an instance of ModelList, its\nconstructor is used.",
+                    "type": "Function|Object|String"
+                },
+                {
+                    "name": "modelLists",
+                    "description": "1-n ModelList objects to difference.  Order is important.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "static": 1,
+            "class": "ModelList",
+            "module": "gallery-model-list-difference"
         },
         {
             "file": "yui3-gallery/src/gallery-model-list-union/js/model-list-union.js",

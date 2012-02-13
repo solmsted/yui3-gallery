@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>gallery-yql-rest-client-oauth - solmsted gallery modules</title>
+    <title>yui3-gallery&#x2F;src&#x2F;gallery-async-progress&#x2F;js&#x2F;async-progress.js - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -143,45 +143,61 @@
 
             <div class="apidocs">
                 <div id="docs-main" class="content">
-                    <h1>gallery-yql-rest-client-oauth Module</h1>
-<div class="box clearfix meta">
+                    <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-async-progress&#x2F;js&#x2F;async-progress.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+&#x2F;**
+ * @module gallery-async-progress
+ *&#x2F;
+(function (Y) {
+    &#x27;use strict&#x27;;
     
-
-    
-        <div class="foundat">
-            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-yql-rest-client-oauth_js_yql-rest-client-oauth.js.html#l1"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-rest-client-oauth&#x2F;js&#x2F;yql-rest-client-oauth.js:1</code></a>
-        </div>
-    
-
-    
-</div>
-
-
-
-<div class="box intro">
-    <p>This module is a REST client supporting OAuth signatures.</p>
-</div>
-
-<div class="yui3-g">
-    <div class="yui3-u-1-2">
+    var _invoke = Y.Array.invoke,
         
-            <p>This module provides the following classes:</p>
+        _class;
 
-            <ul class="module-classes">
-            
-                <li class="module-class">
-                    <a href="..&#x2F;classes/YQLRESTClient.html">
-                        YQLRESTClient
-                    </a>
-                </li>
-            
-            </ul>
-        
-    </div>
+    &#x2F;**
+     * Asynchronous command runner progress plugin.
+     * @class Y.Plugin.AsyncProgress
+     * @extends Y.Plugin.Base
+     * @param {Object} config Configuration Object.
+     *&#x2F;
+    _class = Y.extend(function (config) {
+        _class.superclass.constructor.call(this, config);
+    }, Y.Plugin.Base, {
+        destructor: function () {
+            _invoke(this._subscriptions, &#x27;detach&#x27;);
+        },
+        initializer: function () {
+            var completed = 0,
+                host = this.get(&#x27;host&#x27;),
+                run = host.get(&#x27;run&#x27;),
+                total = run.length;
+                
+            this._subscriptions = _invoke(run, &#x27;on&#x27;, &#x27;complete&#x27;, function () {
+                completed += 1;
+                
+                &#x2F;**
+                 * @event progress
+                 * @for Y.Async
+                 * @param {Number} completed
+                 * @param {Number} total
+                 *&#x2F;
+                host.fire(&#x27;progress&#x27;, {
+                    completed: completed,
+                    total: total
+                });
+            });
+        }
+    }, {
+        NAME: &#x27;async-progress&#x27;,
+        NS: &#x27;progress&#x27;
+    });
 
-    <div class="yui3-u-1-2">
-        
-    </div>
+    Y.Plugin.AsyncProgress = _class;
+}(Y));
+    </pre>
 </div>
 
                 </div>

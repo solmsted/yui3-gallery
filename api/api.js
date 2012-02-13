@@ -9,8 +9,10 @@ YUI.add("yuidoc-meta", function(Y) {
         "Y.AsyncCommand",
         "Y.Plugin.AsyncCommandClone",
         "Y.Plugin.AsyncCommandDelay",
+        "Y.Plugin.AsyncCommandTimeout",
         "Y.Plugin.AsyncCommandWithhold",
         "Y.Plugin.AsyncPause",
+        "Y.Plugin.AsyncProgress",
         "YQL",
         "YQLCrypto",
         "YQLRESTClient",
@@ -22,12 +24,15 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-async-command",
         "gallery-async-command-clone",
         "gallery-async-command-delay",
+        "gallery-async-command-timeout",
         "gallery-async-command-withhold",
         "gallery-async-pause",
+        "gallery-async-progress",
         "gallery-composite-image",
         "gallery-delay",
         "gallery-gravatar-url",
         "gallery-lazy-load",
+        "gallery-model-list-difference",
         "gallery-model-list-union",
         "gallery-widget-weak-modality",
         "gallery-yql-crypto",
@@ -58,12 +63,20 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "gallery-async-command-delay"
         },
         {
+            "displayName": "gallery-async-command-timeout",
+            "name": "gallery-async-command-timeout"
+        },
+        {
             "displayName": "gallery-async-command-withhold",
             "name": "gallery-async-command-withhold"
         },
         {
             "displayName": "gallery-async-pause",
             "name": "gallery-async-pause"
+        },
+        {
+            "displayName": "gallery-async-progress",
+            "name": "gallery-async-progress"
         },
         {
             "displayName": "gallery-composite-image",
@@ -83,6 +96,11 @@ YUI.add("yuidoc-meta", function(Y) {
             "displayName": "gallery-lazy-load",
             "name": "gallery-lazy-load",
             "description": "A little helper function for when you want to load more modules into an existing Y instance."
+        },
+        {
+            "displayName": "gallery-model-list-difference",
+            "name": "gallery-model-list-difference",
+            "description": "Creates a model list that is the difference of two or more other model lists."
         },
         {
             "displayName": "gallery-model-list-union",

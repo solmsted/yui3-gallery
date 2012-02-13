@@ -54,9 +54,13 @@
             
                 <li><a href="..&#x2F;classes/Y.Plugin.AsyncCommandDelay.html">Y.Plugin.AsyncCommandDelay</a></li>
             
+                <li><a href="..&#x2F;classes/Y.Plugin.AsyncCommandTimeout.html">Y.Plugin.AsyncCommandTimeout</a></li>
+            
                 <li><a href="..&#x2F;classes/Y.Plugin.AsyncCommandWithhold.html">Y.Plugin.AsyncCommandWithhold</a></li>
             
                 <li><a href="..&#x2F;classes/Y.Plugin.AsyncPause.html">Y.Plugin.AsyncPause</a></li>
+            
+                <li><a href="..&#x2F;classes/Y.Plugin.AsyncProgress.html">Y.Plugin.AsyncProgress</a></li>
             
                 <li><a href="..&#x2F;classes/YQL.html">YQL</a></li>
             
@@ -80,9 +84,13 @@
             
                 <li><a href="..&#x2F;modules/gallery-async-command-delay.html">gallery-async-command-delay</a></li>
             
+                <li><a href="..&#x2F;modules/gallery-async-command-timeout.html">gallery-async-command-timeout</a></li>
+            
                 <li><a href="..&#x2F;modules/gallery-async-command-withhold.html">gallery-async-command-withhold</a></li>
             
                 <li><a href="..&#x2F;modules/gallery-async-pause.html">gallery-async-pause</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-async-progress.html">gallery-async-progress</a></li>
             
                 <li><a href="..&#x2F;modules/gallery-composite-image.html">gallery-composite-image</a></li>
             
@@ -91,6 +99,8 @@
                 <li><a href="..&#x2F;modules/gallery-gravatar-url.html">gallery-gravatar-url</a></li>
             
                 <li><a href="..&#x2F;modules/gallery-lazy-load.html">gallery-lazy-load</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-model-list-difference.html">gallery-model-list-difference</a></li>
             
                 <li><a href="..&#x2F;modules/gallery-model-list-union.html">gallery-model-list-union</a></li>
             
@@ -175,6 +185,14 @@
                     <ul class="index-list methods">
                         
                             <li class="index-item method">
+                                <a href="#method_difference">difference</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                            </li>
+                        
+                            <li class="index-item method">
                                 <a href="#method_union">union</a>
 
                                 
@@ -196,6 +214,127 @@
         
             <div id="methods" class="api-class-tabpanel">
                 <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_difference" class="method item">
+    <h3 class="name"><code>difference</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>modelListType</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>modelLists</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-model-list-difference_js_model-list-difference.js.html#l19"><code>yui3-gallery&#x2F;src&#x2F;gallery-model-list-difference&#x2F;js&#x2F;model-list-difference.js:19</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Creates a model list that is the difference of two or more other model lists.
+The new model list stays up to date as the source lists change.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">modelListType</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  The first argument determines
+the type of model list that is created; it may be a constructor function or a string namespace
+to a constructor function stored on Y. If the first argument is an instance of ModelList, its
+constructor is used.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">modelLists</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>1-n ModelList objects to difference.  Order is important.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
 
                 
                     <div id="method_union" class="method item">
@@ -242,6 +381,8 @@
     <div class="meta">
         
             
+                
+                    <p>Provided by the <a href="../modules/gallery-model-list-union.html">gallery-model-list-union</a> module.</p>
                 
                 <p>Defined in
             

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>gallery-yql-rest-client-oauth - solmsted gallery modules</title>
+    <title>yui3-gallery&#x2F;src&#x2F;gallery-async-command-timeout&#x2F;js&#x2F;async-command-timeout.js - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -143,45 +143,91 @@
 
             <div class="apidocs">
                 <div id="docs-main" class="content">
-                    <h1>gallery-yql-rest-client-oauth Module</h1>
-<div class="box clearfix meta">
+                    <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-async-command-timeout&#x2F;js&#x2F;async-command-timeout.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+&#x2F;**
+ * @module gallery-async-command-timeout
+ *&#x2F;
+(function (Y) {
+    &#x27;use strict&#x27;;
     
-
-    
-        <div class="foundat">
-            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-yql-rest-client-oauth_js_yql-rest-client-oauth.js.html#l1"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-rest-client-oauth&#x2F;js&#x2F;yql-rest-client-oauth.js:1</code></a>
-        </div>
-    
-
-    
-</div>
-
-
-
-<div class="box intro">
-    <p>This module is a REST client supporting OAuth signatures.</p>
-</div>
-
-<div class="yui3-g">
-    <div class="yui3-u-1-2">
+    var _invoke = Y.Array.invoke,
+        _later = Y.later,
         
-            <p>This module provides the following classes:</p>
+        _class;
 
-            <ul class="module-classes">
+    &#x2F;**
+     * Asynchronous command timeout plugin.
+     * @class AsyncCommandTimeout
+     * @extends Y.Plugin.Base
+     * @namespace Y.Plugin
+     * @param {Object} config Configuration Object.
+     *&#x2F;
+    _class = Y.extend(function (config) {
+        _class.superclass.constructor.call(this, config);
+    }, Y.Plugin.Base, {
+        destructor: function () {
+            _invoke(this._subscriptions, &#x27;detach&#x27;);
             
-                <li class="module-class">
-                    <a href="..&#x2F;classes/YQLRESTClient.html">
-                        YQLRESTClient
-                    </a>
-                </li>
+            if (this._timer) {
+                this._timer.cancel();
+                delete this._timer;
+            }
+        },
+        initializer: function () {
+            var me = this,
+                host = me.get(&#x27;host&#x27;),
+                timeout = me.get(&#x27;timeout&#x27;);
             
-            </ul>
-        
-    </div>
+            if (!timeout) {
+                return;
+            }
+            
+            me._subscriptions = [
+                host.on(&#x27;start&#x27;, function () {
+                    me._timer = _later(timeout, host, host.fire, [
+                        &#x27;failure&#x27;,
+                        {
+                            error: &#x27;timeout&#x27;
+                        }
+                    ]);
+                }),
+                host.on(&#x27;success&#x27;, function (eventFacade) {
+                    if (host.get(&#x27;completed&#x27;)) {
+                        eventFacade.preventDefault();
+                    } else if (me._timer) {
+                        me._timer.cancel();
+                    }
 
-    <div class="yui3-u-1-2">
-        
-    </div>
+                    delete me._timer;
+                })
+            ];
+        }
+    }, {
+        ATTRS: {
+            &#x2F;**
+             * Approximate timeout in milliseconds to wait for success before
+             * the command automatically fails.  Must be a non-negative integer.
+             * A value of 0 disables the timeout.
+             * @attribute timeout
+             * @default 0
+             * @initonly
+             * @type Number
+             *&#x2F;
+            timeout: {
+                value: 0,
+                writeOnce: &#x27;initOnly&#x27;
+            }
+        },
+        NAME: &#x27;async-command-timeout&#x27;,
+        NS: &#x27;timeout&#x27;
+    });
+
+    Y.Plugin.AsyncCommandTimeout = _class;
+}(Y));
+    </pre>
 </div>
 
                 </div>

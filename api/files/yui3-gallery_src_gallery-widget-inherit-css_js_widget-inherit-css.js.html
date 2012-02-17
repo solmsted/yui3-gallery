@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>gallery-yql-execute. - solmsted gallery modules</title>
+    <title>yui3-gallery&#x2F;src&#x2F;gallery-widget-inherit-css&#x2F;js&#x2F;widget-inherit-css.js - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -147,45 +147,50 @@
 
             <div class="apidocs">
                 <div id="docs-main" class="content">
-                    <h1>gallery-yql-execute. Module</h1>
-<div class="box clearfix meta">
+                    <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-widget-inherit-css&#x2F;js&#x2F;widget-inherit-css.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+&#x2F;**
+ * @module gallery-widget-inherit-css
+ *&#x2F;
+(function (Y) {
+    &#x27;use strict&#x27;;
     
-
-    
-        <div class="foundat">
-            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-yql-execute_js_yql-execute.js.html#l1"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-execute&#x2F;js&#x2F;yql-execute.js:1</code></a>
-        </div>
-    
-
-    
-</div>
-
-
-
-<div class="box intro">
-    <p>This module Executes JavaScript remotely.</p>
-</div>
-
-<div class="yui3-g">
-    <div class="yui3-u-1-2">
+    var _Do = Y.Do,
+        _Widget = Y.Widget,
         
-            <p>This module provides the following classes:</p>
-
-            <ul class="module-classes">
+        _AlterReturn = _Do.AlterReturn,
+        
+        _getClassName = Y.ClassNameManager.getClassName,
+        
+        _getSuperclassClassName = function () {
+            var superclass = this.constructor.superclass,
+                superclassClassName,
+                superclassConstructor = superclass.constructor,
+                superclassCssPrefix = superclassConstructor.CSS_PREFIX || _getClassName(superclassConstructor.NAME.toLowerCase());
             
-                <li class="module-class">
-                    <a href="..&#x2F;classes/YQL.html">
-                        YQL
-                    </a>
-                </li>
+            superclassClassName = superclassConstructor !== _Widget &amp;&amp; _getSuperclassClassName.apply(superclass, arguments) || [];
             
-            </ul>
-        
-    </div>
+            superclassClassName.push(superclass.getClassName.apply({
+                _cssPrefix: superclassCssPrefix
+            }, arguments));
+            
+            return superclassClassName;
+        };
 
-    <div class="yui3-u-1-2">
-        
-    </div>
+    &#x2F;**
+     * Allows a Widget subclass to inherit css from the superclass.
+     * @class WidgetInheritCss
+     * @constructor
+     *&#x2F;
+    Y.WidgetInheritCss = function () {
+        _Do.after(function () {
+            return new _AlterReturn(&#x27;Added superclass class.&#x27;, _Do.originalRetVal + &#x27; &#x27; + _getSuperclassClassName.apply(this, arguments).join(&#x27; &#x27;));
+        }, this, &#x27;getClassName&#x27;, this);
+    };
+}(Y));
+    </pre>
 </div>
 
                 </div>

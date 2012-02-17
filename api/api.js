@@ -4,6 +4,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "Array",
         "Composite.Image",
         "ModelList",
+        "WidgetInheritCss",
         "WidgetModality",
         "Y.Async",
         "Y.AsyncCommand",
@@ -34,6 +35,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-lazy-load",
         "gallery-model-list-difference",
         "gallery-model-list-union",
+        "gallery-widget-inherit-css",
         "gallery-widget-weak-modality",
         "gallery-yql-crypto",
         "gallery-yql-execute.",
@@ -95,7 +97,7 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "gallery-lazy-load",
             "name": "gallery-lazy-load",
-            "description": "A little helper function for when you want to load more modules into an existing Y instance."
+            "description": "Similar to Y.later, but sooner.\n\nbased on setImmediate.js. https://github.com/NobleJS/setImmediate\n\nCopyright (c) 2011 Barnesandnoble.com, llc and Donavon West\n\nhttps://github.com/NobleJS/setImmediate/blob/master/MIT-LICENSE.txt"
         },
         {
             "displayName": "gallery-model-list-difference",
@@ -106,6 +108,10 @@ YUI.add("yuidoc-meta", function(Y) {
             "displayName": "gallery-model-list-union",
             "name": "gallery-model-list-union",
             "description": "Creates a model list that is the union of two or more other model lists."
+        },
+        {
+            "displayName": "gallery-widget-inherit-css",
+            "name": "gallery-widget-inherit-css"
         },
         {
             "displayName": "gallery-widget-weak-modality",

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>yui3-gallery&#x2F;src&#x2F;gallery-async-command-clone&#x2F;js&#x2F;async-command-clone.js - solmsted gallery modules</title>
+    <title>yui3-gallery&#x2F;src&#x2F;gallery-any-base-converter&#x2F;js&#x2F;any-base-converter.js - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -151,49 +151,169 @@
 
             <div class="apidocs">
                 <div id="docs-main" class="content">
-                    <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-async-command-clone&#x2F;js&#x2F;async-command-clone.js</h1>
+                    <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-any-base-converter&#x2F;js&#x2F;any-base-converter.js</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 &#x2F;**
- * @module gallery-async-command-clone
+ * @module gallery-any-base-converter
  *&#x2F;
-(function (Y) {
+(function (Y, moduleName) {
     &#x27;use strict&#x27;;
+    
+    var _string__empty = &#x27;&#x27;,
+        _string__fullStop = &#x27;.&#x27;,
+        _string_alphabet = &#x27;alphabet&#x27;,
+        _string_lookup = &#x27;lookup&#x27;,
+        _string_minusSign = &#x27;minusSign&#x27;,
+        _string_radixPoint = &#x27;radixPoint&#x27;,
+        
+        _Base = Y.Base,
+    
+        _each = Y.each,
+        _floor = Math.floor,
+        _pow = Math.pow;
 
     &#x2F;**
-     * Asynchronous command clone plugin.
-     * @class AsyncCommandClone
-     * @extends Y.Plugin.Base
-     * @namespace Y.Plugin
+     * AnyBaseConverter is an object that will convert numbers to and from a positional notation with a custom alphabet and base.
+     * @class AnyBaseConverter
+     * @extends Base
      * @param {Object} config Configuration Object.
      *&#x2F;
-    var _class = Y.extend(function (config) {
-        _class.superclass.constructor.call(this, config);
-    }, Y.Plugin.Base, {
+    Y.AnyBaseConverter = _Base.create(moduleName, _Base, [], {
         &#x2F;**
-         * Clones the host AsyncCommand instance in a new unused state.
-         * @method clone
-         * @return {AsyncCommand}
+         * Converts a string from a custom base and returns a number.
+         * @method from
+         * @param {String} any
+         * @returns {Number} value
          *&#x2F;
-        clone: function () {
-            var config = this.get(&#x27;host&#x27;).getAttrs([
-                &#x27;args&#x27;,
-                &#x27;ctx&#x27;,
-                &#x27;fn&#x27;
-            ]);
+        from: function (any) {
+            any = any.split(this.get(_string_radixPoint));
             
-            config.args = config.args.slice(1);
+            var base = this.get(_string_alphabet).length,
+                fractionalPart = any[1],
+                integerPart = any[0].split(_string__empty),
+                lookup = this.get(_string_lookup),
+                negative = false,
+                value = 0;
+                
+            if (integerPart[0] === this.get(_string_minusSign)) {
+                negative = true;
+                integerPart.shift();
+            }
             
-            return new Y.AsyncCommand(config);
+            _each(integerPart.reverse(), function (character, index) {
+                value += _pow(base, index) * lookup[character];
+            });
+            
+            if (fractionalPart) {
+                value = parseFloat(String(value) + _string__fullStop + String(this.fromN(fractionalPart)).split(_string__empty).reverse().join(_string__empty));
+            }
+            
+            if (negative) {
+                value = -value;
+            }
+            
+            return value;
+        },
+        &#x2F;**
+         * Converts a number to a custom base and returns a string.
+         * @method to
+         * @param {Number} value
+         * @returns {String} any
+         *&#x2F;
+        to: function (value) {
+            value = +value;
+            
+            var alphabet = this.get(_string_alphabet),
+                base = alphabet.length,
+                fractionalPart,
+                integerPart,
+                any = _string__empty,
+                negative = false;
+                
+            if (value &lt; 0) {
+                negative = true;
+                value = -value;
+            }
+            
+            integerPart = _floor(value);
+            fractionalPart = String(value).split(_string__fullStop)[1];
+            
+            do {
+                any = alphabet.charAt(integerPart % base) + any;
+                integerPart = _floor(integerPart &#x2F; base);
+            } while (integerPart);
+            
+            if (fractionalPart) {
+                any += this.get(_string_radixPoint) + this.toN(fractionalPart.split(_string__empty).reverse().join(_string__empty));
+            }
+            
+            if (negative) {
+                any = this.get(_string_minusSign) + any;
+            }
+                
+            return any;
         }
     }, {
-        NAME: &#x27;async-command-clone&#x27;,
-        NS: &#x27;clone&#x27;
-    });
+        ATTRS: {
+            &#x2F;**
+             * The string of characters to use as single-digit numbers. The length of this string determines
+             * the base of the result. Each character should be unique within the string or else it will be
+             * impossible to correctly convert a string back into a number. Currently, non-BMP characters are
+             * not supported.
+             * @attribute alphabet
+             * @default &#x27;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~&#x27;
+             * @type String
+             *&#x2F;
+            alphabet: {
+                setter: function (value) {
+                    var lookup = {},
+                        i,
+                        length = value.length;
 
-    Y.Plugin.AsyncCommandClone = _class;
-}(Y));
+                    for (i = 0; i &lt; length; i += 1) {
+                        lookup[value.charAt(i)] = i;
+                    }
+
+                    this._set(_string_lookup, lookup);
+                },
+                value: &#x27;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz~&#x27;
+            },
+            &#x2F;**
+             * Used as a reverse lookup for a character index in alphabet.
+             * @attribute lookup
+             * @protected
+             * @readOnly
+             * @type Object
+             *&#x2F;
+            lookup: {
+                readOnly: true,
+                value: null
+            },
+            &#x2F;**
+             * A single character string to prepend to negative values. This character should not be in the alphabet.
+             * Currently, non-BMP characters are not supported.
+             * @attribute minusSign
+             * @default &#x27;-&#x27;
+             * @type String
+             *&#x2F;
+            minusSign: {
+                value: &#x27;-&#x27;
+            },
+            &#x2F;**
+             * A single character string to insert between the integer and fractional parts of the number.
+             * This character should not be in the alphabet.  Currently, non-BMP characters are not supported.
+             * @attribute radixPoint
+             * @default &#x27;.&#x27;
+             * @type String
+             *&#x2F;
+            radixPoint: {
+                value: _string__fullStop
+            }
+        }
+    });
+}(Y, arguments[1]));
     </pre>
 </div>
 

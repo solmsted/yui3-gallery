@@ -1,6 +1,7 @@
 YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
+        "AnyBaseConverter",
         "Array",
         "Composite.Image",
         "ModelList",
@@ -20,6 +21,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "YUI"
     ],
     "modules": [
+        "gallery-any-base-converter",
         "gallery-array-unnest",
         "gallery-async",
         "gallery-async-command",
@@ -43,6 +45,10 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-yql-rest-client-oauth"
     ],
     "allModules": [
+        {
+            "displayName": "gallery-any-base-converter",
+            "name": "gallery-any-base-converter"
+        },
         {
             "displayName": "gallery-array-unnest",
             "name": "gallery-array-unnest",

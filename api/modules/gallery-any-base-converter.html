@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>yui3-gallery&#x2F;src&#x2F;gallery-async-command-clone&#x2F;js&#x2F;async-command-clone.js - solmsted gallery modules</title>
+    <title>gallery-any-base-converter - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -151,50 +151,45 @@
 
             <div class="apidocs">
                 <div id="docs-main" class="content">
-                    <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-async-command-clone&#x2F;js&#x2F;async-command-clone.js</h1>
+                    <h1>gallery-any-base-converter Module</h1>
+<div class="box clearfix meta">
+    
 
-<div class="file">
-    <pre class="code prettyprint linenums">
-&#x2F;**
- * @module gallery-async-command-clone
- *&#x2F;
-(function (Y) {
-    &#x27;use strict&#x27;;
+    
+        <div class="foundat">
+            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-any-base-converter_js_any-base-converter.js.html#l1"><code>yui3-gallery&#x2F;src&#x2F;gallery-any-base-converter&#x2F;js&#x2F;any-base-converter.js:1</code></a>
+        </div>
+    
 
-    &#x2F;**
-     * Asynchronous command clone plugin.
-     * @class AsyncCommandClone
-     * @extends Y.Plugin.Base
-     * @namespace Y.Plugin
-     * @param {Object} config Configuration Object.
-     *&#x2F;
-    var _class = Y.extend(function (config) {
-        _class.superclass.constructor.call(this, config);
-    }, Y.Plugin.Base, {
-        &#x2F;**
-         * Clones the host AsyncCommand instance in a new unused state.
-         * @method clone
-         * @return {AsyncCommand}
-         *&#x2F;
-        clone: function () {
-            var config = this.get(&#x27;host&#x27;).getAttrs([
-                &#x27;args&#x27;,
-                &#x27;ctx&#x27;,
-                &#x27;fn&#x27;
-            ]);
+    
+</div>
+
+
+
+<div class="box intro">
+    
+</div>
+
+<div class="yui3-g">
+    <div class="yui3-u-1-2">
+        
+            <p>This module provides the following classes:</p>
+
+            <ul class="module-classes">
             
-            config.args = config.args.slice(1);
+                <li class="module-class">
+                    <a href="..&#x2F;classes/AnyBaseConverter.html">
+                        AnyBaseConverter
+                    </a>
+                </li>
             
-            return new Y.AsyncCommand(config);
-        }
-    }, {
-        NAME: &#x27;async-command-clone&#x27;,
-        NS: &#x27;clone&#x27;
-    });
+            </ul>
+        
+    </div>
 
-    Y.Plugin.AsyncCommandClone = _class;
-}(Y));
-    </pre>
+    <div class="yui3-u-1-2">
+        
+    </div>
 </div>
 
                 </div>

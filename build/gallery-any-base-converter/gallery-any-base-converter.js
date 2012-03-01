@@ -52,7 +52,7 @@ YUI.add('gallery-any-base-converter', function(Y) {
             });
             
             if (fractionalPart) {
-                value = parseFloat(String(value) + _string__fullStop + String(this.fromN(fractionalPart)).split(_string__empty).reverse().join(_string__empty));
+                value = parseFloat(String(value) + _string__fullStop + String(this.from(fractionalPart)).split(_string__empty).reverse().join(_string__empty));
             }
             
             if (negative) {
@@ -91,7 +91,7 @@ YUI.add('gallery-any-base-converter', function(Y) {
             } while (integerPart);
             
             if (fractionalPart) {
-                any += this.get(_string_radixPoint) + this.toN(fractionalPart.split(_string__empty).reverse().join(_string__empty));
+                any += this.get(_string_radixPoint) + this.to(fractionalPart.split(_string__empty).reverse().join(_string__empty));
             }
             
             if (negative) {

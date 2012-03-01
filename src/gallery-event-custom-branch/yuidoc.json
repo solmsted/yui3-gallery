@@ -1,0 +1,12 @@
+{
+    "name": "Event Custom Branch",
+    "description": "Provides more control over custom event bubbling.",
+    "options": {
+        "linkNatives": "true",
+        "attributesEmit": "true",
+        "paths": [
+            "./js"
+        ],
+        "outdir": "./api"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "project": {
+        "name": "Event Custom Branch",
+        "description": "Provides more control over custom event bubbling."
+    },
+    "files": {
+        "js/event-custom-branch.js": {
+            "name": "js/event-custom-branch.js",
+            "modules": {
+                "gallery-event-custom-branch": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "gallery-event-custom-branch": {
+            "name": "gallery-event-custom-branch",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/event-custom-branch.js",
+            "line": 1
+        }
+    },
+    "classes": {},
+    "classitems": []
+}

@@ -45,4 +45,4 @@ YUI.add('gallery-array-iterate', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['yui'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['yui'], skinnable:false});

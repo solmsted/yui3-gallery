@@ -76,4 +76,4 @@ YUI.add('gallery-lazy-load', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['oop'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['oop'], skinnable:false});

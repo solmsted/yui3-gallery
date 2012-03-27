@@ -161,4 +161,4 @@ YUI.add('gallery-any-base-converter', function(Y) {
 }(Y, arguments[1]));
 
 
-}, '@VERSION@' ,{requires:['base'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['base'], skinnable:false});

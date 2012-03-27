@@ -254,4 +254,4 @@ YUI.add('gallery-soon', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['node-base'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['node-base'], skinnable:false});

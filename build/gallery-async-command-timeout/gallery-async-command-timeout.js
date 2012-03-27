@@ -82,4 +82,4 @@ YUI.add('gallery-async-command-timeout', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['array-invoke', 'gallery-async-command', 'plugin'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['array-invoke', 'gallery-async-command', 'plugin'], skinnable:false});

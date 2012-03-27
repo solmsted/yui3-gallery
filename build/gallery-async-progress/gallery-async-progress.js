@@ -52,4 +52,4 @@ YUI.add('gallery-async-progress', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['array-invoke', 'gallery-async', 'plugin'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['array-invoke', 'gallery-async', 'plugin'], skinnable:false});

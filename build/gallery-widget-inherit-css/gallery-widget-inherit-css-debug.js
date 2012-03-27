@@ -41,4 +41,4 @@ YUI.add('gallery-widget-inherit-css', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['classnamemanager', 'event-custom', 'widget'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['classnamemanager', 'event-custom', 'widget'], skinnable:false});

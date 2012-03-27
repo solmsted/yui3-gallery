@@ -70,4 +70,4 @@ YUI.add('gallery-model-list-difference', function(Y) {
 }(Y));
 
 
-}, '@VERSION@' ,{requires:['array-extras', 'array-invoke', 'gallery-array-unnest', 'model-list'], skinnable:false});
+}, 'gallery-2012.03.23-18-00' ,{requires:['array-extras', 'array-invoke', 'gallery-array-unnest', 'model-list'], skinnable:false});

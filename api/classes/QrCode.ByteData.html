@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Y.Plugin.AsyncPause - solmsted gallery modules</title>
+    <title>QrCode.ByteData - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -169,19 +169,19 @@
 
             <div class="apidocs">
                 <div id="docs-main" class="content">
-                    <h1>Y.Plugin.AsyncPause Class</h1>
+                    <h1>QrCode.ByteData Class</h1>
 <div class="box meta">
     
 
     
         <div class="extends">
-            Extends Y.Plugin.Base
+            Extends <a href="../classes/QrCode.Data.html" class="crosslink">QrCode.Data</a>
         </div>
     
 
     
         <div class="foundat">
-            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-async-pause_js_async-pause.js.html#l11"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-pause&#x2F;js&#x2F;async-pause.js:11</code></a>
+            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l4514"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:4514</code></a>
         </div>
     
 
@@ -191,9 +191,91 @@
 
 
 <div class="box intro">
-    <p>Asynchronous command runner pause plugin.</p>
+    <p>This class encodes a value in byte mode.  Byte mode encodes strings
+as raw binary data.</p>
 </div>
 
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_QrCode.ByteData" class="method item">
+    <h3 class="name"><code>QrCode.ByteData</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>config</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l4514"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:4514</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">config</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Configuration object.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+    </div>
 
 
 <div id="classdocs" class="tabview">
@@ -221,13 +303,13 @@
                     <ul class="index-list methods">
                         
                             <li class="index-item method">
-                                <a href="#method_pause">pause</a>
+                                <a href="#method_toBinaryString">toBinaryString</a>
 
                                 
                             </li>
                         
-                            <li class="index-item method">
-                                <a href="#method_resume">resume</a>
+                            <li class="index-item method inherited">
+                                <a href="#method_toBinaryString">toBinaryString</a>
 
                                 
                             </li>
@@ -244,16 +326,16 @@
 
                     <ul class="index-list attrs">
                         
-                            <li class="index-item attr protected">
-                                <a href="#attr__args">_args</a>
-                            </li>
-                        
-                            <li class="index-item attr protected">
-                                <a href="#attr__resumed">_resumed</a>
-                            </li>
-                        
                             <li class="index-item attr">
-                                <a href="#attr_paused">paused</a>
+                                <a href="#attr_characterWidth">characterWidth</a>
+                            </li>
+                        
+                            <li class="index-item attr inherited">
+                                <a href="#attr_type">type</a>
+                            </li>
+                        
+                            <li class="index-item attr inherited">
+                                <a href="#attr_value">value</a>
                             </li>
                         
                     </ul>
@@ -268,11 +350,27 @@
                 <h2 class="off-left">Methods</h2>
 
                 
-                    <div id="method_pause" class="method item">
-    <h3 class="name"><code>pause</code></h3>
+                    <div id="method_toBinaryString" class="method item">
+    <h3 class="name"><code>toBinaryString</code></h3>
 
     
-        <span class="paren">()</span>
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>version</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
     
 
     
@@ -283,10 +381,6 @@
 
     
 
-    
-
-    
-        <span class="flag chainable">chainable</span>
     
 
     <div class="meta">
@@ -296,7 +390,7 @@
                 <p>Defined in
             
         
-        <a href="../files&#x2F;yui3-gallery_src_gallery-async-pause_js_async-pause.js.html#l37"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-pause&#x2F;js&#x2F;async-pause.js:37</code></a></p>
+        <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l4524"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:4524</code></a></p>
 
         
 
@@ -304,23 +398,73 @@
     </div>
 
     <div class="description">
-        <p>Pause the run.  Does not stop a command that is currently running, the run will pause
-before the next command runs.</p>
+        <p>Returns a properly formatted binary string for byte data.</p>
     </div>
 
     
+        <div class="params">
+            <h4>Parameters:</h4>
 
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">version</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                    
+                
+            </div>
+        </div>
     
 
     
 </div>
 
                 
-                    <div id="method_resume" class="method item">
-    <h3 class="name"><code>resume</code></h3>
+                    <div id="method_toBinaryString" class="method item inherited">
+    <h3 class="name"><code>toBinaryString</code></h3>
 
     
-        <span class="paren">()</span>
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>version</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
     
 
     
@@ -331,20 +475,16 @@ before the next command runs.</p>
 
     
 
-    
-
-    
-        <span class="flag chainable">chainable</span>
     
 
     <div class="meta">
         
             
-                
-                <p>Defined in
+                <p>Inherited from
+                <a href="QrCode.Data.html#method_toBinaryString">QrCode.Data</a>:
             
         
-        <a href="../files&#x2F;yui3-gallery_src_gallery-async-pause_js_async-pause.js.html#l47"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-pause&#x2F;js&#x2F;async-pause.js:47</code></a></p>
+        <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l2999"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:2999</code></a></p>
 
         
 
@@ -352,12 +492,47 @@ before the next command runs.</p>
     </div>
 
     <div class="description">
-        <p>Resumes a paused run.  If a command is currently running, the paused state may not be updated
-immediately.  Resume does nothing if the run is not paused or not started yet or already complete.</p>
+        <p>This is an abstract method that should be implemented to return a
+properly formatted binary string for a specific data encoding mode.</p>
     </div>
 
     
+        <div class="params">
+            <h4>Parameters:</h4>
 
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">version</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                    
+                
+            </div>
+        </div>
     
 
     
@@ -374,15 +549,13 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
                 <h2 class="off-left">Attributes</h2>
 
                 
-                    <div id="attr__args" class="attr item protected">
-    <a name="config__args"></a> 
-    <h3 class="name"><code>_args</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+                    <div id="attr_characterWidth" class="attr item">
+    <a name="config_characterWidth"></a> 
+    <h3 class="name"><code>characterWidth</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
 
     
 
-    
-        <span class="flag protected">protected</span>
     
 
     
@@ -396,7 +569,7 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
                 <p>Defined in
             
         
-        <a href="../files&#x2F;yui3-gallery_src_gallery-async-pause_js_async-pause.js.html#l111"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-pause&#x2F;js&#x2F;async-pause.js:111</code></a></p>
+        <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l4567"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:4567</code></a></p>
 
         
 
@@ -404,17 +577,19 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
     </div>
 
     <div class="description">
-        <p>Paused _runQueue arguments.</p>
+        <p>The number of bits used to encode each character.</p>
     </div>
 
+    
+        <p><strong>Default:</strong> 8</p>
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>_argsChange</code></h4>
+            <h4>Fires event <code>characterWidthChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>_args</code> is
+            Fires when the value for the configuration attribute <code>characterWidth</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -466,15 +641,13 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
 </div>
 
                 
-                    <div id="attr__resumed" class="attr item protected">
-    <a name="config__resumed"></a> 
-    <h3 class="name"><code>_resumed</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+                    <div id="attr_type" class="attr item">
+    <a name="config_type"></a> 
+    <h3 class="name"><code>type</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
 
     
 
-    
-        <span class="flag protected">protected</span>
     
 
     
@@ -483,12 +656,13 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
 
     <div class="meta">
         
-            
-                
-                <p>Defined in
-            
+            <p>Inherited from
+            <a href="QrCode.Data.html#attr_type">
+                QrCode.Data
+            </a>
+            but overwritten in
         
-        <a href="../files&#x2F;yui3-gallery_src_gallery-async-pause_js_async-pause.js.html#l121"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-pause&#x2F;js&#x2F;async-pause.js:121</code></a></p>
+        <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l4578"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:4578</code></a></p>
 
         
 
@@ -496,17 +670,19 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
     </div>
 
     <div class="description">
-        <p>Boolean value indicating the resumed status of the run.</p>
+        
     </div>
 
+    
+        <p><strong>Default:</strong> &#x27;byte&#x27;</p>
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>_resumedChange</code></h4>
+            <h4>Fires event <code>typeChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>_resumed</code> is
+            Fires when the value for the configuration attribute <code>type</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -558,10 +734,10 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
 </div>
 
                 
-                    <div id="attr_paused" class="attr item">
-    <a name="config_paused"></a> 
-    <h3 class="name"><code>paused</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                    <div id="attr_value" class="attr item">
+    <a name="config_value"></a> 
+    <h3 class="name"><code>value</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
 
     
 
@@ -573,12 +749,13 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
 
     <div class="meta">
         
-            
-                
-                <p>Defined in
-            
+            <p>Inherited from
+            <a href="QrCode.Data.html#attr_value">
+                QrCode.Data
+            </a>
+            but overwritten in
         
-        <a href="../files&#x2F;yui3-gallery_src_gallery-async-pause_js_async-pause.js.html#l100"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-pause&#x2F;js&#x2F;async-pause.js:100</code></a></p>
+        <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l4588"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:4588</code></a></p>
 
         
 
@@ -586,19 +763,17 @@ immediately.  Resume does nothing if the run is not paused or not started yet or
     </div>
 
     <div class="description">
-        <p>Boolean value indicating the paused status of the run.</p>
+        
     </div>
 
-    
-        <p><strong>Default:</strong> false</p>
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>pausedChange</code></h4>
+            <h4>Fires event <code>valueChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>paused</code> is
+            Fires when the value for the configuration attribute <code>value</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the

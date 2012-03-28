@@ -5,6 +5,14 @@ YUI.add("yuidoc-meta", function(Y) {
         "Array",
         "Composite.Image",
         "ModelList",
+        "QrCode",
+        "QrCode.AlphanumericData",
+        "QrCode.ByteData",
+        "QrCode.Data",
+        "QrCode.GeneratorBase",
+        "QrCode.NumericData",
+        "QrCode.Ucs2Data",
+        "QrCode.Utf8Data",
         "WidgetInheritCss",
         "WidgetModality",
         "Y.Async",
@@ -37,6 +45,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-lazy-load",
         "gallery-model-list-difference",
         "gallery-model-list-union",
+        "gallery-qr-code-generator-base",
         "gallery-widget-inherit-css",
         "gallery-widget-weak-modality",
         "gallery-yql-crypto",
@@ -114,6 +123,11 @@ YUI.add("yuidoc-meta", function(Y) {
             "displayName": "gallery-model-list-union",
             "name": "gallery-model-list-union",
             "description": "Creates a model list that is the union of two or more other model lists."
+        },
+        {
+            "displayName": "gallery-qr-code-generator-base",
+            "name": "gallery-qr-code-generator-base",
+            "description": "gallery-qr-code-generator-base is a slightly low-level utility for generating QR Codes."
         },
         {
             "displayName": "gallery-widget-inherit-css",

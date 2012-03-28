@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>yui3-gallery&#x2F;src&#x2F;gallery-array-iterate&#x2F;js&#x2F;array-iterate.js - solmsted gallery modules</title>
+    <title>QrCode - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.4.0&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -169,54 +169,204 @@
 
             <div class="apidocs">
                 <div id="docs-main" class="content">
-                    <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-array-iterate&#x2F;js&#x2F;array-iterate.js</h1>
-
-<div class="file">
-    <pre class="code prettyprint linenums">
-&#x2F;**
- * Iterate through an array.
- * @module gallery-async-pause
- *&#x2F;
-(function (Y) {
-    &#x27;use strict&#x27;;
+                    <h1>QrCode Class</h1>
+<div class="box meta">
     
-    var _isFunction = Y.Lang.isFunction,
+
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l6"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:6</code></a>
+        </div>
+    
+
+    
+</div>
+
+
+
+<div class="box intro">
+    
+</div>
+
+
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
         
-        &#x2F;**
-         * @method iterate
-         * @for Array
-         * @param {Array} array the array to iterate
-         * @param {Number} startIndex (Optional) The first index to iterate.
-         * If left undefined, iteration will either start at the beginning of the array if incrementBy
-         * is positive or at the end of the array if incrementBy is negative.
-         * @param {Number} incrementBy the interval by which the array will be iterated. Must be a non-zero integer.
-         * Negative values cause the array to be iterated backwards.
-         * @param {Function} iterationFunction the function to call on each iteration. This function will receive three
-         * arguments: value, index, and array. If this function returns a truthy value, iteration will be terminated.
-         * @param {Object} contextObject (Optional) the context that will become this in the iterationFunction
-         * @returns {Boolean} will return true if iteration was terminated early, otherwise it will return false.
-         * @static
-         *&#x2F;
-        iterate = function (array, startIndex, incrementBy, iterationFunction, contextObject) {
-            if (_isFunction(incrementBy)) {
-                return iterate(array, startIndex &lt; 0 ? array.length - 1 : 0, startIndex, incrementBy, iterationFunction);
-            }
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+        
+        
+        
+        
+    </ul>
 
-            var i = startIndex,
-                length = array.length;
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
 
-            for (; i &gt;= 0 &amp;&amp; i &lt; length; i += incrementBy) {
-                if (i in array &amp;&amp; iterationFunction.call(contextObject, array[i], i, array)) {
-                    return true;
-                }
-            }
             
-            return false;
-        };
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods">
+                        
+                            <li class="index-item method">
+                                <a href="#method_numberToBinaryString">numberToBinaryString</a>
+
+                                
+                                    <span class="flag static">static</span>
+                                
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+
+            
+
+            
+
+            
+        </div>
+
         
-    Y.Array.iterate = iterate;
-}(Y));
-    </pre>
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+                
+                    <div id="method_numberToBinaryString" class="method item">
+    <h3 class="name"><code>numberToBinaryString</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>number</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>length</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>Defined in
+            
+        
+        <a href="../files&#x2F;yui3-gallery_src_gallery-qr-code-generator-base_js_qr-code-generator-base.js.html#l4788"><code>yui3-gallery&#x2F;src&#x2F;gallery-qr-code-generator-base&#x2F;js&#x2F;qr-code-generator-base.js:4788</code></a></p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Converts a decimal non-negative integer to a string containing '1' and '0' characters.
+If the number does not fit within the given length, null is returned.  If the number is
+smaller than the given length, it is padded with '0' and a string with the given length
+is returned.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">number</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">length</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+            </div>
+        
+
+        
+
+        
+
+        
+    </div>
 </div>
 
                 </div>

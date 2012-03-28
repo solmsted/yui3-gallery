@@ -46,6 +46,22 @@
             
                 <li><a href="..&#x2F;classes/ModelList.html">ModelList</a></li>
             
+                <li><a href="..&#x2F;classes/QrCode.html">QrCode</a></li>
+            
+                <li><a href="..&#x2F;classes/QrCode.AlphanumericData.html">QrCode.AlphanumericData</a></li>
+            
+                <li><a href="..&#x2F;classes/QrCode.ByteData.html">QrCode.ByteData</a></li>
+            
+                <li><a href="..&#x2F;classes/QrCode.Data.html">QrCode.Data</a></li>
+            
+                <li><a href="..&#x2F;classes/QrCode.GeneratorBase.html">QrCode.GeneratorBase</a></li>
+            
+                <li><a href="..&#x2F;classes/QrCode.NumericData.html">QrCode.NumericData</a></li>
+            
+                <li><a href="..&#x2F;classes/QrCode.Ucs2Data.html">QrCode.Ucs2Data</a></li>
+            
+                <li><a href="..&#x2F;classes/QrCode.Utf8Data.html">QrCode.Utf8Data</a></li>
+            
                 <li><a href="..&#x2F;classes/WidgetInheritCss.html">WidgetInheritCss</a></li>
             
                 <li><a href="..&#x2F;classes/WidgetModality.html">WidgetModality</a></li>
@@ -109,6 +125,8 @@
                 <li><a href="..&#x2F;modules/gallery-model-list-difference.html">gallery-model-list-difference</a></li>
             
                 <li><a href="..&#x2F;modules/gallery-model-list-union.html">gallery-model-list-union</a></li>
+            
+                <li><a href="..&#x2F;modules/gallery-qr-code-generator-base.html">gallery-qr-code-generator-base</a></li>
             
                 <li><a href="..&#x2F;modules/gallery-widget-inherit-css.html">gallery-widget-inherit-css</a></li>
             
@@ -207,7 +225,7 @@
             });
             
             if (fractionalPart) {
-                value = parseFloat(String(value) + _string__fullStop + String(this.fromN(fractionalPart)).split(_string__empty).reverse().join(_string__empty));
+                value = parseFloat(String(value) + _string__fullStop + String(this.from(fractionalPart)).split(_string__empty).reverse().join(_string__empty));
             }
             
             if (negative) {
@@ -246,7 +264,7 @@
             } while (integerPart);
             
             if (fractionalPart) {
-                any += this.get(_string_radixPoint) + this.toN(fractionalPart.split(_string__empty).reverse().join(_string__empty));
+                any += this.get(_string_radixPoint) + this.to(fractionalPart.split(_string__empty).reverse().join(_string__empty));
             }
             
             if (negative) {

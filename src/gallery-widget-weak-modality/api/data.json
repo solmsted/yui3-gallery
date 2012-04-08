@@ -50,7 +50,7 @@
         {
             "file": "js/widget-weak-modality.js",
             "line": 13,
-            "description": "When set to a truthy value, a modal widget can be closed by clicking on the background mask node.",
+            "description": "When set to a truthy value, a modal widget can be closed by clicking on\nthe background mask node.",
             "itemtype": "attribute",
             "name": "weak",
             "default": "false",

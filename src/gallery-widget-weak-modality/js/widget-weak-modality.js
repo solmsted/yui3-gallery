@@ -11,7 +11,8 @@
         _widgetModalityStack = _widgetModality.STACK;
     
     /**
-     * When set to a truthy value, a modal widget can be closed by clicking on the background mask node.
+     * When set to a truthy value, a modal widget can be closed by clicking on
+     * the background mask node.
      * @attribute weak
      * @default false
      * @for WidgetModality

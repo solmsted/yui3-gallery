@@ -1,3 +1,5 @@
+YUI.add('gallery-popup-calendar', function(Y) {
+
 /*
  * The Popup Calendar extends the YUI Calendar component 
  * to add popup functionality to input forms. 
@@ -19,7 +21,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @private
      */
     initializer: function() {
-        Y.log('initializer', 'info', this.name);
 
         this._bindEvents();
         this.setHideOn();
@@ -38,7 +39,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @private
      */
     _bindEvents: function() {
-        Y.log('_bindEvents', 'info', this.name);
 
         var input = this.get(INPUT);
 
@@ -56,7 +56,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @private
      */
     _setPopupTabindex: function() {
-        Y.log('_setPopupTabindex', 'info', this.name);
 
         var input = this.get(INPUT),
             inputTabIndex = input.getAttribute(TABINDEX);
@@ -75,7 +74,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @private
      */
     _emitDate: function(e) {
-        Y.log('_emitDate', 'info', this.name);
 
         this.fire('dateSelected', e);
         this.hideCalendar();
@@ -89,7 +87,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @private
      */
     _testKey: function(e) {
-        Y.log('_testKey', 'info', this.name);
 
         if (e.keyCode === 9) { this.hideCalendar(); }
     },     
@@ -101,7 +98,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @private
      */
     destructor: function() {
-        Y.log('destructor', 'info', this.name);
 
         this.get(INPUT).detachAll();
     },
@@ -114,7 +110,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @public
      */
     setHideOn: function() {
-        Y.log('_setHideOn', 'info', this.name);
         var hideEvents = [
             { eventName: 'mousedownoutside' },
             { eventName: 'key', node: Y.one('document'), keyCode: 'esc'}
@@ -136,7 +131,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @public
      */
     showCalendar: function() {
-        Y.log('showCalendar', 'info', this.name);
 
         if (this.get('rendered')) {
             this.show() 
@@ -155,7 +149,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      * @public
      */
     hideCalendar: function() {
-        Y.log('hideCalendar', 'info', this.name);
 
         this.hide();
     }
@@ -203,3 +196,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
         }
     }
 });
+
+
+}, 'gallery-2012.04.18-20-14' ,{skinnable:true, requires:['calendar', 'widget-position', 'widget-position-align', 'widget-autohide']});

@@ -1,3 +1,5 @@
+YUI.add('gallery-popup-calendar', function(Y) {
+
 /*
  * The Popup Calendar extends the YUI Calendar component 
  * to add popup functionality to input forms. 
@@ -203,3 +205,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
         }
     }
 });
+
+
+}, 'gallery-2012.04.18-20-14' ,{skinnable:true, requires:['calendar', 'widget-position', 'widget-position-align', 'widget-autohide']});

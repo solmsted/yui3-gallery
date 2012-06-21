@@ -2030,7 +2030,7 @@
             "line": 264,
             "description": "Creates and runs an instance of Async in 'queue' mode.  This\nmethod accepts an unlimited number of parameters.  The first\nargument is a config object passed to the AsyncCommand constructor\nwhen instantiating dynamically.  The rest of the arguments can\nbe command functions, AsyncCommand config objects, instances of\nAsyncCommand, instances of Async, or arrays containing any of the\nabove.",
             "itemtype": "method",
-            "name": "runQueue",
+            "name": "runQueueWithConfig",
             "return": {
                 "description": "",
                 "type": "Async"

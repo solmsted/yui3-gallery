@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>yui3-gallery&#x2F;src&#x2F;gallery-google-maps-loader&#x2F;js&#x2F;google-maps-loader.js - solmsted gallery modules</title>
+    <title>gallery-cssmatrix2d - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.5.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -206,196 +206,49 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1 class="file-heading">File: yui3-gallery&#x2F;src&#x2F;gallery-google-maps-loader&#x2F;js&#x2F;google-maps-loader.js</h1>
-
-<div class="file">
-    <pre class="code prettyprint linenums">
-&#x2F;**
- * @module gallery-google-maps-loader
- *&#x2F;
-(function (Y, moduleName) {
-    &#x27;use strict&#x27;;
-
-    var _Base = Y.Base,
+                        <h1>gallery-cssmatrix2d Module</h1>
+<div class="box clearfix meta">
     
-        _isArray = Y.Lang.isArray;
 
-    &#x2F;**
-     * @class GoogleMapsLoader
-     * @constructor
-     * @extends Base
-     * @param {Object} config Configuration object.
-     *&#x2F;
-    Y.GoogleMapsLoader = _Base.create(moduleName, _Base, [], {
-        initializer: function () {
-            var me = this;
+    
+
+    
+        <div class="foundat">
+            Defined in: <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-cssmatrix2d_js_cssmatrix2d.js.html#l14"><code>yui3-gallery&#x2F;src&#x2F;gallery-cssmatrix2d&#x2F;js&#x2F;cssmatrix2d.js:14</code></a>
+        </div>
+    
+
+    
+</div>
+
+
+
+<div class="box intro">
+    
+</div>
+
+
+
+<div class="yui3-g">
+    <div class="yui3-u-1-2">
+        
+            <p>This module provides the following classes:</p>
+
+            <ul class="module-classes">
             
-            &#x2F;**
-             * Fired when JSONP fails.
-             * @event failure
-             *&#x2F;
-            me.publish(&#x27;failure&#x27;);
+                <li class="module-class">
+                    <a href="..&#x2F;classes/CSSMatrix2d.html">
+                        CSSMatrix2d
+                    </a>
+                </li>
             
-            &#x2F;**
-             * Fired when JSONP succeeds.
-             * @event success
-             * @fireOnce
-             *&#x2F;
-            me.publish(&#x27;success&#x27;, {
-                fireOnce: true
-            });
-            
-            &#x2F;**
-             * Fired when JSONP times out.
-             * @event timeout
-             *&#x2F;
-            me.publish(&#x27;timeout&#x27;);
-        },
-        &#x2F;**
-         * Loads the Google Maps JavaScript API through JSONP.  Does nothing if
-         * this object has already loaded it.
-         * @method load
-         * @chainable
-         * @param {Object} parameters An optional object with the following
-         * optional properties:
-         * &lt;dl&gt;
-         *     &lt;dt&gt;
-         *         language
-         *     &lt;&#x2F;dt&gt;
-         *     &lt;dd&gt;
-         *         The language code to override the browser&#x27;s default language.
-         *     &lt;&#x2F;dd&gt;
-         *     &lt;dt&gt;
-         *         libraries
-         *     &lt;&#x2F;dt&gt;
-         *     &lt;dd&gt;
-         *         An array or comma separated string of library names.
-         *     &lt;&#x2F;dd&gt;
-         *     &lt;dt&gt;
-         *         region
-         *     &lt;&#x2F;dt&gt;
-         *     &lt;dd&gt;
-         *         A Unicode region subtag identifier to override the default
-         *         region.
-         *     &lt;&#x2F;dd&gt;
-         *     &lt;dt&gt;
-         *         sensor
-         *     &lt;&#x2F;dt&gt;
-         *     &lt;dd&gt;
-         *         Set this to a truthy value if your application determines the
-         *         user&#x27;s location via a sensor.
-         *     &lt;&#x2F;dd&gt;
-         *     &lt;dt&gt;
-         *         source
-         *     &lt;&#x2F;dt&gt;
-         *     &lt;dd&gt;
-         *         Location of the Google Maps JavaScript API to override the attribute.
-         *     &lt;&#x2F;dd&gt;
-         *     &lt;dt&gt;
-         *         timeout
-         *     &lt;&#x2F;dt&gt;
-         *     &lt;dd&gt;
-         *         Timeout in milliseconds to override the attribute.
-         *     &lt;&#x2F;dd&gt;
-         *     &lt;dt&gt;
-         *         version
-         *     &lt;&#x2F;dt&gt;
-         *     &lt;dd&gt;
-         *         The version of the Google Maps JavaScript API to load.
-         *     &lt;&#x2F;dd&gt;
-         * &lt;&#x2F;dl&gt;
-         *&#x2F;
-        load: function (parameters) {
-            var me = this;
-            
-            if (me.get(&#x27;loaded&#x27;)) {
-                return me;
-            }
+            </ul>
+        
+    </div>
 
-            parameters = parameters || {};
-
-            var language = parameters.language,
-                libraries = parameters.libraries,
-                region = parameters.region,
-                sensor = parameters.sensor,
-                timeout = parameters.timeout || me.get(&#x27;timeout&#x27;),
-                url = (parameters.source || me.get(&#x27;source&#x27;)) + &#x27;?callback={callback}&#x27;,
-                version = parameters.version;
-
-            if (language) {
-                url += &#x27;&amp;language=&#x27; + language;
-            }
-
-            if (libraries) {
-                if (_isArray(libraries)) {
-                    libraries = libraries.join(&#x27;,&#x27;);
-                }
-
-                url += &#x27;&amp;libraries=&#x27; + libraries;
-            }
-
-            if (region) {
-                url += &#x27;&amp;region=&#x27; + region;
-            }
-
-            url += &#x27;&amp;sensor=&#x27; + (sensor ? &#x27;true&#x27; : &#x27;false&#x27;);
-
-            if (version) {
-                url += &#x27;&amp;v=&#x27; + version;
-            }
-
-            Y.jsonp(url, {
-                on: {
-                    failure: function () {
-                        me.fire(&#x27;failure&#x27;);
-                    },
-                    success: function () {
-                        me._set(&#x27;loaded&#x27;, true);
-                        me.fire(&#x27;success&#x27;);
-                    },
-                    timeout: function () {
-                        me.fire(&#x27;timeout&#x27;);
-                    }
-                },
-                timeout: timeout
-            });
-            
-            return me;
-        }
-    }, {
-        ATTRS: {
-            &#x2F;**
-             * @attribute loaded
-             * @default false
-             * @readOnly
-             * @type Boolean
-             *&#x2F;
-            loaded: {
-                readOnly: true,
-                value: false
-            },
-            &#x2F;**
-             * The location of the Google Maps JavaScrpt API.
-             * @attribute source
-             * @default &#x27;http:&#x2F;&#x2F;maps.google.com&#x2F;maps&#x2F;api&#x2F;js&#x27;
-             * @type String
-             *&#x2F;
-            source: {
-                value: &#x27;http:&#x2F;&#x2F;maps.google.com&#x2F;maps&#x2F;api&#x2F;js&#x27;
-            },
-            &#x2F;**
-             * The timeout in milliseconds used by JSONP.
-             * @attribute timeout
-             * @default 30000
-             * @type Number
-             *&#x2F;
-            timeout: {
-                value: 30000
-            }
-        }
-    });
-}(Y, arguments[1]));
-    </pre>
+    <div class="yui3-u-1-2">
+        
+    </div>
 </div>
 
                     </div>

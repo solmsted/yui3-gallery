@@ -6,6 +6,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "Async",
         "AsyncCommand",
         "Audio",
+        "CSSMatrix2d",
         "ChildProcess",
         "Composite.Image",
         "GoogleMapsFrame",
@@ -48,6 +49,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-audio",
         "gallery-child-process",
         "gallery-composite-image",
+        "gallery-cssmatrix2d",
         "gallery-delay",
         "gallery-google-maps-frame",
         "gallery-google-maps-loader",
@@ -124,6 +126,10 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "gallery-composite-image",
             "name": "gallery-composite-image"
+        },
+        {
+            "displayName": "gallery-cssmatrix2d",
+            "name": "gallery-cssmatrix2d"
         },
         {
             "displayName": "gallery-delay",

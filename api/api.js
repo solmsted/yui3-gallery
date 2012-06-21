@@ -3,8 +3,21 @@ YUI.add("yuidoc-meta", function(Y) {
     "classes": [
         "AnyBaseConverter",
         "Array",
+        "Async",
+        "AsyncCommand",
+        "Audio",
+        "ChildProcess",
         "Composite.Image",
+        "GoogleMapsFrame",
+        "GoogleMapsLoader",
+        "Isoline",
         "ModelList",
+        "Plugin.AsyncCommandClone",
+        "Plugin.AsyncCommandDelay",
+        "Plugin.AsyncCommandTimeout",
+        "Plugin.AsyncCommandWithhold",
+        "Plugin.AsyncPause",
+        "Plugin.AsyncProgress",
         "QrCode",
         "QrCode.AlphanumericData",
         "QrCode.ByteData",
@@ -15,14 +28,6 @@ YUI.add("yuidoc-meta", function(Y) {
         "QrCode.Utf8Data",
         "WidgetInheritCss",
         "WidgetModality",
-        "Y.Async",
-        "Y.AsyncCommand",
-        "Y.Plugin.AsyncCommandClone",
-        "Y.Plugin.AsyncCommandDelay",
-        "Y.Plugin.AsyncCommandTimeout",
-        "Y.Plugin.AsyncCommandWithhold",
-        "Y.Plugin.AsyncPause",
-        "Y.Plugin.AsyncProgress",
         "YQL",
         "YQLCrypto",
         "YQLRESTClient",
@@ -30,6 +35,7 @@ YUI.add("yuidoc-meta", function(Y) {
     ],
     "modules": [
         "gallery-any-base-converter",
+        "gallery-array-iterate",
         "gallery-array-unnest",
         "gallery-async",
         "gallery-async-command",
@@ -39,13 +45,19 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-async-command-withhold",
         "gallery-async-pause",
         "gallery-async-progress",
+        "gallery-audio",
+        "gallery-child-process",
         "gallery-composite-image",
         "gallery-delay",
+        "gallery-google-maps-frame",
+        "gallery-google-maps-loader",
         "gallery-gravatar-url",
+        "gallery-isoline",
         "gallery-lazy-load",
         "gallery-model-list-difference",
         "gallery-model-list-union",
         "gallery-qr-code-generator-base",
+        "gallery-soon",
         "gallery-widget-inherit-css",
         "gallery-widget-weak-modality",
         "gallery-yql-crypto",
@@ -57,6 +69,11 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "gallery-any-base-converter",
             "name": "gallery-any-base-converter"
+        },
+        {
+            "displayName": "gallery-array-iterate",
+            "name": "gallery-array-iterate",
+            "description": "Iterate through an array."
         },
         {
             "displayName": "gallery-array-unnest",
@@ -96,6 +113,15 @@ YUI.add("yuidoc-meta", function(Y) {
             "name": "gallery-async-progress"
         },
         {
+            "displayName": "gallery-audio",
+            "name": "gallery-audio"
+        },
+        {
+            "displayName": "gallery-child-process",
+            "name": "gallery-child-process",
+            "description": "This is a convenience wrapper around child processes in Node.js."
+        },
+        {
             "displayName": "gallery-composite-image",
             "name": "gallery-composite-image"
         },
@@ -105,14 +131,26 @@ YUI.add("yuidoc-meta", function(Y) {
             "description": "Create a function that doesn't execute immediately when it is called."
         },
         {
+            "displayName": "gallery-google-maps-frame",
+            "name": "gallery-google-maps-frame"
+        },
+        {
+            "displayName": "gallery-google-maps-loader",
+            "name": "gallery-google-maps-loader"
+        },
+        {
             "displayName": "gallery-gravatar-url",
             "name": "gallery-gravatar-url",
             "description": "This module provides a function for creating gravatar image urls."
         },
         {
+            "displayName": "gallery-isoline",
+            "name": "gallery-isoline"
+        },
+        {
             "displayName": "gallery-lazy-load",
             "name": "gallery-lazy-load",
-            "description": "Similar to Y.later, but sooner.\n\nbased on setImmediate.js. https://github.com/NobleJS/setImmediate\n\nCopyright (c) 2011 Barnesandnoble.com, llc and Donavon West\n\nhttps://github.com/NobleJS/setImmediate/blob/master/MIT-LICENSE.txt"
+            "description": "A little helper function for when you want to load more modules into an\nexisting Y instance."
         },
         {
             "displayName": "gallery-model-list-difference",
@@ -127,7 +165,12 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "gallery-qr-code-generator-base",
             "name": "gallery-qr-code-generator-base",
-            "description": "gallery-qr-code-generator-base is a slightly low-level utility for generating QR Codes."
+            "description": "gallery-qr-code-generator-base is a slightly low-level utility for generating\nQR Codes."
+        },
+        {
+            "displayName": "gallery-soon",
+            "name": "gallery-soon",
+            "description": "Similar to Y.later, but sooner.\n\nbased on setImmediate.js. https://github.com/NobleJS/setImmediate\n\nCopyright (c) 2011 Barnesandnoble.com, llc and Donavon West\n\nhttps://github.com/NobleJS/setImmediate/blob/master/MIT-LICENSE.txt"
         },
         {
             "displayName": "gallery-widget-inherit-css",

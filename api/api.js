@@ -14,6 +14,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "Isoline",
         "ModelList",
         "Mutex",
+        "Node",
         "Plugin.AsyncCommandClone",
         "Plugin.AsyncCommandDelay",
         "Plugin.AsyncCommandTimeout",
@@ -60,6 +61,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-model-list-difference",
         "gallery-model-list-union",
         "gallery-mutex",
+        "gallery-node-transform2d",
         "gallery-qr-code-generator-base",
         "gallery-soon",
         "gallery-widget-inherit-css",
@@ -173,6 +175,10 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "gallery-mutex",
             "name": "gallery-mutex"
+        },
+        {
+            "displayName": "gallery-node-transform2d",
+            "name": "gallery-node-transform2d"
         },
         {
             "displayName": "gallery-qr-code-generator-base",

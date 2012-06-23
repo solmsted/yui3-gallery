@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>YQLCrypto - solmsted gallery modules</title>
+    <title>Node - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.5.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -214,21 +214,17 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>YQLCrypto Class</h1>
+                        <h1>Node Class</h1>
 <div class="box meta">
     
 
     
 
     
-        <div class="foundat">
-            Defined in: <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l56"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:56</code></a>
-        </div>
-    
 
     
         
-            Module: <a href="../modules/gallery-yql-crypto.html">gallery-yql-crypto</a>
+            Module: <a href="../modules/gallery-node-transform2d.html">gallery-node-transform2d</a>
         
     
 
@@ -266,70 +262,91 @@
                     <ul class="index-list methods">
                         
                             <li class="index-item method">
-                                <a href="#method_execute">execute</a>
+                                <a href="#method_getMatrix">getMatrix</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_hmacSha1">hmacSha1</a>
+                                <a href="#method_inverseTransform">inverseTransform</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_hmacSha1_b64">hmacSha1_b64</a>
+                                <a href="#method_multiplyMatrix">multiplyMatrix</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_hmacSha256">hmacSha256</a>
+                                <a href="#method_rotate">rotate</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_hmacSha256_b64">hmacSha256_b64</a>
+                                <a href="#method_rotateRad">rotateRad</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_md5">md5</a>
+                                <a href="#method_scale">scale</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_md5_b64">md5_b64</a>
+                                <a href="#method_scaleXY">scaleXY</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_sha1">sha1</a>
+                                <a href="#method_skewX">skewX</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_sha1_b64">sha1_b64</a>
+                                <a href="#method_skewXRad">skewXRad</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_uuid">uuid</a>
+                                <a href="#method_skewY">skewY</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_skewYRad">skewYRad</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_transform">transform</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_translate">translate</a>
 
                                 
                                 
@@ -351,41 +368,17 @@
                 <h2 class="off-left">Methods</h2>
 
                 
-                    <div id="method_execute" class="method item">
-    <h3 class="name"><code>execute</code></h3>
+                    <div id="method_getMatrix" class="method item">
+    <h3 class="name"><code>getMatrix</code></h3>
 
     
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-            
-                <li class="arg">
-                    
-                        <code>code</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
-                    
-                </li>
-            
-            </ul><span class="paren">)</span>
-        </div>
+        <span class="paren">()</span>
     
 
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/CSSMatrix2d.html" class="crosslink">CSSMatrix2d</a></span>
+        </span>
     
 
     
@@ -411,7 +404,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l61"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:61</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l13"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:13</code></a>
         
         </p>
 
@@ -422,10 +415,92 @@
     </div>
 
     <div class="description">
-        <p>This method wraps the YQL execute data table which executes inline
-Javascript on the YQL server.  YQL Server side Javascript
-documentation is here:
-http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
+        <p>Helper method to get the node's current 2d transfom matrix.</p>
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/CSSMatrix2d.html" class="crosslink">CSSMatrix2d</a></span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_inverseTransform" class="method item">
+    <h3 class="name"><code>inverseTransform</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l22"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:22</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Transforms the node by the inverse of the nodes current 2d transform
+matrix.</p>
     </div>
 
     
@@ -436,14 +511,17 @@ http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
             
                 <li class="param">
                     
-                        <code class="param-name">code</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Javascript code to execute on the YQL server.</p>
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -458,37 +536,9 @@ http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
                     
 
                     <div class="param-description">
-                        <p>Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -504,8 +554,8 @@ http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
 </div>
 
                 
-                    <div id="method_hmacSha1" class="method item">
-    <h3 class="name"><code>hmacSha1</code></h3>
+                    <div id="method_multiplyMatrix" class="method item">
+    <h3 class="name"><code>multiplyMatrix</code></h3>
 
     
         <div class="args">
@@ -513,31 +563,19 @@ http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>matrix</code>
                     
                 </li>
             
                 <li class="arg">
                     
-                        <code>secret</code>
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -556,6 +594,8 @@ http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -570,7 +610,7 @@ http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l73"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:73</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l48"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:48</code></a>
         
         </p>
 
@@ -581,8 +621,8 @@ http://developer.yahoo.com/yql/guide/yql-javascript-objects.html</p>
     </div>
 
     <div class="description">
-        <p>Generates a sha1 hash-based message authentication code.
-The result is expressed as a hex value.</p>
+        <p>Transforms the node by multiplying the nodes current 2d transform
+matrix with another matrix.</p>
     </div>
 
     
@@ -593,14 +633,14 @@ The result is expressed as a hex value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">matrix</code>
+                        <span class="type"><a href="../classes/CSSMatrix2d.html" class="crosslink">CSSMatrix2d</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The matrix to multiply.</p>
                     </div>
 
                     
@@ -608,14 +648,17 @@ The result is expressed as a hex value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">secret</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The secret key.</p>
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -630,38 +673,9 @@ The result is expressed as a hex value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -677,8 +691,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_hmacSha1_b64" class="method item">
-    <h3 class="name"><code>hmacSha1_b64</code></h3>
+                    <div id="method_rotate" class="method item">
+    <h3 class="name"><code>rotate</code></h3>
 
     
         <div class="args">
@@ -686,31 +700,19 @@ parameter.</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>angle</code>
                     
                 </li>
             
                 <li class="arg">
                     
-                        <code>secret</code>
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -729,6 +731,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -743,7 +747,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l85"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:85</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l65"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:65</code></a>
         
         </p>
 
@@ -754,8 +758,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates a sha1 hash-based message authentication code.
-The result is expressed as a base 64 encoded value.</p>
+        <p>Rotates the node clockwise.</p>
     </div>
 
     
@@ -766,14 +769,14 @@ The result is expressed as a base 64 encoded value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">angle</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The angle specified in degrees.</p>
                     </div>
 
                     
@@ -781,14 +784,17 @@ The result is expressed as a base 64 encoded value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">secret</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The secret key.</p>
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -803,38 +809,9 @@ The result is expressed as a base 64 encoded value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -850,8 +827,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_hmacSha256" class="method item">
-    <h3 class="name"><code>hmacSha256</code></h3>
+                    <div id="method_rotateRad" class="method item">
+    <h3 class="name"><code>rotateRad</code></h3>
 
     
         <div class="args">
@@ -859,31 +836,19 @@ parameter.</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>angle</code>
                     
                 </li>
             
                 <li class="arg">
                     
-                        <code>secret</code>
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -902,6 +867,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -916,7 +883,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l97"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:97</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l81"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:81</code></a>
         
         </p>
 
@@ -927,8 +894,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates a sha256 hash-based message authentication code.
-The result is expressed as a hex value.</p>
+        <p>Rotates the node clockwise.</p>
     </div>
 
     
@@ -939,14 +905,14 @@ The result is expressed as a hex value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">angle</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The angle specified in radians.</p>
                     </div>
 
                     
@@ -954,14 +920,17 @@ The result is expressed as a hex value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">secret</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The secret key.</p>
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -976,38 +945,9 @@ The result is expressed as a hex value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -1023,8 +963,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_hmacSha256_b64" class="method item">
-    <h3 class="name"><code>hmacSha256_b64</code></h3>
+                    <div id="method_scale" class="method item">
+    <h3 class="name"><code>scale</code></h3>
 
     
         <div class="args">
@@ -1032,31 +972,19 @@ parameter.</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>scaleFactor</code>
                     
                 </li>
             
                 <li class="arg">
                     
-                        <code>secret</code>
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -1075,6 +1003,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -1089,7 +1019,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l109"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:109</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l97"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:97</code></a>
         
         </p>
 
@@ -1100,8 +1030,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates a sha256 hash-based message authentication code.
-The result is expressed as a base 64 encoded value.</p>
+        <p>Scales the node horizontally and vertically.</p>
     </div>
 
     
@@ -1112,14 +1041,14 @@ The result is expressed as a base 64 encoded value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">scaleFactor</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The horizontal and vertical scale factor.</p>
                     </div>
 
                     
@@ -1127,14 +1056,17 @@ The result is expressed as a base 64 encoded value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">secret</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The secret key.</p>
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -1149,38 +1081,9 @@ The result is expressed as a base 64 encoded value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -1196,8 +1099,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_md5" class="method item">
-    <h3 class="name"><code>md5</code></h3>
+                    <div id="method_scaleXY" class="method item">
+    <h3 class="name"><code>scaleXY</code></h3>
 
     
         <div class="args">
@@ -1205,25 +1108,25 @@ parameter.</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>scaleFactorX</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>scaleFactorY</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -1242,6 +1145,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -1256,7 +1161,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l121"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:121</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l113"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:113</code></a>
         
         </p>
 
@@ -1267,8 +1172,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates an md5 hash.
-The result is expressed as a hex value.</p>
+        <p>Scales the node horizontally and vertically.</p>
     </div>
 
     
@@ -1279,14 +1183,47 @@ The result is expressed as a hex value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">scaleFactorX</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The horizontal scale factor.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">scaleFactorY</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The vertical scale factor.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -1301,38 +1238,9 @@ The result is expressed as a hex value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -1348,8 +1256,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_md5_b64" class="method item">
-    <h3 class="name"><code>md5_b64</code></h3>
+                    <div id="method_skewX" class="method item">
+    <h3 class="name"><code>skewX</code></h3>
 
     
         <div class="args">
@@ -1357,25 +1265,19 @@ parameter.</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>angle</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -1394,6 +1296,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -1408,7 +1312,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l132"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:132</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l130"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:130</code></a>
         
         </p>
 
@@ -1419,8 +1323,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates an md5 hash.
-The result is expressed as a base 64 encoded value.</p>
+        <p>Skews the node horizontally.</p>
     </div>
 
     
@@ -1431,14 +1334,32 @@ The result is expressed as a base 64 encoded value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">angle</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The horizontal skew angle specified in degrees.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -1453,38 +1374,9 @@ The result is expressed as a base 64 encoded value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -1500,8 +1392,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_sha1" class="method item">
-    <h3 class="name"><code>sha1</code></h3>
+                    <div id="method_skewXRad" class="method item">
+    <h3 class="name"><code>skewXRad</code></h3>
 
     
         <div class="args">
@@ -1509,25 +1401,19 @@ parameter.</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>angle</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -1546,6 +1432,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -1560,7 +1448,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l143"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:143</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l146"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:146</code></a>
         
         </p>
 
@@ -1571,8 +1459,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates a sha1 hash.
-The result is expressed as a hex value.</p>
+        <p>Skews the node horizontally.</p>
     </div>
 
     
@@ -1583,14 +1470,32 @@ The result is expressed as a hex value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">angle</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The horizontal skew angle specified in radians.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -1605,38 +1510,9 @@ The result is expressed as a hex value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -1652,8 +1528,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_sha1_b64" class="method item">
-    <h3 class="name"><code>sha1_b64</code></h3>
+                    <div id="method_skewY" class="method item">
+    <h3 class="name"><code>skewY</code></h3>
 
     
         <div class="args">
@@ -1661,25 +1537,19 @@ parameter.</p>
             
                 <li class="arg">
                     
-                        <code>string</code>
+                        <code>angle</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
                     
                 </li>
             
                 <li class="arg">
                     
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -1698,6 +1568,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -1712,7 +1584,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l154"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:154</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l162"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:162</code></a>
         
         </p>
 
@@ -1723,8 +1595,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates a sha1 hash.
-The result is expressed as a base 64 encoded value.</p>
+        <p>Skews the node vertically.</p>
     </div>
 
     
@@ -1735,14 +1606,32 @@ The result is expressed as a base 64 encoded value.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">string</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">angle</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The message to hash.</p>
+                        <p>The vertical skew angle specified in degrees.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -1757,38 +1646,9 @@ The result is expressed as a base 64 encoded value.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">params</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">opts</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     
@@ -1804,8 +1664,8 @@ parameter.</p>
 </div>
 
                 
-                    <div id="method_uuid" class="method item">
-    <h3 class="name"><code>uuid</code></h3>
+                    <div id="method_skewYRad" class="method item">
+    <h3 class="name"><code>skewYRad</code></h3>
 
     
         <div class="args">
@@ -1813,19 +1673,19 @@ parameter.</p>
             
                 <li class="arg">
                     
+                        <code>angle</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
                         <code>callbackFunction</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>params</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>opts</code>
                     
                 </li>
             
@@ -1844,6 +1704,8 @@ parameter.</p>
     
 
     
+        <span class="flag chainable">chainable</span>
+    
 
     
 
@@ -1858,7 +1720,7 @@ parameter.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-yql-crypto_js_yql-crypto.js.html#l165"><code>yui3-gallery&#x2F;src&#x2F;gallery-yql-crypto&#x2F;js&#x2F;yql-crypto.js:165</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l178"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:178</code></a>
         
         </p>
 
@@ -1869,7 +1731,7 @@ parameter.</p>
     </div>
 
     <div class="description">
-        <p>Generates a universally unique identifier.</p>
+        <p>Skews the node vertically.</p>
     </div>
 
     
@@ -1880,6 +1742,39 @@ parameter.</p>
             
                 <li class="param">
                     
+                        <code class="param-name">angle</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The vertical skew angle specified in radians.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">transitionConfig</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
                         <code class="param-name">callbackFunction</code>
                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
                     
@@ -1887,8 +1782,110 @@ parameter.</p>
                     
 
                     <div class="param-description">
-                        <p>The result value is the only
-parameter.</p>
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_transform" class="method item">
+    <h3 class="name"><code>transform</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>matrix</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l194"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:194</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Transforms the node by the given matrix.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">matrix</code>
+                        <span class="type"><a href="../classes/CSSMatrix2d.html" class="crosslink">CSSMatrix2d</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The 2d transform matrix.</p>
                     </div>
 
                     
@@ -1896,14 +1893,17 @@ parameter.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">params</code>
+                        <code class="param-name">transitionConfig</code>
                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
                     </div>
 
                     
@@ -1911,14 +1911,173 @@ parameter.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">opts</code>
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_translate" class="method item">
+    <h3 class="name"><code>translate</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>x</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>y</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>transitionConfig</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>callbackFunction</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-node-transform2d_js_node-transform2d.js.html#l226"><code>yui3-gallery&#x2F;src&#x2F;gallery-node-transform2d&#x2F;js&#x2F;node-transform2d.js:226</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Translates the node horizontally and vertically.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">x</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The amount to translate horizontally.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">y</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The amount to translate vertically.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">transitionConfig</code>
                         <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>(optional) Passes through to Y.YQL.</p>
+                        <p>Optional.  If defined, and if the
+transition module is available, a transition will be used to
+transform the node.  This object is passed along to the transition
+method.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">callbackFunction</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  Whether or not
+transition is used, the callback function, if defined, will get
+called when the transform is complete.</p>
                     </div>
 
                     

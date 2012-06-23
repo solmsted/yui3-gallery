@@ -282,6 +282,17 @@
             "fors": {},
             "namespaces": {}
         },
+        "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js": {
+            "name": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "modules": {
+                "gallery-node-transform2d": 1
+            },
+            "classes": {},
+            "fors": {
+                "Node": 1
+            },
+            "namespaces": {}
+        },
         "yui3-gallery/src/gallery-qr-code-generator-base/js/qr-code-generator-base.js": {
             "name": "yui3-gallery/src/gallery-qr-code-generator-base/js/qr-code-generator-base.js",
             "modules": {
@@ -703,6 +714,20 @@
             "tag": "module",
             "file": "yui3-gallery/src/gallery-mutex/js/mutex.js",
             "line": 7
+        },
+        "gallery-node-transform2d": {
+            "name": "gallery-node-transform2d",
+            "submodules": {},
+            "classes": {
+                "Node": 1
+            },
+            "fors": {
+                "Node": 1
+            },
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 1
         },
         "gallery-qr-code-generator-base": {
             "name": "gallery-qr-code-generator-base",
@@ -1214,6 +1239,17 @@
             "line": 7,
             "description": "Most people believe that Since JavaScript does not provide a\nmulti-threaded shared memory environment, JavaScript is completely\nfree from concurrency issues.  This is true at a low level;\nJavaScript developers don't need to worry about race conditions\nbetween multiple processes or threads writing to the same memory\nlocation.  At a higher level, asynchronous operations still allow for\nsimilar problems to occur.\n\nImagine a function that does the following:\n<ol>\n    <li>\n        Check the value of a variable.\n    </li>\n    <li>\n        If the value is undefined:\n        <ol>\n            <li>\n                Make a request to a server.\n            </li>\n            <li>\n                Receive data.\n            <li>\n                Set the value of the variable.\n            </li>\n        </ol>\n    </li>\n    <li>\n        Pass the variable to a callback function.\n    </li>\n</ol>\n\nIt seems common for web applications to lazy load data like this as\nneeded.  Now imagine that there are several separate modules within a\nweb application which all require this data.  It's possible for the\nfirst module to call this function, the function sees that the value\nis undefined, and sends a request to a server.  Then before the\nrequest returns, the second module calls this function, the function\nsees that the value is undefined and sends a request to a server.\nThen before both of those requests return, the third module calls\nthis function, the function sees that the value is undefined and sends\na request to a server.  In this case, three requests are made to a server\nfor the same data.\n\nIt would be far better if the second and third calls to the function\njust waited for the first request to complete.  Y.Mutex makes it\neasier to accomplish this functionality.\n\nY.Mutex provides a concept of locking a resource.  Once an exclusive\nresource lock is obtained, other parts of an application which\nattempt to access the same resource, will have to wait until that\nresource is unlocked.\n\nThe function above could be rewritten as follows:\n<ol>\n    <li>\n        Obtain an exclusive lock for a variable.\n    </li>\n    <li>\n        Check the value of the variable.\n    </li>\n    <li>\n        If the value is undefined:\n        <ol>\n            <li>\n                Make a request to a server.\n            </li>\n            <li>\n                Receive data.\n            <li>\n                Set the value of the variable.\n            </li>\n        </ol>\n    </li>\n    <li>\n        Unlock the variable.\n    </li>\n    <li>\n        Pass the variable to a callback function.\n    </li>\n</ol>\n\nThis way, second or third or more calls to the function, before the\nfirst request is complete, will always wait for the request to\ncomplete instead of sending multiple unnecessary requests.\n\nJust like locking in multi threaded applications, there are\ndisadvantages and dangers to locking.  There is a small amount of\noverhead added to every resource access, even when the chances for\nconcurrency issues are very small.  Once a lock is obtained, it must\nbe unlocked; so error handling and time outs are important to ensure\nthat the entire application doesn't break when something goes wrong.\nIt is possible to cause a deadlock when locking multiple resources at\nonce.\n\nOne advantage Y.Mutex has in JavaScript over other multi threaded\napplications, the locks are asynchronous.  The application is not\nblocked while waiting to acquire a lock.  Even if a deadlock occurs,\nother parts of the application are not affected.  Y.Mutex also\nprovides multiple ways to cancel a particular lock, so there are\nextra possibilities to recover from locking errors.\n\nY.Mutex offers exclusive locks, shared locks, and upgradable locks.\nWhen a resource is locked by an exclusive lock, Y.Mutex guarantees\nthat no other locks will be granted for the resource until the\nresource is unlocked.  When a resource is locked by a shared lock,\nY.Mutex allows the resource to be locked by an unlimited number of\nother shared locks at the same time and/or one single upgradable\nlock.  When a resource is locked by multiple shared locks, an\nexclusive lock can not be obtained until all of the shared locks have\nbeen unlocked.  An upgradable lock can be upgraded to act as an\nexclusive lock.  Shared locks are generally used when just reading\nvalues.  Exclusive locks are generally used when writing values.\n\nY.Mutex provides a way to deal with asynchronous concurrency issues,\nbut it does not prevent them.  If code from part of an application\nuses Y.Mutex to lock a resource, there is nothing stopping code from\nanother part of the application from ignoring the lock and accessing\nthe resource directly.  Y.Mutex does not handle real multi threaded or\nmulti process concurrency issues.",
             "static": 1
+        },
+        "Node": {
+            "name": "Node",
+            "shortname": "Node",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-node-transform2d",
+            "namespace": ""
         },
         "QrCode": {
             "name": "QrCode",
@@ -3695,6 +3731,348 @@
             "static": 1,
             "class": "Mutex",
             "module": "gallery-mutex"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 13,
+            "description": "Helper method to get the node's current 2d transfom matrix.",
+            "itemtype": "method",
+            "name": "getMatrix",
+            "return": {
+                "description": "",
+                "type": "CSSMatrix2d"
+            },
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 22,
+            "description": "Transforms the node by the inverse of the nodes current 2d transform\nmatrix.",
+            "itemtype": "method",
+            "name": "inverseTransform",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 48,
+            "description": "Transforms the node by multiplying the nodes current 2d transform\nmatrix with another matrix.",
+            "itemtype": "method",
+            "name": "multiplyMatrix",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "matrix",
+                    "description": "The matrix to multiply.",
+                    "type": "CSSMatrix2d"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 65,
+            "description": "Rotates the node clockwise.",
+            "itemtype": "method",
+            "name": "rotate",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "The angle specified in degrees.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 81,
+            "description": "Rotates the node clockwise.",
+            "itemtype": "method",
+            "name": "rotateRad",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "The angle specified in radians.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 97,
+            "description": "Scales the node horizontally and vertically.",
+            "itemtype": "method",
+            "name": "scale",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "scaleFactor",
+                    "description": "The horizontal and vertical scale factor.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 113,
+            "description": "Scales the node horizontally and vertically.",
+            "itemtype": "method",
+            "name": "scaleXY",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "scaleFactorX",
+                    "description": "The horizontal scale factor.",
+                    "type": "Number"
+                },
+                {
+                    "name": "scaleFactorY",
+                    "description": "The vertical scale factor.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 130,
+            "description": "Skews the node horizontally.",
+            "itemtype": "method",
+            "name": "skewX",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "The horizontal skew angle specified in degrees.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 146,
+            "description": "Skews the node horizontally.",
+            "itemtype": "method",
+            "name": "skewXRad",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "The horizontal skew angle specified in radians.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 162,
+            "description": "Skews the node vertically.",
+            "itemtype": "method",
+            "name": "skewY",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "The vertical skew angle specified in degrees.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 178,
+            "description": "Skews the node vertically.",
+            "itemtype": "method",
+            "name": "skewYRad",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "The vertical skew angle specified in radians.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 194,
+            "description": "Transforms the node by the given matrix.",
+            "itemtype": "method",
+            "name": "transform",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "matrix",
+                    "description": "The 2d transform matrix.",
+                    "type": "CSSMatrix2d"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-node-transform2d/js/node-transform2d.js",
+            "line": 226,
+            "description": "Translates the node horizontally and vertically.",
+            "itemtype": "method",
+            "name": "translate",
+            "chainable": 1,
+            "params": [
+                {
+                    "name": "x",
+                    "description": "The amount to translate horizontally.",
+                    "type": "Number"
+                },
+                {
+                    "name": "y",
+                    "description": "The amount to translate vertically.",
+                    "type": "Number"
+                },
+                {
+                    "name": "transitionConfig",
+                    "description": "Optional.  If defined, and if the\ntransition module is available, a transition will be used to\ntransform the node.  This object is passed along to the transition\nmethod.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callbackFunction",
+                    "description": "Optional.  Whether or not\ntransition is used, the callback function, if defined, will get\ncalled when the transform is complete.",
+                    "type": "Function"
+                }
+            ],
+            "class": "Node",
+            "module": "gallery-node-transform2d"
         },
         {
             "file": "yui3-gallery/src/gallery-qr-code-generator-base/js/qr-code-generator-base.js",

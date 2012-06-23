@@ -13,6 +13,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "GoogleMapsLoader",
         "Isoline",
         "ModelList",
+        "Mutex",
         "Plugin.AsyncCommandClone",
         "Plugin.AsyncCommandDelay",
         "Plugin.AsyncCommandTimeout",
@@ -58,6 +59,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-lazy-load",
         "gallery-model-list-difference",
         "gallery-model-list-union",
+        "gallery-mutex",
         "gallery-qr-code-generator-base",
         "gallery-soon",
         "gallery-widget-inherit-css",
@@ -167,6 +169,10 @@ YUI.add("yuidoc-meta", function(Y) {
             "displayName": "gallery-model-list-union",
             "name": "gallery-model-list-union",
             "description": "Creates a model list that is the union of two or more other model lists."
+        },
+        {
+            "displayName": "gallery-mutex",
+            "name": "gallery-mutex"
         },
         {
             "displayName": "gallery-qr-code-generator-base",

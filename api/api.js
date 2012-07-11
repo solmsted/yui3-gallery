@@ -9,6 +9,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "CSSMatrix2d",
         "ChildProcess",
         "Composite.Image",
+        "Conway",
         "GoogleMapsFrame",
         "GoogleMapsLoader",
         "Isoline",
@@ -51,6 +52,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-audio",
         "gallery-child-process",
         "gallery-composite-image",
+        "gallery-conway",
         "gallery-cssmatrix2d",
         "gallery-delay",
         "gallery-google-maps-frame",
@@ -130,6 +132,11 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "gallery-composite-image",
             "name": "gallery-composite-image"
+        },
+        {
+            "displayName": "gallery-conway",
+            "name": "gallery-conway",
+            "description": "A simulator for Conway's Game of Life."
         },
         {
             "displayName": "gallery-cssmatrix2d",

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>ChildProcess - solmsted gallery modules</title>
+    <title>Conway - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.5.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -218,7 +218,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>ChildProcess Class</h1>
+                        <h1>Conway Class</h1>
 <div class="box meta">
     
 
@@ -230,13 +230,13 @@
 
     
         <div class="foundat">
-            Defined in: <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l14"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:14</code></a>
+            Defined in: <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l38"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:38</code></a>
         </div>
     
 
     
         
-            Module: <a href="../modules/gallery-child-process.html">gallery-child-process</a>
+            Module: <a href="../modules/gallery-conway.html">gallery-conway</a>
         
     
 
@@ -252,8 +252,8 @@
 
     <div class="constructor">
         <h2>Constructor</h2>
-        <div id="method_ChildProcess" class="method item">
-    <h3 class="name"><code>ChildProcess</code></h3>
+        <div id="method_Conway" class="method item">
+    <h3 class="name"><code>Conway</code></h3>
 
     
         <div class="args">
@@ -294,7 +294,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l14"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:14</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l38"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:38</code></a>
         
         </p>
 
@@ -323,7 +323,7 @@
                     
 
                     <div class="param-description">
-                        <p>Configuration object.</p>
+                        <p>Configuration Object.</p>
                     </div>
 
                     
@@ -369,22 +369,36 @@
 
                     <ul class="index-list methods extends">
                         
-                            <li class="index-item method private">
-                                <a href="#method__write">_write</a>
+                            <li class="index-item method protected">
+                                <a href="#method__cellChange">_cellChange</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method protected">
+                                <a href="#method__cellStep">_cellStep</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_kill">kill</a>
+                                <a href="#method_getCell">getCell</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item method">
-                                <a href="#method_write">write</a>
+                                <a href="#method_setCell">setCell</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_step">step</a>
 
                                 
                                 
@@ -401,28 +415,7 @@
                     <ul class="index-list properties extends">
                         
                             <li class="index-item property protected">
-                                <a href="#property__childProcess">_childProcess</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property protected">
-                                <a href="#property__stderr">_stderr</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property protected">
-                                <a href="#property__stdin">_stdin</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item property protected">
-                                <a href="#property__stdout">_stdout</a>
+                                <a href="#property__history">_history</a>
 
                                 
                                 
@@ -439,31 +432,27 @@
                     <ul class="index-list attrs extends">
                         
                             <li class="index-item attr">
-                                <a href="#attr_args">args</a>
+                                <a href="#attr_birth">birth</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_command">command</a>
+                                <a href="#attr_grid">grid</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_options">options</a>
+                                <a href="#attr_height">height</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_pid">pid</a>
+                                <a href="#attr_life">life</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_ready">ready</a>
+                                <a href="#attr_toroidal">toroidal</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_stderrEncoding">stderrEncoding</a>
-                            </li>
-                        
-                            <li class="index-item attr">
-                                <a href="#attr_stdoutEncoding">stdoutEncoding</a>
+                                <a href="#attr_width">width</a>
                             </li>
                         
                     </ul>
@@ -477,35 +466,7 @@
                     <ul class="index-list events extends">
                         
                             <li class="index-item event">
-                                <a href="#event_drain">drain</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item event">
-                                <a href="#event_error">error</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item event">
-                                <a href="#event_exit">exit</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item event">
-                                <a href="#event_stderr">stderr</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item event">
-                                <a href="#event_stdout">stdout</a>
+                                <a href="#event_cellChange">cellChange</a>
 
                                 
                                 
@@ -521,8 +482,8 @@
                 <h2 class="off-left">Methods</h2>
 
                 
-                    <div id="method__write" class="method item private">
-    <h3 class="name"><code>_write</code></h3>
+                    <div id="method__cellChange" class="method item protected">
+    <h3 class="name"><code>_cellChange</code></h3>
 
     
         <div class="args">
@@ -530,13 +491,7 @@
             
                 <li class="arg">
                     
-                        <code>data</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>encoding</code>
+                        <code>eventFacade</code>
                     
                 </li>
             
@@ -549,13 +504,15 @@
     
 
     
-        <span class="flag private">private</span>
+        <span class="flag protected">protected</span>
     
 
     
 
     
 
+    
+        <span class="flag chainable">chainable</span>
     
 
     
@@ -571,7 +528,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l287"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:287</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l233"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:233</code></a>
         
         </p>
 
@@ -582,7 +539,7 @@
     </div>
 
     <div class="description">
-        
+        <p>Default function for the cellChange event.</p>
     </div>
 
     
@@ -593,23 +550,8 @@
             
                 <li class="param">
                     
-                        <code class="param-name">data</code>
-                        <span class="type">Buffer | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                         
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">encoding</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">eventFacade</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
                     
 
                     
@@ -631,8 +573,8 @@
 </div>
 
                 
-                    <div id="method_kill" class="method item">
-    <h3 class="name"><code>kill</code></h3>
+                    <div id="method__cellStep" class="method item protected">
+    <h3 class="name"><code>_cellStep</code></h3>
 
     
         <div class="args">
@@ -640,7 +582,409 @@
             
                 <li class="arg">
                     
-                        <code>signal</code>
+                        <code>grid</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>height</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>width</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>index</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>birth</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>life</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>toroidal</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l281"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:281</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Determines the outcome of one step of the simulation for one cell.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">grid</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">[Boolean]</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">height</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">width</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">index</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">birth</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">[Number]</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">life</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">[Number]</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">toroidal</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                    
+                    If the cell changed, returns an object with the
+following properties:
+
+<dl>
+    <dt>
+         cell
+    </dt>
+    <dd>
+        Boolean.  The current value of the cell.
+    </dd>
+    <dt>
+        index
+    </dt>
+    <dd>
+        Number.  The cell's array index.
+    </dd>
+    <dt>
+        x
+    </dt>
+    <dd>
+        Number.  The cell's x coordinate.
+    </dd>
+    <dt>
+        y
+    </dt>
+    <dd>
+        Number.  The cell's y coordinate.
+    </dd>
+</dl>
+
+otherwise returns null.
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getCell" class="method item">
+    <h3 class="name"><code>getCell</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>x</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code class="optional">[y]</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l48"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:48</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Returns the value of a specific cell.  The cell may be specified with
+x and y coordinates or with a single array index.
+(index = x + y * width)</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">x</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The x coordinate or the array index.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name optional">[y]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  The y coordinate.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                    
+                    A truthy value means the cell is currently alive.
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_setCell" class="method item">
+    <h3 class="name"><code>setCell</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>x</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code class="optional">[y]</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>value</code>
                     
                 </li>
             
@@ -675,7 +1019,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l242"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:242</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l101"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:101</code></a>
         
         </p>
 
@@ -686,10 +1030,9 @@
     </div>
 
     <div class="description">
-        <p>Sends a signal to the child process.  Refer to Node.js child.kill
-documentation.  Note that while the method is called kill, the signal
-delivered to the child process may not actually kill it.  kill really
-just sends a signal to a process.</p>
+        <p>Sets the value of a specific cell.  The cell may be specified with x
+and y coordinates or with a single array index.
+(index = x + y * width)</p>
     </div>
 
     
@@ -700,14 +1043,46 @@ just sends a signal to a process.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">signal</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">x</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>(optional) Defaults to 'SIGTERM'.</p>
+                        <p>The x coordinate orthe array index.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name optional">[y]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  The y coordinate.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">value</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The new value for the cell.  A truthy value means
+the cell is currently alive.</p>
                     </div>
 
                     
@@ -723,8 +1098,8 @@ just sends a signal to a process.</p>
 </div>
 
                 
-                    <div id="method_write" class="method item">
-    <h3 class="name"><code>write</code></h3>
+                    <div id="method_step" class="method item">
+    <h3 class="name"><code>step</code></h3>
 
     
         <div class="args">
@@ -732,13 +1107,7 @@ just sends a signal to a process.</p>
             
                 <li class="arg">
                     
-                        <code>data</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>encoding</code>
+                        <code class="optional">[callbackFunction]</code>
                     
                 </li>
             
@@ -773,7 +1142,7 @@ just sends a signal to a process.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l260"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:260</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l143"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:143</code></a>
         
         </p>
 
@@ -784,9 +1153,14 @@ just sends a signal to a process.</p>
     </div>
 
     <div class="description">
-        <p>Writes data to the stdin of the child process.  If the stdin of the
-child process has reported its kernel buffer is full, the write will
-be queued until the drain event.</p>
+        <p>Runs one step of the simulation.  The simulation is resolved
+asynchronously and will call the callback function when it completes.
+Once this method is called, it should not be called again until the
+first call is complete.  Calling getCell, setCell, or step while the
+simulation is still being resolved may cause unexpected side effects.
+If you wish to ensure that unexpected side effects never occur and
+don't mind incurring a small overhead cost, use gallery-mutex to
+obtain an exclusive lock when calling these methods.</p>
     </div>
 
     
@@ -797,31 +1171,46 @@ be queued until the drain event.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">data</code>
-                        <span class="type">Buffer | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name optional">[callbackFunction]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>The data to write.</p>
-                    </div>
+                        <p>Optional.  This function will be
+called once the simulation is resolved.  This function will be passed
+a single argument, an array.  For each cell that changed value during
+the simulation, there will be an object in the array with the
+following properties:</p>
 
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">encoding</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>(optional) The encoding to use when data is
-a String value.  May be one of 'ascii', 'base64', or 'utf8'.  If
-undefined, 'utf8' is assumed.</p>
+<dl>
+    <dt>
+         cell
+    </dt>
+    <dd>
+        Boolean.  The current value of the cell.
+    </dd>
+    <dt>
+        index
+    </dt>
+    <dd>
+        Number.  The cell's array index.
+    </dd>
+    <dt>
+        x
+    </dt>
+    <dd>
+        Number.  The cell's x coordinate.
+    </dd>
+    <dt>
+        y
+    </dt>
+    <dd>
+        Number.  The cell's y coordinate.
+    </dd>
+</dl>
                     </div>
 
                     
@@ -845,9 +1234,9 @@ undefined, 'utf8' is assumed.</p>
                 <h2 class="off-left">Properties</h2>
 
                 
-                    <div id="property__childProcess" class="property item protected">
-    <h3 class="name"><code>_childProcess</code></h3>
-    <span class="type">Unknown</span>
+                    <div id="property__history" class="property item protected">
+    <h3 class="name"><code>_history</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
     
 
@@ -870,7 +1259,7 @@ undefined, 'utf8' is assumed.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l215"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:215</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l90"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:90</code></a>
         
         </p>
 
@@ -880,145 +1269,10 @@ undefined, 'utf8' is assumed.</p>
     </div>
 
     <div class="description">
-        
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property__stderr" class="property item protected">
-    <h3 class="name"><code>_stderr</code></h3>
-    <span class="type">Unknown</span>
-
-    
-
-    
-        <span class="flag protected">protected</span>
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l221"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:221</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property__stdin" class="property item protected">
-    <h3 class="name"><code>_stdin</code></h3>
-    <span class="type">Unknown</span>
-
-    
-
-    
-        <span class="flag protected">protected</span>
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l227"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:227</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property__stdout" class="property item protected">
-    <h3 class="name"><code>_stdout</code></h3>
-    <span class="type">Unknown</span>
-
-    
-
-    
-        <span class="flag protected">protected</span>
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l233"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:233</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        
+        <p>This object's keys are the indices of cells that have changed
+value since the previous step of the simulation.  This is used to
+improve performance while resolving the next step of the
+simulation.</p>
     </div>
 
     
@@ -1037,10 +1291,10 @@ undefined, 'utf8' is assumed.</p>
                 <h2 class="off-left">Attributes</h2>
 
                 
-                    <div id="attr_args" class="attr item">
-    <a name="config_args"></a> 
-    <h3 class="name"><code>args</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+                    <div id="attr_birth" class="attr item">
+    <a name="config_birth"></a> 
+    <h3 class="name"><code>birth</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">[Number]</a></span>
 
     
 
@@ -1065,7 +1319,7 @@ undefined, 'utf8' is assumed.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l25"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:25</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l371"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:371</code></a>
         
         </p>
 
@@ -1075,20 +1329,24 @@ undefined, 'utf8' is assumed.</p>
     </div>
 
     <div class="description">
-        <p>Array of command line arguments.  Refer to Node.js
-child_process.spawn documentation.</p>
+        <p>In Conway's Game of Life, a cell is born (becomes alive) if it is
+not currently alive and if it has exactly three living neighbors.
+This is the default functionality but it can be modified.  For
+example, if this attribute is set to [1,4,6] a cell will be born
+if it is not currently alive and if it has exactly one, four, or
+six living neighbors.</p>
     </div>
 
     
-        <p><strong>Default:</strong> []</p>
+        <p><strong>Default:</strong> [3]</p>
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>argsChange</code></h4>
+            <h4>Fires event <code>birthChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>args</code> is
+            Fires when the value for the configuration attribute <code>birth</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -1140,10 +1398,10 @@ child_process.spawn documentation.</p>
 </div>
 
                 
-                    <div id="attr_command" class="attr item">
-    <a name="config_command"></a> 
-    <h3 class="name"><code>command</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="attr_grid" class="attr item">
+    <a name="config_grid"></a> 
+    <h3 class="name"><code>grid</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">[Boolean]</a></span>
 
     
 
@@ -1168,7 +1426,7 @@ child_process.spawn documentation.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l37"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:37</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l388"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:388</code></a>
         
         </p>
 
@@ -1178,18 +1436,18 @@ child_process.spawn documentation.</p>
     </div>
 
     <div class="description">
-        <p>The command to execute.  Refer to Node.js child_process.spawn
-documentation.</p>
+        <p>The grid of cell values.  The array values should never be
+manipulated directly; doing so may cause unexpected side effects.</p>
     </div>
 
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>commandChange</code></h4>
+            <h4>Fires event <code>gridChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>command</code> is
+            Fires when the value for the configuration attribute <code>grid</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -1241,112 +1499,9 @@ documentation.</p>
 </div>
 
                 
-                    <div id="attr_options" class="attr item">
-    <a name="config_options"></a> 
-    <h3 class="name"><code>options</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l47"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:47</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Additional options.  Refer to Node.js child_process.spawn
-documentation.</p>
-    </div>
-
-    
-        <p><strong>Default:</strong> {}</p>
-    
-
-    
-        <div class="emits box">
-            <h4>Fires event <code>optionsChange</code></h4>
-
-            <p>
-            Fires when the value for the configuration attribute <code>options</code> is
-            changed. You can listen for the event using the <code>on</code> method if you
-            wish to be notified before the attribute's value has changed, or
-            using the <code>after</code> method if you wish to be notified after the
-            attribute's value has changed.
-            </p>
-
-            <div class="params">
-                <h4>Parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                        <code class="param-name">e</code>
-                        <span class="type">EventFacade</span>
-
-                        <div class="param-description">
-                            An Event Facade object with the following
-                            attribute-specific properties added:
-                        </div>
-
-                        <ul class="params-list">
-                            <li class="param">
-                                <code class="param-name">prevVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value of the attribute, prior to it being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">newVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value the attribute is to be set to.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">attrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">The name of the attribute being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">subAttrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="attr_pid" class="attr item">
-    <a name="config_pid"></a> 
-    <h3 class="name"><code>pid</code></h3>
+                    <div id="attr_height" class="attr item">
+    <a name="config_height"></a> 
+    <h3 class="name"><code>height</code></h3>
     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
 
     
@@ -1372,7 +1527,7 @@ documentation.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l59"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:59</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l399"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:399</code></a>
         
         </p>
 
@@ -1382,17 +1537,17 @@ documentation.</p>
     </div>
 
     <div class="description">
-        <p>The PID of the child process.</p>
+        <p>The height of the grid.</p>
     </div>
 
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>pidChange</code></h4>
+            <h4>Fires event <code>heightChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>pid</code> is
+            Fires when the value for the configuration attribute <code>height</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -1444,9 +1599,117 @@ documentation.</p>
 </div>
 
                 
-                    <div id="attr_ready" class="attr item">
-    <a name="config_ready"></a> 
-    <h3 class="name"><code>ready</code></h3>
+                    <div id="attr_life" class="attr item">
+    <a name="config_life"></a> 
+    <h3 class="name"><code>life</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">[Number]</a></span>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l409"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:409</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>In Conway's Game of Life, a living cell remains alive if it
+currently has exactly two or three living neighbors.  Otherwise
+the cell will die either from loneliness or overcrowding.  This
+is the default functionality but it can be modified.  For
+example, if this attribute is set to [1,3,5] a living cell
+will remain alive if it has exactly one, three, or five living
+neighbors.</p>
+    </div>
+
+    
+        <p><strong>Default:</strong> [2,3]</p>
+    
+
+    
+        <div class="emits box">
+            <h4>Fires event <code>lifeChange</code></h4>
+
+            <p>
+            Fires when the value for the configuration attribute <code>life</code> is
+            changed. You can listen for the event using the <code>on</code> method if you
+            wish to be notified before the attribute's value has changed, or
+            using the <code>after</code> method if you wish to be notified after the
+            attribute's value has changed.
+            </p>
+
+            <div class="params">
+                <h4>Parameters:</h4>
+
+                <ul class="params-list">
+                    <li class="param">
+                        <code class="param-name">e</code>
+                        <span class="type">EventFacade</span>
+
+                        <div class="param-description">
+                            An Event Facade object with the following
+                            attribute-specific properties added:
+                        </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                <code class="param-name">prevVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value of the attribute, prior to it being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">newVal</code>
+                                <span class="type">Any</span>
+                                <div class="param-description">The value the attribute is to be set to.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">attrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">The name of the attribute being set.</div>
+                            </li>
+                            <li class="param">
+                                <code class="param-name">subAttrName</code>
+                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="attr_toroidal" class="attr item">
+    <a name="config_toroidal"></a> 
+    <h3 class="name"><code>toroidal</code></h3>
     <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
 
     
@@ -1472,7 +1735,7 @@ documentation.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l68"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:68</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l428"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:428</code></a>
         
         </p>
 
@@ -1482,8 +1745,18 @@ documentation.</p>
     </div>
 
     <div class="description">
-        <p>This will be true when the stdin of the child process is writable and
-its kernel buffer is not full.</p>
+        <p>Since the grid is a fixed size, there is a good chance that the
+simulation will have to interact with the boundaries of the grid.
+By default, the grid exists on an infinite two-dimensional plane
+but all cells beyond the limits of the grid are considered to be
+dead.  When this attribute is set to a truthy value, the universe
+of the simulation will become a three-dimensional torus instead
+of a two-dimensional plane.  The grid will represent the entire
+surface area of the torus.  Basically all this means is, when the
+grid is toroidal, the left and right edges of the grid will be
+connected and the top and bottom edges of the grid will be
+connected, so while there is still a finite area there are no
+real boundaries.</p>
     </div>
 
     
@@ -1492,10 +1765,10 @@ its kernel buffer is not full.</p>
 
     
         <div class="emits box">
-            <h4>Fires event <code>readyChange</code></h4>
+            <h4>Fires event <code>toroidalChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>ready</code> is
+            Fires when the value for the configuration attribute <code>toroidal</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -1547,10 +1820,10 @@ its kernel buffer is not full.</p>
 </div>
 
                 
-                    <div id="attr_stderrEncoding" class="attr item">
-    <a name="config_stderrEncoding"></a> 
-    <h3 class="name"><code>stderrEncoding</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="attr_width" class="attr item">
+    <a name="config_width"></a> 
+    <h3 class="name"><code>width</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
 
     
 
@@ -1575,7 +1848,7 @@ its kernel buffer is not full.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l80"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:80</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l448"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:448</code></a>
         
         </p>
 
@@ -1585,119 +1858,17 @@ its kernel buffer is not full.</p>
     </div>
 
     <div class="description">
-        <p>Encoding may be one of 'ascii', 'base64', or 'utf8'.  If left
-undefined, the stderr event will emit a Buffer instead of a string.</p>
+        <p>The width of the grid.</p>
     </div>
 
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>stderrEncodingChange</code></h4>
+            <h4>Fires event <code>widthChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>stderrEncoding</code> is
-            changed. You can listen for the event using the <code>on</code> method if you
-            wish to be notified before the attribute's value has changed, or
-            using the <code>after</code> method if you wish to be notified after the
-            attribute's value has changed.
-            </p>
-
-            <div class="params">
-                <h4>Parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                        <code class="param-name">e</code>
-                        <span class="type">EventFacade</span>
-
-                        <div class="param-description">
-                            An Event Facade object with the following
-                            attribute-specific properties added:
-                        </div>
-
-                        <ul class="params-list">
-                            <li class="param">
-                                <code class="param-name">prevVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value of the attribute, prior to it being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">newVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value the attribute is to be set to.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">attrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">The name of the attribute being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">subAttrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="attr_stdoutEncoding" class="attr item">
-    <a name="config_stdoutEncoding"></a> 
-    <h3 class="name"><code>stdoutEncoding</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l90"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:90</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Encoding may be one of 'ascii', 'base64', or 'utf8'.  If left
-undefined, the stdout event will emit a Buffer instead of a string.</p>
-    </div>
-
-    
-
-    
-        <div class="emits box">
-            <h4>Fires event <code>stdoutEncodingChange</code></h4>
-
-            <p>
-            Fires when the value for the configuration attribute <code>stdoutEncoding</code> is
+            Fires when the value for the configuration attribute <code>width</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -1757,8 +1928,8 @@ undefined, the stdout event will emit a Buffer instead of a string.</p>
                 <h2 class="off-left">Events</h2>
 
                 
-                    <div id="event_drain" class="events item">
-    <h3 class="name"><code>drain</code></h3>
+                    <div id="event_cellChange" class="events item">
+    <h3 class="name"><code>cellChange</code></h3>
     <span class="type"></span>
 
     
@@ -1780,7 +1951,7 @@ undefined, the stdout event will emit a Buffer instead of a string.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l106"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:106</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-conway_js_conway.js.html#l67"><code>yui3-gallery&#x2F;src&#x2F;gallery-conway&#x2F;js&#x2F;conway.js:67</code></a>
         
         </p>
 
@@ -1790,51 +1961,7 @@ undefined, the stdout event will emit a Buffer instead of a string.</p>
     </div>
 
     <div class="description">
-        <p>Fires when the stdin of the child process is writable again after
-having reported its kernel buffer was full.</p>
-    </div>
-
-    
-
-
-    
-</div>
-
-                
-                    <div id="event_error" class="events item">
-    <h3 class="name"><code>error</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l118"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:118</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fires when there is an error in any stream of the child process.</p>
+        <p>If this event is prevented, the cell's value will not be changed.</p>
     </div>
 
     
@@ -1845,14 +1972,17 @@ having reported its kernel buffer was full.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">stderr</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                        <code class="param-name">cell</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Error reported from stderr.</p>
+                        <p>The current value of the cell.  Note that
+the cell's value is changed by the default function so the value
+of this property will be different between on and after
+subscriptions.</p>
                     </div>
 
                     
@@ -1860,14 +1990,14 @@ having reported its kernel buffer was full.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">stdin</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                        <code class="param-name">height</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Error reported from stdin.</p>
+                        <p>The current height of the grid.</p>
                     </div>
 
                     
@@ -1875,81 +2005,14 @@ having reported its kernel buffer was full.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">stdout</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                        <code class="param-name">index</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>Error reported from stdout.</p>
-                    </div>
-
-                    
-                </li>
-            
-            </ul>
-        </div>
-    
-
-
-    
-</div>
-
-                
-                    <div id="event_exit" class="events item">
-    <h3 class="name"><code>exit</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l127"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:127</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fires when the child process exits.</p>
-    </div>
-
-    
-        <div class="params">
-            <h4>Event Payload:</h4>
-
-            <ul class="params-list">
-            
-                <li class="param">
-                    
-                        <code class="param-name">code</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a> | Null</span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>If the process terminated normally,
-code is the final exit code of the process, otherwise null.</p>
+                        <p>The cell's array index.</p>
                     </div>
 
                     
@@ -1957,148 +2020,59 @@ code is the final exit code of the process, otherwise null.</p>
             
                 <li class="param">
                     
-                        <code class="param-name">signal</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | Null</span>
+                        <code class="param-name">toroidal</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
                     
 
                     
 
                     <div class="param-description">
-                        <p>If the process terminated due to
-receipt of a signal, signal is the string name of the signal,
-otherwise null.</p>
+                        <p>True if the grid is currently toroidal.</p>
                     </div>
 
                     
                 </li>
             
-            </ul>
-        </div>
-    
-
-
-    
-</div>
-
-                
-                    <div id="event_stderr" class="events item">
-    <h3 class="name"><code>stderr</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l144"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:144</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fired when stderr receives data.</p>
-    </div>
-
-    
-        <div class="params">
-            <h4>Event Payload:</h4>
-
-            <ul class="params-list">
-            
                 <li class="param">
                     
-                        <code class="param-name">data</code>
-                        <span class="type">Buffer | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">width</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                         
+                        <p>The current width of the grid.</p>
                     </div>
 
                     
                 </li>
             
-            </ul>
-        </div>
-    
-
-
-    
-</div>
-
-                
-                    <div id="event_stdout" class="events item">
-    <h3 class="name"><code>stdout</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-child-process_js_child-process.js.html#l151"><code>yui3-gallery&#x2F;src&#x2F;gallery-child-process&#x2F;js&#x2F;child-process.js:151</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fired when stdout receives data.</p>
-    </div>
-
-    
-        <div class="params">
-            <h4>Event Payload:</h4>
-
-            <ul class="params-list">
-            
                 <li class="param">
                     
-                        <code class="param-name">data</code>
-                        <span class="type">Buffer | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <code class="param-name">x</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
                     
 
                     
 
                     <div class="param-description">
-                         
+                        <p>The cell's x coordinate.</p>
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">y</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The cell's y coordinate.</p>
                     </div>
 
                     

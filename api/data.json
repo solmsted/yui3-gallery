@@ -4,6 +4,17 @@
         "description": ""
     },
     "files": {
+        "yui3-gallery/src/gallery-alea/js/alea.js": {
+            "name": "yui3-gallery/src/gallery-alea/js/alea.js",
+            "modules": {
+                "gallery-alea": 1
+            },
+            "classes": {
+                "Alea": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
         "yui3-gallery/src/gallery-any-base-converter/js/any-base-converter.js": {
             "name": "yui3-gallery/src/gallery-any-base-converter/js/any-base-converter.js",
             "modules": {
@@ -410,6 +421,19 @@
         }
     },
     "modules": {
+        "gallery-alea": {
+            "name": "gallery-alea",
+            "submodules": {},
+            "classes": {
+                "Alea": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "yui3-gallery/src/gallery-alea/js/alea.js",
+            "line": 63,
+            "description": "Y.Alea is a better pseudorandom number generator than Math.random.\n\nbased on Alea.js and Mash.js. http://baagoe.com/en/RandomMusings/javascript/\nCopyright (C) 2010 by Johannes Baagøe <baagoe@baagoe.org>"
+        },
         "gallery-any-base-converter": {
             "name": "gallery-any-base-converter",
             "submodules": {},
@@ -878,6 +902,27 @@
         }
     },
     "classes": {
+        "Alea": {
+            "name": "Alea",
+            "shortname": "Alea",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "gallery-alea",
+            "namespace": "",
+            "file": "yui3-gallery/src/gallery-alea/js/alea.js",
+            "line": 63,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "seedValues*",
+                    "description": "Optional.  Any number of seed values.  If left\nundefined, Y.Lang.now() is used.",
+                    "optional": true
+                }
+            ]
+        },
         "AnyBaseConverter": {
             "name": "AnyBaseConverter",
             "shortname": "AnyBaseConverter",
@@ -1539,6 +1584,42 @@
         }
     },
     "classitems": [
+        {
+            "file": "yui3-gallery/src/gallery-alea/js/alea.js",
+            "line": 101,
+            "description": "Generates a random number that is greater than or equal to zero\nand less than one.  The number will be a 32-bit fraction.",
+            "itemtype": "method",
+            "name": "random",
+            "return": {
+                "description": "Number"
+            },
+            "class": "Alea",
+            "module": "gallery-alea"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-alea/js/alea.js",
+            "line": 120,
+            "description": "Generates a random number that is greater than or equal to zero\nand less than one.  The number will be a 53-bit fraction.",
+            "itemtype": "method",
+            "name": "fract53",
+            "return": {
+                "description": "Number"
+            },
+            "class": "Alea",
+            "module": "gallery-alea"
+        },
+        {
+            "file": "yui3-gallery/src/gallery-alea/js/alea.js",
+            "line": 130,
+            "description": "Generates a random 32-bit unsigned integer.",
+            "itemtype": "method",
+            "name": "uint32",
+            "return": {
+                "description": "Number"
+            },
+            "class": "Alea",
+            "module": "gallery-alea"
+        },
         {
             "file": "yui3-gallery/src/gallery-any-base-converter/js/any-base-converter.js",
             "line": 28,

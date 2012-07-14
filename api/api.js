@@ -1,6 +1,7 @@
 YUI.add("yuidoc-meta", function(Y) {
    Y.YUIDoc = { meta: {
     "classes": [
+        "Alea",
         "AnyBaseConverter",
         "Array",
         "Async",
@@ -38,6 +39,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "YUI"
     ],
     "modules": [
+        "gallery-alea",
         "gallery-any-base-converter",
         "gallery-array-iterate",
         "gallery-array-unnest",
@@ -74,6 +76,11 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-yql-rest-client-oauth"
     ],
     "allModules": [
+        {
+            "displayName": "gallery-alea",
+            "name": "gallery-alea",
+            "description": "Y.Alea is a better pseudorandom number generator than Math.random.\n\nbased on Alea.js and Mash.js. http://baagoe.com/en/RandomMusings/javascript/\nCopyright (C) 2010 by Johannes Baagøe <baagoe@baagoe.org>"
+        },
         {
             "displayName": "gallery-any-base-converter",
             "name": "gallery-any-base-converter"

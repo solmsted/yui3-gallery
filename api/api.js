@@ -31,6 +31,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "QrCode.NumericData",
         "QrCode.Ucs2Data",
         "QrCode.Utf8Data",
+        "WeightedList",
         "WidgetInheritCss",
         "WidgetModality",
         "YQL",
@@ -68,6 +69,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-node-transform2d",
         "gallery-qr-code-generator-base",
         "gallery-soon",
+        "gallery-weighted-list",
         "gallery-widget-inherit-css",
         "gallery-widget-weak-modality",
         "gallery-yql-crypto",
@@ -203,6 +205,10 @@ YUI.add("yuidoc-meta", function(Y) {
             "displayName": "gallery-soon",
             "name": "gallery-soon",
             "description": "Similar to Y.later, but sooner.\n\nbased on setImmediate.js. https://github.com/NobleJS/setImmediate\n\nCopyright (c) 2011 Barnesandnoble.com, llc and Donavon West\n\nhttps://github.com/NobleJS/setImmediate/blob/master/MIT-LICENSE.txt"
+        },
+        {
+            "displayName": "gallery-weighted-list",
+            "name": "gallery-weighted-list"
         },
         {
             "displayName": "gallery-widget-inherit-css",

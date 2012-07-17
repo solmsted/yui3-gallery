@@ -14,6 +14,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "GoogleMapsFrame",
         "GoogleMapsLoader",
         "Isoline",
+        "LSystem",
         "ModelList",
         "Mutex",
         "Node",
@@ -62,6 +63,7 @@ YUI.add("yuidoc-meta", function(Y) {
         "gallery-google-maps-loader",
         "gallery-gravatar-url",
         "gallery-isoline",
+        "gallery-l-system",
         "gallery-lazy-load",
         "gallery-model-list-difference",
         "gallery-model-list-union",
@@ -172,6 +174,10 @@ YUI.add("yuidoc-meta", function(Y) {
         {
             "displayName": "gallery-isoline",
             "name": "gallery-isoline"
+        },
+        {
+            "displayName": "gallery-l-system",
+            "name": "gallery-l-system"
         },
         {
             "displayName": "gallery-lazy-load",

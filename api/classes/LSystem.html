@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>AsyncCommand - solmsted gallery modules</title>
+    <title>LSystem - solmsted gallery modules</title>
     <link rel="stylesheet" href="http:&#x2F;&#x2F;yui.yahooapis.com&#x2F;3.5.1&#x2F;build&#x2F;cssgrids&#x2F;cssgrids-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/vendor/prettify/prettify-min.css">
     <link rel="stylesheet" href="..&#x2F;assets/css/main.css" id="site_styles">
@@ -230,7 +230,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>AsyncCommand Class</h1>
+                        <h1>LSystem Class</h1>
 <div class="box meta">
     
 
@@ -242,13 +242,13 @@
 
     
         <div class="foundat">
-            Defined in: <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l21"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:21</code></a>
+            Defined in: <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l26"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:26</code></a>
         </div>
     
 
     
         
-            Module: <a href="../modules/gallery-async-command.html">gallery-async-command</a>
+            Module: <a href="../modules/gallery-l-system.html">gallery-l-system</a>
         
     
 
@@ -258,9 +258,99 @@
 
 
 <div class="box intro">
-    <p>Asynchronous command class.</p>
+    
 </div>
 
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+        <div id="method_LSystem" class="method item">
+    <h3 class="name"><code>LSystem</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>config</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l26"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:26</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">config</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Configuration Object.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+    </div>
 
 
 <div id="classdocs" class="tabview">
@@ -275,8 +365,6 @@
             <li class="api-class-tab attrs"><a href="#attrs">Attributes</a></li>
         
         
-            <li class="api-class-tab events"><a href="#events">Events</a></li>
-        
     </ul>
 
     <div>
@@ -289,8 +377,22 @@
 
                     <ul class="index-list methods extends">
                         
+                            <li class="index-item method protected">
+                                <a href="#method__resolveMatch">_resolveMatch</a>
+
+                                
+                                
+                            </li>
+                        
                             <li class="index-item method">
-                                <a href="#method_run">run</a>
+                                <a href="#method_iterate">iterate</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
+                                <a href="#method_restart">restart</a>
 
                                 
                                 
@@ -309,31 +411,19 @@
                     <ul class="index-list attrs extends">
                         
                             <li class="index-item attr">
-                                <a href="#attr_args">args</a>
+                                <a href="#attr_axiom">axiom</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_completed">completed</a>
+                                <a href="#attr_iterations">iterations</a>
+                            </li>
+                        
+                            <li class="index-item attr protected">
+                                <a href="#attr_pattern">pattern</a>
                             </li>
                         
                             <li class="index-item attr">
-                                <a href="#attr_ctx">ctx</a>
-                            </li>
-                        
-                            <li class="index-item attr">
-                                <a href="#attr_error">error</a>
-                            </li>
-                        
-                            <li class="index-item attr">
-                                <a href="#attr_failed">failed</a>
-                            </li>
-                        
-                            <li class="index-item attr">
-                                <a href="#attr_fn">fn</a>
-                            </li>
-                        
-                            <li class="index-item attr">
-                                <a href="#attr_started">started</a>
+                                <a href="#attr_rules">rules</a>
                             </li>
                         
                             <li class="index-item attr">
@@ -345,42 +435,6 @@
             
 
             
-                <div class="index-section events">
-                    <h3>Events</h3>
-
-                    <ul class="index-list events extends">
-                        
-                            <li class="index-item event">
-                                <a href="#event_complete">complete</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item event protected">
-                                <a href="#event_failure">failure</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item event protected">
-                                <a href="#event_start">start</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item event protected">
-                                <a href="#event_success">success</a>
-
-                                
-                                
-                            </li>
-                        
-                    </ul>
-                </div>
-            
         </div>
 
         
@@ -388,8 +442,269 @@
                 <h2 class="off-left">Methods</h2>
 
                 
-                    <div id="method_run" class="method item">
-    <h3 class="name"><code>run</code></h3>
+                    <div id="method__resolveMatch" class="method item protected">
+    <h3 class="name"><code>_resolveMatch</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>ruleValue</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>index</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>value</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>match</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+        </span>
+    
+
+    
+
+    
+        <span class="flag protected">protected</span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l91"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:91</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">ruleValue</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a> | <a href="../classes/WeightedList.html" class="crosslink">WeightedList</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">index</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">value</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">match</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>:
+                    
+                    Returns null if the rule doesn't apply.
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_iterate" class="method item">
+    <h3 class="name"><code>iterate</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code class="optional">[iterations]</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag chainable">chainable</span>
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l43"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:43</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Iterates the l-system's value.</p>
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name optional">[iterations]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>Optional.  The number of iterations to
+perform.  Defaults to 1.  The l-system can only iterate forward so
+negative values aren't accepted.</p>
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="method_restart" class="method item">
+    <h3 class="name"><code>restart</code></h3>
 
     
         <span class="paren">()</span>
@@ -422,7 +737,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l106"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:106</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l75"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:75</code></a>
         
         </p>
 
@@ -433,7 +748,7 @@
     </div>
 
     <div class="description">
-        <p>Execute the command function.</p>
+        <p>This method restarts the l-system and resets its value.</p>
     </div>
 
     
@@ -454,10 +769,10 @@
                 <h2 class="off-left">Attributes</h2>
 
                 
-                    <div id="attr_args" class="attr item">
-    <a name="config_args"></a> 
-    <h3 class="name"><code>args</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array" class="crosslink external" target="_blank">Array</a></span>
+                    <div id="attr_axiom" class="attr item">
+    <a name="config_axiom"></a> 
+    <h3 class="name"><code>axiom</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
 
     
 
@@ -482,7 +797,7 @@
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l117"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:117</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l206"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:206</code></a>
         
         </p>
 
@@ -492,21 +807,21 @@
     </div>
 
     <div class="description">
-        <p>Array of arguments to be passed to the command function.
-A special callback function is automatically added as the first
-argument.</p>
+        <p>The axiom is the initial value of the l-system.  Note: If the
+axiom is changed after the l-system has been iterated, the
+l-system will be restarted.</p>
     </div>
 
     
-        <p><strong>Default:</strong> []</p>
+        <p><strong>Default:</strong> &#x27;&#x27;</p>
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>argsChange</code></h4>
+            <h4>Fires event <code>axiomChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>args</code> is
+            Fires when the value for the configuration attribute <code>axiom</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -558,10 +873,10 @@ argument.</p>
 </div>
 
                 
-                    <div id="attr_completed" class="attr item">
-    <a name="config_completed"></a> 
-    <h3 class="name"><code>completed</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+                    <div id="attr_iterations" class="attr item">
+    <a name="config_iterations"></a> 
+    <h3 class="name"><code>iterations</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
 
     
 
@@ -586,7 +901,7 @@ argument.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l139"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:139</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l217"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:217</code></a>
         
         </p>
 
@@ -596,19 +911,21 @@ argument.</p>
     </div>
 
     <div class="description">
-        <p>Boolean value indicating the completed status of the command.</p>
+        <p>The number of iterations the l-system has been set to.  This
+attribute is read only; use the iterate method to iterate the
+l-system.</p>
     </div>
 
     
-        <p><strong>Default:</strong> false</p>
+        <p><strong>Default:</strong> 0</p>
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>completedChange</code></h4>
+            <h4>Fires event <code>iterationsChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>completed</code> is
+            Fires when the value for the configuration attribute <code>iterations</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -660,13 +977,15 @@ argument.</p>
 </div>
 
                 
-                    <div id="attr_ctx" class="attr item">
-    <a name="config_ctx"></a> 
-    <h3 class="name"><code>ctx</code></h3>
-    <span class="type"></span>
+                    <div id="attr_pattern" class="attr item protected">
+    <a name="config_pattern"></a> 
+    <h3 class="name"><code>pattern</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp" class="crosslink external" target="_blank">RegExp</a></span>
 
     
 
+    
+        <span class="flag protected">protected</span>
     
 
     
@@ -688,7 +1007,7 @@ argument.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l150"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:150</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l230"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:230</code></a>
         
         </p>
 
@@ -698,17 +1017,18 @@ argument.</p>
     </div>
 
     <div class="description">
-        <p>Execution context for the command function.</p>
+        <p>The regular expression that is used to help apply the rules
+during iteration.</p>
     </div>
 
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>ctxChange</code></h4>
+            <h4>Fires event <code>patternChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>ctx</code> is
+            Fires when the value for the configuration attribute <code>pattern</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -760,10 +1080,10 @@ argument.</p>
 </div>
 
                 
-                    <div id="attr_error" class="attr item">
-    <a name="config_error"></a> 
-    <h3 class="name"><code>error</code></h3>
-    <span class="type"></span>
+                    <div id="attr_rules" class="attr item">
+    <a name="config_rules"></a> 
+    <h3 class="name"><code>rules</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
 
     
 
@@ -788,7 +1108,7 @@ argument.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l159"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:159</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l242"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:242</code></a>
         
         </p>
 
@@ -798,325 +1118,161 @@ argument.</p>
     </div>
 
     <div class="description">
-        <p>Error value passed to the failure event.</p>
+        <p>The l-system's rules.  Note: If the rules are changed after the
+l-system has been iterated, the l-system will be restarted.  If
+you read this object and manipulate it directly, you must call
+the restart method before iterating the l-system again otherwise
+it will yield unknown results.</p>
+
+<p>The rules are key/value pairs.  The rules object's keys should be
+single characters.  In the simplest case, the rules object's
+values are strings.  For  example, with this rules object
+{a: 'abc'}, every time the character 'a' is found in the
+l-system's value, it will be replaced with the string 'abc'.</p>
+
+<p>The rules object's values may also be objects for more control
+over when the rule is applied.  For example, with this rules
+object {a: {prev: 'ccc', value: 'abc'}}, every time the character
+'a' is found in the l-system's value and the previous characters
+in the l-system's value are 'ccc', the 'a' will be replaced with
+the string 'abc'.  In the simplest case, the value property is a
+string but it may be any value that can be one of the rule
+object's values.  Here is a list of the properties that affect
+when this rule is applied:</p>
+
+<dl>
+    <dt>
+        first
+    </dt>
+    <dd>
+        If the first property is defined and is a truthy value,
+        the rule will only be applied if the matched character is
+        the first character in the l-system's value.  If the
+        first property is set to false, the rule will only be
+        applied if the matched character is not the first
+        character in the l-system's value.
+    </dd>
+    <dt>
+        last
+    </dt>
+    <dd>
+        If the last property is defined and is a truthy value,
+        the rule will only be applied if the matched character is
+        the last character in the l-system's value.  If the last
+        property is set to false, the rule will only be applied
+        if the matched character is not the last character in the
+        l-system's value.
+    </dd>
+    <dt>
+        next
+    </dt>
+    <dd>
+        If the next property is defined, it should be a string of
+        one or more characters.  The rule will only be applied if
+        the matched character is followed by this string of
+        characters exactly.
+
+        The next property may also be a weighted list of strings
+        of one or more characters.  In this case, the value will
+        be selected from the weighted list at random.
+    </dd>
+    <dt>
+        notNext
+    </dt>
+    <dd>
+        If the notNext property is defined, it should be a string
+        of one or more characters.  The rule will only be applied
+        if the matched character is not followed by this string
+        of characters exactly.
+
+        The notNext property may also be a weighted list of
+        strings of one or more characters.  In this case, the
+        value will be selected from the weighted list at random.
+    </dd>
+    <dt>
+        notPrev
+    </dt>
+    <dd>
+        If the notPrev property is defined, it should be a string
+        of one or more characters.  The rule will only be applied
+        if the matched character is not preceded by this string
+        of characters exactly.
+
+        The notPrev property may also be a weighted list of
+        strings of one or more characters.  In this case, the
+        value will be selected from the weighted list at random.
+    </dd>
+    <dt>
+        prev
+    </dt>
+    <dd>
+        If the prev property is defined, it should be a string of
+        one or more characters.  The rule will only be applied if
+        the matched character is preceded by this string of
+        characters exactly.
+
+        The prev property may also be a weighted list of strings
+        of one or more characters.  In this case, the value will
+        be selected from the weighted list at random.
+    </dd>
+</dl>
+
+<p>For even further control, the rules object's values may be
+objects with a fn property.  The fn property should be a function
+that accepts three arguments:</p>
+
+<dl>
+    <dt>
+        match
+    </dt>
+    <dd>
+        String.  The single character that was matched.
+    </dd>
+    <dt>
+        index
+    </dt>
+    <dd>
+        Number.  The index of the matched character within the
+        l-system's value.
+    </dd>
+    <dt>
+        value
+    </dt>
+    <dd>
+        String.  The l-system's current value.
+    </dd>
+</dl>
+
+<p>The function should return a string or null.  The rule will only
+be applied if the function does not return null.  The object may
+also have a ctx property which will be used as the execution
+context for the function.</p>
+
+<p>Multiple rules may be given for a single character by providing
+an array as a rules object's value.  The array may contain any
+value that is acceptable as a rules object's value.  The array
+items will be processed in order; the first rule that applies
+will be used.  Because of this, the array items should usually be
+one of the ojects described above.  The array may contain string
+items, but since string rules are always applied, there should
+only ever be one string item in the array and it should be the
+last item in the array.</p>
+
+<p>A rules object's value may also be a weighted list of any of the
+other values described above.  In this case, the values will be
+selected from the weighted list at random.</p>
     </div>
 
+    
+        <p><strong>Default:</strong> {}</p>
     
 
     
         <div class="emits box">
-            <h4>Fires event <code>errorChange</code></h4>
+            <h4>Fires event <code>rulesChange</code></h4>
 
             <p>
-            Fires when the value for the configuration attribute <code>error</code> is
-            changed. You can listen for the event using the <code>on</code> method if you
-            wish to be notified before the attribute's value has changed, or
-            using the <code>after</code> method if you wish to be notified after the
-            attribute's value has changed.
-            </p>
-
-            <div class="params">
-                <h4>Parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                        <code class="param-name">e</code>
-                        <span class="type">EventFacade</span>
-
-                        <div class="param-description">
-                            An Event Facade object with the following
-                            attribute-specific properties added:
-                        </div>
-
-                        <ul class="params-list">
-                            <li class="param">
-                                <code class="param-name">prevVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value of the attribute, prior to it being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">newVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value the attribute is to be set to.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">attrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">The name of the attribute being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">subAttrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="attr_failed" class="attr item">
-    <a name="config_failed"></a> 
-    <h3 class="name"><code>failed</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l168"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:168</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Boolean value indicating the failed status of the command.</p>
-    </div>
-
-    
-        <p><strong>Default:</strong> false</p>
-    
-
-    
-        <div class="emits box">
-            <h4>Fires event <code>failedChange</code></h4>
-
-            <p>
-            Fires when the value for the configuration attribute <code>failed</code> is
-            changed. You can listen for the event using the <code>on</code> method if you
-            wish to be notified before the attribute's value has changed, or
-            using the <code>after</code> method if you wish to be notified after the
-            attribute's value has changed.
-            </p>
-
-            <div class="params">
-                <h4>Parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                        <code class="param-name">e</code>
-                        <span class="type">EventFacade</span>
-
-                        <div class="param-description">
-                            An Event Facade object with the following
-                            attribute-specific properties added:
-                        </div>
-
-                        <ul class="params-list">
-                            <li class="param">
-                                <code class="param-name">prevVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value of the attribute, prior to it being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">newVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value the attribute is to be set to.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">attrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">The name of the attribute being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">subAttrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="attr_fn" class="attr item">
-    <a name="config_fn"></a> 
-    <h3 class="name"><code>fn</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l179"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:179</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>The command function to execute.  This function receives a special
-success callback function as the first parameter.  The success
-callback function has a method parameter called fail.  One of
-these callback functions must be called in order to complete the
-command.</p>
-    </div>
-
-    
-
-    
-        <div class="emits box">
-            <h4>Fires event <code>fnChange</code></h4>
-
-            <p>
-            Fires when the value for the configuration attribute <code>fn</code> is
-            changed. You can listen for the event using the <code>on</code> method if you
-            wish to be notified before the attribute's value has changed, or
-            using the <code>after</code> method if you wish to be notified after the
-            attribute's value has changed.
-            </p>
-
-            <div class="params">
-                <h4>Parameters:</h4>
-
-                <ul class="params-list">
-                    <li class="param">
-                        <code class="param-name">e</code>
-                        <span class="type">EventFacade</span>
-
-                        <div class="param-description">
-                            An Event Facade object with the following
-                            attribute-specific properties added:
-                        </div>
-
-                        <ul class="params-list">
-                            <li class="param">
-                                <code class="param-name">prevVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value of the attribute, prior to it being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">newVal</code>
-                                <span class="type">Any</span>
-                                <div class="param-description">The value the attribute is to be set to.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">attrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">The name of the attribute being set.</div>
-                            </li>
-                            <li class="param">
-                                <code class="param-name">subAttrName</code>
-                                <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-                                <div class="param-description">If setting a property within the attribute's value, the name of the sub-attribute property being set.</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="attr_started" class="attr item">
-    <a name="config_started"></a> 
-    <h3 class="name"><code>started</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l195"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:195</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Boolean value indicating the started status of the command.</p>
-    </div>
-
-    
-        <p><strong>Default:</strong> false</p>
-    
-
-    
-        <div class="emits box">
-            <h4>Fires event <code>startedChange</code></h4>
-
-            <p>
-            Fires when the value for the configuration attribute <code>started</code> is
+            Fires when the value for the configuration attribute <code>rules</code> is
             changed. You can listen for the event using the <code>on</code> method if you
             wish to be notified before the attribute's value has changed, or
             using the <code>after</code> method if you wish to be notified after the
@@ -1171,7 +1327,7 @@ command.</p>
                     <div id="attr_value" class="attr item">
     <a name="config_value"></a> 
     <h3 class="name"><code>value</code></h3>
-    <span class="type"></span>
+    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
 
     
 
@@ -1196,7 +1352,7 @@ command.</p>
             
         
         
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l206"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:206</code></a>
+        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-l-system_js_l-system.js.html#l390"><code>yui3-gallery&#x2F;src&#x2F;gallery-l-system&#x2F;js&#x2F;l-system.js:390</code></a>
         
         </p>
 
@@ -1206,9 +1362,11 @@ command.</p>
     </div>
 
     <div class="description">
-        <p>Value passed to the success event.</p>
+        <p>The current value of the l-system.</p>
     </div>
 
+    
+        <p><strong>Default:</strong> &#x27;&#x27;</p>
     
 
     
@@ -1271,290 +1429,6 @@ command.</p>
             </div>
         
 
-        
-            <div id="events" class="api-class-tabpanel">
-                <h2 class="off-left">Events</h2>
-
-                
-                    <div id="event_complete" class="events item">
-    <h3 class="name"><code>complete</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l31"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:31</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fired when the command function completes.</p>
-    </div>
-
-    
-        <div class="params">
-            <h4>Event Payload:</h4>
-
-            <ul class="params-list">
-            
-                <li class="param">
-                    
-                        <code class="param-name">error</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>Optional error value.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">failed</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>Indicates the failed status of the
-command.</p>
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">value</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>Optional return value from the command function.</p>
-                    </div>
-
-                    
-                </li>
-            
-            </ul>
-        </div>
-    
-
-
-    
-</div>
-
-                
-                    <div id="event_failure" class="events item protected">
-    <h3 class="name"><code>failure</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-        <span class="flag protected">protected</span>
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l47"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:47</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fired when the command function fails.</p>
-    </div>
-
-    
-        <div class="params">
-            <h4>Event Payload:</h4>
-
-            <ul class="params-list">
-            
-                <li class="param">
-                    
-                        <code class="param-name">error</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>Optional error value.</p>
-                    </div>
-
-                    
-                </li>
-            
-            </ul>
-        </div>
-    
-
-
-    
-</div>
-
-                
-                    <div id="event_start" class="events item protected">
-    <h3 class="name"><code>start</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-        <span class="flag protected">protected</span>
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l69"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:69</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fired when the command function starts.</p>
-    </div>
-
-    
-
-
-    
-</div>
-
-                
-                    <div id="event_success" class="events item protected">
-    <h3 class="name"><code>success</code></h3>
-    <span class="type"></span>
-
-    
-
-    
-        <span class="flag protected">protected</span>
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="..&#x2F;files&#x2F;yui3-gallery_src_gallery-async-command_js_async-command.js.html#l83"><code>yui3-gallery&#x2F;src&#x2F;gallery-async-command&#x2F;js&#x2F;async-command.js:83</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Fired when the command function succeeds.</p>
-    </div>
-
-    
-        <div class="params">
-            <h4>Event Payload:</h4>
-
-            <ul class="params-list">
-            
-                <li class="param">
-                    
-                        <code class="param-name">value</code>
-                        <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>Optional return value from the command function.</p>
-                    </div>
-
-                    
-                </li>
-            
-            </ul>
-        </div>
-    
-
-
-    
-</div>
-
-                
-            </div>
         
     </div>
 </div>

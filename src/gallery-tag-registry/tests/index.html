@@ -2,40 +2,41 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />        
-        <title>Test File</title>
+        <title>YUI Tag</title>
         <script type="text/javascript" src="../../../../yui3/build/yui/yui.js"></script>
         <script type="text/javascript">
         var Y = YUI({
             modules: {
-                'gallery-event-inserted': {
-                    fullpath: '../../../build/gallery-event-inserted/gallery-event-inserted.js'
-                },
-                'gallery-tag': {
-                    fullpath: '../../../build/gallery-tag/gallery-tag.js'
-                },
-                'gallery-tag-registry': {
-                    fullpath: '../../../build/gallery-tag-registry/gallery-tag-registry.js'
-                }
-            }
+                'gallery-event-inserted': '../../../build/gallery-event-inserted/gallery-event-inserted.js',
+                'gallery-tag': '../../../build/gallery-tag/gallery-tag.js'
+            },
+            groups: {tag: {patterns: {'tag-': {configFn: function(cfg) {
+                cfg.path = '../../yui3-gallery/build/gallery-tag-registry/' + cfg.name + '.js'
+            }}}}}
         })
         </script>
+        <style type="text/css">
+        iframe {width: 500px; height: 300px; border: 0;}
+        </style>
     </head>
     <body>
         <h1>YUI Tag</h1>
 
-        <h2>Button</h2>
-        <ybutton data-label="PIZZA" data-disabled="false"></ybutton>
+        <iframe src="ybind.html"></iframe>
 
-        <h2>Dial</h2>
-        <ydial data-min="-100" data-max="100" data-value="0" data-stepsPerRevolution="10"></ydial>
+        <iframe src="ybutton.html"></iframe>
 
-        <h2>Suggest</h2>
-        <ysuggest></ysuggest>
-        
-        <div id="test"></div>
+        <iframe src="ydial.html"></iframe>
+
+        <iframe src="yautocomplete.html"></iframe>
+
+        <iframe src="ycalendar.html"></iframe>
+
+        <iframe src="yoverlay.html"></iframe>
+
+        <iframe src="ytemplate.html"></iframe>
 
         <script type="text/javascript">
-        Y.use('gallery-tag-registry', function(Y) {});
         </script>
     </body>
 </html>

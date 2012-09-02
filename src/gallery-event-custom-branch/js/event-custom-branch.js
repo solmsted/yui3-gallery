@@ -11,7 +11,7 @@
         _mix = Y.mix;
 
     _mix(_customEventPrototype, {
-        applyConfig: function(object, force) {
+        applyConfig: function (object, force) {
             _customEventApplyConfigs.apply(this, arguments);
 
             if (object) {
@@ -400,7 +400,7 @@
 
                 if (originalBranchPrevented) {
                     event.preventBranchDefault();
-                }                    
+                }
             }
 
             return returnValue;

@@ -1,0 +1,20 @@
+{
+    "author": "Steven Olmsted <steven.olm@gmail.com>",
+    "dependencies": {
+        "module-a": "git://locationOfModuleARepo",
+        "module-b": "git://locationOfModuleBRepo",
+        "module-c": "git://locationOfModuleCRepo",
+        "yui": "~3.9.0pr3"
+    },
+    "description": "Example of combining npm and yui modules.",
+    "engines": {
+        "node": "~0.8.20"
+    },
+    "name": "application-entry-point",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git://locationOfApplicationEntryPointRepo"
+    },
+    "version": "0.0.1"
+}

@@ -1,0 +1,5 @@
+Example of a combined npm and yui module.
+
+This module depends on npm module 'node-uuid' and yui module 'base'.
+ModuleB is used as a class extension of ModuleA.
+ModuleB tries to load ModuleC on demand.

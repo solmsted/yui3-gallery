@@ -1,0 +1,4 @@
+Example of a combined npm and yui module.
+
+This module depends on npm module 'express', yui module 'base', and custom yui
+module 'module-b'.

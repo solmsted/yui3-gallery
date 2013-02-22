@@ -1,0 +1,10 @@
+Example of combining npm and yui modules.
+
+This module depends on yui and all the other custom yui modules used by the
+application.
+
+If each custom module is in its own git repo, and if the git urls are specified
+in the package.json, the deploying the entire application should be as simple
+as cloning application-entry-point and running `npm install` in its directory.
+
+application-entry-point.js can be executable.

@@ -1,0 +1,22 @@
+{
+    "author": "Steven Olmsted <steven.olm@gmail.com>",
+    "dependencies": {
+        "express": "~3.1.0"
+    },
+    "description": "Example of a combined npm and yui module.",
+    "engines": {
+        "node": "~0.8.20"
+    },
+    "main": "metadata",
+    "name": "module-a",
+    "peerDependencies": {
+        "module-b": "git://locationOfModuleBRepo",
+        "yui": "~3.9.0pr3"
+    },
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git://locationOfModuleARepo"
+    },
+    "version": "0.0.1"
+}

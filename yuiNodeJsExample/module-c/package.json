@@ -1,0 +1,18 @@
+{
+    "author": "Steven Olmsted <steven.olm@gmail.com>",
+    "description": "Example of a combined npm module and group of yui modules.",
+    "engines": {
+        "node": "~0.8.20"
+    },
+    "main": "metadata",
+    "name": "module-c",
+    "peerDependencies": {
+        "yui": "~3.9.0pr3"
+    },
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git://locationOfModuleCRepo"
+    },
+    "version": "0.0.1"
+}
